@@ -287,6 +287,7 @@ page = st.session_state.page
 st.sidebar.markdown("---")
 port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])
 move_threshold = st.sidebar.slider("Alert Threshold (%)", 1.0, 10.0, 3.0, 0.5)
+mobile_view = st.sidebar.toggle("📱 Mobile View", value=False)
 st.sidebar.markdown("---")
 st.sidebar.caption(f"Updated: {datetime.datetime.now().strftime('%b %d %I:%M %p ET')}")
 
@@ -324,7 +325,9 @@ if page == "Market Alerts":
             st.dataframe(big, use_container_width=True, hide_index=True)
 
         st.subheader("All Holdings")
-        st.dataframe(df, use_container_width=True, hide_index=True)
+        mobile_alert_cols = ["", "Ticker", "Portfolio", "Price", "Day Change"]
+        alert_show = [c for c in (mobile_alert_cols if mobile_view else df.columns) if c in df.columns]
+        st.dataframe(df[alert_show], use_container_width=True, hide_index=True)
 
         # ── News ──────────────────────────────────────────────────────────────
         st.subheader("📰 Latest News")
@@ -406,8 +409,10 @@ elif page == "Portfolio":
             "rev_grade": "Rev", "div_yield": "Div Yield"
         })
 
-        display_cols = [c for c in ["Ticker","Name","Price","Today","Week","MTD","YTD","Score","Rating",
-                                     "Val","Growth","Profit","Mom","Rev","Div Yield","Sector"] if c in merged.columns]
+        all_cols    = ["Ticker","Name","Price","Today","Week","MTD","YTD","Score","Rating",
+                       "Val","Growth","Profit","Mom","Rev","Div Yield","Sector"]
+        mobile_cols = ["Ticker","Price","Today","YTD","Score","Rating"]
+        display_cols = [c for c in (mobile_cols if mobile_view else all_cols) if c in merged.columns]
         display_df = merged[display_cols].dropna(how="all", subset=[c for c in ["Price","Today","Score"] if c in merged.columns])
         if display_df.empty:
             st.markdown("---")
@@ -487,9 +492,10 @@ elif page == "Stock Ratings":
     if "quant_score" in filt.columns:
         filt = filt.sort_values("quant_score", ascending=False)
 
-    show = [c for c in ["ticker","name","sector","quant_rating","quant_score","val_grade",
-                         "growth_grade","profit_grade","mom_grade","rev_grade","price",
-                         "div_yield","upside"] if c in filt.columns]
+    all_show    = ["ticker","name","sector","quant_rating","quant_score","val_grade",
+                   "growth_grade","profit_grade","mom_grade","rev_grade","price","div_yield","upside"]
+    mobile_show = ["ticker","quant_rating","quant_score","price","div_yield"]
+    show = [c for c in (mobile_show if mobile_view else all_show) if c in filt.columns]
     st.caption(f"Showing {len(filt):,} of {len(ratings_df):,} stocks")
     st.dataframe(filt[show], use_container_width=True, hide_index=True, height=1100)
 
@@ -519,19 +525,20 @@ elif page == "Matchups":
     # Select and reorder columns — most important on left
     display_cols = []
     col_map = {
-        "Portfolio":        port_col,
-        "Holding":          "Current Holding",
-        "Hold. Score":      "Holding Score",
-        "Hold. Rating":     "Holding Quant",
-        "→ Alt Ticker":     "Alt Ticker",
-        "Alt Name":         "Alt Name",
-        "Alt Score":        "Alt Score",
-        "Alt Rating":       "Alt Quant",
-        "Score ↑":          "Score Diff",
-        "Why Better":       "Why Better",
-        "Alt Div Yield":    "Alt Div Yield",
-        "Sector":           "Holding Sector",
+        "Portfolio":     port_col,
+        "Holding":       "Current Holding",
+        "Hold. Score":   "Holding Score",
+        "Hold. Rating":  "Holding Quant",
+        "→ Alt":         "Alt Ticker",
+        "Alt Name":      "Alt Name",
+        "Alt Score":     "Alt Score",
+        "Alt Rating":    "Alt Quant",
+        "Score ↑":       "Score Diff",
+        "Why Better":    "Why Better",
+        "Alt Div Yield": "Alt Div Yield",
+        "Sector":        "Holding Sector",
     }
+    mobile_matchup_cols = ["Portfolio","Holding","Hold. Score","→ Alt","Alt Score","Score ↑"]
 
     out_rows = []
     for _, row in comp_df.iterrows():
@@ -541,6 +548,8 @@ elif page == "Matchups":
         out_rows.append(r)
 
     out_df = pd.DataFrame(out_rows)
+    if mobile_view:
+        out_df = out_df[[c for c in mobile_matchup_cols if c in out_df.columns]]
 
     # Color the Score ↑ column
     def color_diff(val):

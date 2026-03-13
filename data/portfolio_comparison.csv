@@ -1,0 +1,173 @@
+Portfolio,Current Holding,Holding Name,Holding Sector,Holding Quant,Holding Score,Holding Val,Holding Growth,Holding Profit,Holding Mom,Holding Rev,Holding Analyst,Holding Upside,Holding FSI,Alt Ticker,Alt Name,Alt Quant,Alt Score,Alt Val,Alt Growth,Alt Profit,Alt Mom,Alt Rev,Alt Analyst,Alt Upside,Alt Div Yield,Alt FSI,Score Diff
+Power,CIEN,Ciena Corporation,Technology,Buy,3.59,D+,A,C+,A+,A-,Buy,-3.9%,,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.39
+Power,CIEN,Ciena Corporation,Technology,Buy,3.59,D+,A,C+,A+,A-,Buy,-3.9%,,SNDK,Sandisk Corporation,Buy,3.92,C+,A+,C+,A+,A,Buy,+23.0%,0.0%,,0.33
+Power,DY,"Dycom Industries, Inc.",Industrials,Hold,3.11,C+,B-,C+,B+,B+,Strong Buy,+29.2%,FSI-SM,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.61
+Power,DY,"Dycom Industries, Inc.",Industrials,Hold,3.11,C+,B-,C+,B+,B+,Strong Buy,+29.2%,FSI-SM,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,0.84
+Power,DY,"Dycom Industries, Inc.",Industrials,Hold,3.11,C+,B-,C+,B+,B+,Strong Buy,+29.2%,FSI-SM,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,0.80
+Power,GM,General Motors Company,Consumer Cyclical,Hold,3.10,B+,D+,C-,B+,A,Buy,+29.4%,,TPR,"Tapestry, Inc.",Buy,3.92,D+,A,A,A+,A-,Buy,+12.3%,110.0%,,0.83
+Power,GM,General Motors Company,Consumer Cyclical,Hold,3.10,B+,D+,C-,B+,A,Buy,+29.4%,,HAS,"Hasbro, Inc.",Buy,3.85,C-,A,B,A,A,Buy,+19.5%,297.0%,,0.75
+Power,GM,General Motors Company,Consumer Cyclical,Hold,3.10,B+,D+,C-,B+,A,Buy,+29.4%,,SON,Sonoco Products Company,Buy,3.81,A-,A,B-,A,C-,Buy,+22.8%,402.0%,,0.72
+Power,EAT,"Brinker International, Inc.",Consumer Cyclical,Hold,3.21,B-,B,B+,B,C,Buy,+36.3%,,TPR,"Tapestry, Inc.",Buy,3.92,D+,A,A,A+,A-,Buy,+12.3%,110.0%,,0.71
+Power,EAT,"Brinker International, Inc.",Consumer Cyclical,Hold,3.21,B-,B,B+,B,C,Buy,+36.3%,,HAS,"Hasbro, Inc.",Buy,3.85,C-,A,B,A,A,Buy,+19.5%,297.0%,,0.63
+Power,EAT,"Brinker International, Inc.",Consumer Cyclical,Hold,3.21,B-,B,B+,B,C,Buy,+36.3%,,SON,Sonoco Products Company,Buy,3.81,A-,A,B-,A,C-,Buy,+22.8%,402.0%,,0.60
+Power,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.52
+Power,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,SNDK,Sandisk Corporation,Buy,3.92,C+,A+,C+,A+,A,Buy,+23.0%,0.0%,,0.46
+Power,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,TER,"Teradyne, Inc.",Buy,3.67,D+,A,B+,A+,B,Buy,+7.3%,17.0%,,0.21
+Power,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,HALO,"Halozyme Therapeutics, Inc.",Buy,3.88,B-,A+,A,B-,A,Buy,+32.9%,0.0%,FSI-SM,0.34
+Power,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,0.43
+Power,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,INVA,"Innoviva, Inc.",Buy,3.78,A-,A,A,B+,D,Buy,+51.1%,0.0%,,0.24
+Power,CLS,Celestica Inc.,Technology,Hold,3.02,C+,A-,B-,C+,C+,Strong Buy,+44.0%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.59
+Power,CLS,Celestica Inc.,Technology,Hold,3.02,C+,A-,B-,C+,C+,Strong Buy,+44.0%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.58
+Power,CLS,Celestica Inc.,Technology,Hold,3.02,C+,A-,B-,C+,C+,Strong Buy,+44.0%,,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.49
+Power,ALL,The Allstate Corporation,Financial Services,Hold,3.38,A-,B,B,A-,F,Buy,+17.3%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,0.91
+Power,ALL,The Allstate Corporation,Financial Services,Hold,3.38,A-,B,B,A-,F,Buy,+17.3%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,0.77
+Power,ALL,The Allstate Corporation,Financial Services,Hold,3.38,A-,B,B,A-,F,Buy,+17.3%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.56
+Power,SKYW,"SkyWest, Inc.",Industrials,Hold,2.83,A,B-,B-,C-,C-,Strong Buy,+43.4%,,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.89
+Power,SKYW,"SkyWest, Inc.",Industrials,Hold,2.83,A,B-,B-,C-,C-,Strong Buy,+43.4%,,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,1.13
+Power,SKYW,"SkyWest, Inc.",Industrials,Hold,2.83,A,B-,B-,C-,C-,Strong Buy,+43.4%,,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,1.09
+Power,PPC,Pilgrim's Pride Corporation,Consumer Defensive,Hold,2.64,A-,C,B-,C,D,None,+24.3%,,COKE,"Coca-Cola Consolidated, Inc.",Buy,3.95,B-,B,B+,A+,A,None,N/A,48.0%,,1.31
+Power,PPC,Pilgrim's Pride Corporation,Consumer Defensive,Hold,2.64,A-,C,B-,C,D,None,+24.3%,,MNST,Monster Beverage Corporation,Hold,3.40,D,A,A,B+,C+,Buy,+13.2%,0.0%,FSI-LC|FSI-UP,0.76
+Power,PPC,Pilgrim's Pride Corporation,Consumer Defensive,Hold,2.64,A-,C,B-,C,D,None,+24.3%,,BG,Bunge Global SA,Hold,3.36,B-,B-,D+,A+,B+,Strong Buy,+4.6%,228.0%,FSI-UP,0.72
+Power,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.58
+Power,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,0.81
+Power,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,0.77
+Power,CCL,Carnival Corporation & plc,Consumer Cyclical,Hold,3.24,B,B+,B+,C,B-,Buy,+57.6%,,TPR,"Tapestry, Inc.",Buy,3.92,D+,A,A,A+,A-,Buy,+12.3%,110.0%,,0.69
+Power,CCL,Carnival Corporation & plc,Consumer Cyclical,Hold,3.24,B,B+,B+,C,B-,Buy,+57.6%,,HAS,"Hasbro, Inc.",Buy,3.85,C-,A,B,A,A,Buy,+19.5%,297.0%,,0.61
+Power,CCL,Carnival Corporation & plc,Consumer Cyclical,Hold,3.24,B,B+,B+,C,B-,Buy,+57.6%,,SON,Sonoco Products Company,Buy,3.81,A-,A,B-,A,C-,Buy,+22.8%,402.0%,,0.58
+Power,UNFI,"United Natural Foods, Inc.",Consumer Defensive,Hold,3.29,B+,C-,D+,A,A,Hold,+9.7%,,COKE,"Coca-Cola Consolidated, Inc.",Buy,3.95,B-,B,B+,A+,A,None,N/A,48.0%,,0.65
+Power,UNFI,"United Natural Foods, Inc.",Consumer Defensive,Hold,3.29,B+,C-,D+,A,A,Hold,+9.7%,,PRDO,Perdoceo Education Corporation,Buy,3.84,B,A-,A-,A-,C+,None,+20.1%,172.0%,,0.55
+Power,UNFI,"United Natural Foods, Inc.",Consumer Defensive,Hold,3.29,B+,C-,D+,A,A,Hold,+9.7%,,LRN,"Stride, Inc.",Buy,3.69,B+,A+,B+,B-,B-,Buy,+26.8%,0.0%,,0.40
+Power,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.19
+Power,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.05
+Power,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.84
+Power,WLDN,"Willdan Group, Inc.",Industrials,Hold,2.90,B-,A,B-,D+,C+,Strong Buy,+81.4%,,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.82
+Power,WLDN,"Willdan Group, Inc.",Industrials,Hold,2.90,B-,A,B-,D+,C+,Strong Buy,+81.4%,,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,1.05
+Power,WLDN,"Willdan Group, Inc.",Industrials,Hold,2.90,B-,A,B-,D+,C+,Strong Buy,+81.4%,,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,1.01
+Power,TTMI,"TTM Technologies, Inc.",Technology,Buy,3.55,C+,A-,C+,A,B+,None,+30.9%,,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.43
+Power,TTMI,"TTM Technologies, Inc.",Technology,Buy,3.55,C+,A-,C+,A,B+,None,+30.9%,,SNDK,Sandisk Corporation,Buy,3.92,C+,A+,C+,A+,A,Buy,+23.0%,0.0%,,0.37
+Power,COHR,Coherent Corp.,Technology,Hold,3.40,C-,B+,C,A,A,Buy,+14.4%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.20
+Power,COHR,Coherent Corp.,Technology,Hold,3.40,C-,B+,C,A,A,Buy,+14.4%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.20
+Power,COHR,Coherent Corp.,Technology,Hold,3.40,C-,B+,C,A,A,Buy,+14.4%,,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.58
+Power,STRL,"Sterling Infrastructure, Inc.",Industrials,Hold,3.35,C-,B,B+,A-,B,Strong Buy,+19.0%,FSI-SM,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.37
+Power,STRL,"Sterling Infrastructure, Inc.",Industrials,Hold,3.35,C-,B,B+,A-,B,Strong Buy,+19.0%,FSI-SM,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,0.60
+Power,STRL,"Sterling Infrastructure, Inc.",Industrials,Hold,3.35,C-,B,B+,A-,B,Strong Buy,+19.0%,FSI-SM,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,0.56
+Power,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.68
+Power,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.54
+Power,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,1.33
+Power,TMUS,"T-Mobile US, Inc.",Communication Services,Hold,3.13,C+,B-,B+,B,C,Buy,+25.3%,,META,"Meta Platforms, Inc.",Hold,3.35,C,A-,A,B-,C+,Strong Buy,+35.1%,32.0%,FSI-LC,0.22
+Power,TMUS,"T-Mobile US, Inc.",Communication Services,Hold,3.13,C+,B-,B+,B,C,Buy,+25.3%,,GOOGL,Alphabet Inc.,Hold,3.35,C-,A-,A,B+,C-,Strong Buy,+24.2%,27.0%,FSI-LC,0.22
+Power,TMUS,"T-Mobile US, Inc.",Communication Services,Hold,3.13,C+,B-,B+,B,C,Buy,+25.3%,,OMC,Omnicom Group Inc.,Buy,3.77,B,A,C,B+,A+,Buy,+29.5%,400.0%,,0.64
+Power,FN,Fabrinet,Technology,Hold,3.07,C,B+,B-,B+,C,Buy,+12.0%,FSI-SM,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.54
+Power,FN,Fabrinet,Technology,Hold,3.07,C,B+,B-,B+,C,Buy,+12.0%,FSI-SM,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.53
+Power,FN,Fabrinet,Technology,Hold,3.07,C,B+,B-,B+,C,Buy,+12.0%,FSI-SM,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.44
+Power,VISN,"Vistance Networks, Inc.",Technology,Hold,2.87,B,N/A,B,B-,F,Buy,+30.1%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.74
+Power,VISN,"Vistance Networks, Inc.",Technology,Hold,2.87,B,N/A,B,B-,F,Buy,+30.1%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.73
+Power,VISN,"Vistance Networks, Inc.",Technology,Hold,2.87,B,N/A,B,B-,F,Buy,+30.1%,,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.64
+Power,PARR,"Par Pacific Holdings, Inc.",Energy,Hold,3.14,A-,C+,B-,B+,D,Buy,-5.7%,,TPL,Texas Pacific Land Corporation,Buy,4.00,C-,B,A+,A+,A+,Hold,-16.0%,46.0%,FSI-LC,0.86
+Power,PARR,"Par Pacific Holdings, Inc.",Energy,Hold,3.14,A-,C+,B-,B+,D,Buy,-5.7%,,AROC,"Archrock, Inc.",Buy,3.63,C,A-,A-,A-,B-,Strong Buy,+6.8%,237.0%,,0.48
+Power,PARR,"Par Pacific Holdings, Inc.",Energy,Hold,3.14,A-,C+,B-,B+,D,Buy,-5.7%,,INSW,"International Seaways, Inc.",Buy,3.62,B-,A,A-,A-,D+,Strong Buy,+12.7%,656.0%,,0.48
+Power,SYF,Synchrony Financial,Financial Services,Hold,2.70,A-,C,B+,C-,C-,Buy,+40.7%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.59
+Power,SYF,Synchrony Financial,Financial Services,Hold,2.70,A-,C,B+,C-,C-,Buy,+40.7%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.45
+Power,SYF,Synchrony Financial,Financial Services,Hold,2.70,A-,C,B+,C-,C-,Buy,+40.7%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,1.24
+Power,W,Wayfair Inc.,Consumer Cyclical,Hold,2.62,C,B,C-,C-,A,Buy,+43.0%,,TPR,"Tapestry, Inc.",Buy,3.92,D+,A,A,A+,A-,Buy,+12.3%,110.0%,,1.30
+Power,W,Wayfair Inc.,Consumer Cyclical,Hold,2.62,C,B,C-,C-,A,Buy,+43.0%,,HAS,"Hasbro, Inc.",Buy,3.85,C-,A,B,A,A,Buy,+19.5%,297.0%,,1.23
+Power,W,Wayfair Inc.,Consumer Cyclical,Hold,2.62,C,B,C-,C-,A,Buy,+43.0%,,SON,Sonoco Products Company,Buy,3.81,A-,A,B-,A,C-,Buy,+22.8%,402.0%,,1.19
+Power,BLBD,Blue Bird Corporation,Industrials,Hold,3.14,B+,B,B+,B-,C-,Strong Buy,+29.5%,,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.58
+Power,BLBD,Blue Bird Corporation,Industrials,Hold,3.14,B+,B,B+,B-,C-,Strong Buy,+29.5%,,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,0.81
+Power,BLBD,Blue Bird Corporation,Industrials,Hold,3.14,B+,B,B+,B-,C-,Strong Buy,+29.5%,,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,0.77
+Power,UBER,"Uber Technologies, Inc.",Technology,Hold,2.60,B-,C+,B,C+,F,Buy,+42.3%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,1.01
+Power,UBER,"Uber Technologies, Inc.",Technology,Hold,2.60,B-,C+,B,C+,F,Buy,+42.3%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,1.00
+Power,UBER,"Uber Technologies, Inc.",Technology,Hold,2.60,B-,C+,B,C+,F,Buy,+42.3%,,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.91
+Power,OKTA,"Okta, Inc.",Technology,Hold,3.07,C+,B+,C+,C+,A-,Buy,+27.9%,REMOVED,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.53
+Power,OKTA,"Okta, Inc.",Technology,Hold,3.07,C+,B+,C+,C+,A-,Buy,+27.9%,REMOVED,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.52
+Power,OKTA,"Okta, Inc.",Technology,Hold,3.07,C+,B+,C+,C+,A-,Buy,+27.9%,REMOVED,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.43
+Power,TWLO,Twilio Inc.,Technology,Hold,3.17,C+,B,C-,B,A+,Buy,+14.3%,REMOVED,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.44
+Power,TWLO,Twilio Inc.,Technology,Hold,3.17,C+,B,C-,B,A+,Buy,+14.3%,REMOVED,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.43
+Power,TWLO,Twilio Inc.,Technology,Hold,3.17,C+,B,C-,B,A+,Buy,+14.3%,REMOVED,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.34
+Power,ARQT,"Arcutis Biotherapeutics, Inc.",Healthcare,Hold,3.34,C-,A+,C+,B-,A+,Strong Buy,+51.7%,,HALO,"Halozyme Therapeutics, Inc.",Buy,3.88,B-,A+,A,B-,A,Buy,+32.9%,0.0%,FSI-SM,0.54
+Power,ARQT,"Arcutis Biotherapeutics, Inc.",Healthcare,Hold,3.34,C-,A+,C+,B-,A+,Strong Buy,+51.7%,,AMGN,Amgen Inc.,Buy,3.63,C,B+,A-,A,C+,Buy,-4.8%,267.0%,FSI-LC|FSI-UP,0.29
+Power,ARQT,"Arcutis Biotherapeutics, Inc.",Healthcare,Hold,3.34,C-,A+,C+,B-,A+,Strong Buy,+51.7%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,0.63
+Power,APP,AppLovin Corporation,Communication Services,Hold,3.17,D+,A,A+,C-,B,Buy,+44.3%,REMOVED,META,"Meta Platforms, Inc.",Hold,3.35,C,A-,A,B-,C+,Strong Buy,+35.1%,32.0%,FSI-LC,0.18
+Power,APP,AppLovin Corporation,Communication Services,Hold,3.17,D+,A,A+,C-,B,Buy,+44.3%,REMOVED,GOOGL,Alphabet Inc.,Hold,3.35,C-,A-,A,B+,C-,Strong Buy,+24.2%,27.0%,FSI-LC,0.18
+Power,APP,AppLovin Corporation,Communication Services,Hold,3.17,D+,A,A+,C-,B,Buy,+44.3%,REMOVED,OMC,Omnicom Group Inc.,Buy,3.77,B,A,C,B+,A+,Buy,+29.5%,400.0%,,0.60
+Power,CRDO,Credo Technology Group Holding,Technology,Hold,3.16,C-,A+,A,C-,B,Strong Buy,+78.7%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.44
+Power,CRDO,Credo Technology Group Holding,Technology,Hold,3.16,C-,A+,A,C-,B,Strong Buy,+78.7%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.44
+Power,CRDO,Credo Technology Group Holding,Technology,Hold,3.16,C-,A+,A,C-,B,Strong Buy,+78.7%,,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.34
+Core,SO,The Southern Company,Utilities,Hold,2.92,C,C+,B,B,B,Buy,+3.3%,,EIX,Edison International,Buy,4.22,A,A+,A,A+,F,Hold,+3.4%,491.0%,,1.31
+Core,SO,The Southern Company,Utilities,Hold,2.92,C,C+,B,B,B,Buy,+3.3%,,FE,FirstEnergy Corp.,Buy,3.92,B-,A,B+,A-,A-,Buy,+2.0%,367.0%,,1.00
+Core,SO,The Southern Company,Utilities,Hold,2.92,C,C+,B,B,B,Buy,+3.3%,,CWEN-A,"Clearway Energy, Inc.",Buy,3.79,C+,A,C,A+,A,Strong Buy,+7.2%,476.0%,,0.87
+Core,LNG,"Cheniere Energy, Inc.",Energy,Hold,3.16,C+,A-,A,C+,D+,Strong Buy,+7.5%,,TPL,Texas Pacific Land Corporation,Buy,4.00,C-,B,A+,A+,A+,Hold,-16.0%,46.0%,FSI-LC,0.84
+Core,LNG,"Cheniere Energy, Inc.",Energy,Hold,3.16,C+,A-,A,C+,D+,Strong Buy,+7.5%,,AROC,"Archrock, Inc.",Buy,3.63,C,A-,A-,A-,B-,Strong Buy,+6.8%,237.0%,,0.47
+Core,LNG,"Cheniere Energy, Inc.",Energy,Hold,3.16,C+,A-,A,C+,D+,Strong Buy,+7.5%,,INSW,"International Seaways, Inc.",Buy,3.62,B-,A,A-,A-,D+,Strong Buy,+12.7%,656.0%,,0.47
+Core,CIEN,Ciena Corporation,Technology,Buy,3.59,D+,A,C+,A+,A-,Buy,-3.9%,,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.39
+Core,CIEN,Ciena Corporation,Technology,Buy,3.59,D+,A,C+,A+,A-,Buy,-3.9%,,SNDK,Sandisk Corporation,Buy,3.92,C+,A+,C+,A+,A,Buy,+23.0%,0.0%,,0.33
+Core,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,ADEA,Adeia Inc.,Buy,3.98,B,A,A,A,C,Strong Buy,+32.3%,87.0%,,0.52
+Core,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,SNDK,Sandisk Corporation,Buy,3.92,C+,A+,C+,A+,A,Buy,+23.0%,0.0%,,0.46
+Core,AMD,"Advanced Micro Devices, Inc.",Technology,Hold,3.46,C,A,B-,B,A-,Buy,+46.5%,FSI-LC,TER,"Teradyne, Inc.",Buy,3.67,D+,A,B+,A+,B,Buy,+7.3%,17.0%,,0.21
+Core,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,HALO,"Halozyme Therapeutics, Inc.",Buy,3.88,B-,A+,A,B-,A,Buy,+32.9%,0.0%,FSI-SM,0.34
+Core,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,0.43
+Core,INCY,Incyte Corporation,Healthcare,Buy,3.54,B,A-,A-,B,C,Buy,+18.2%,,INVA,"Innoviva, Inc.",Buy,3.78,A-,A,A,B+,D,Buy,+51.1%,0.0%,,0.24
+Core,CRM,"Salesforce, Inc.",Technology,Hold,2.93,B,B-,B+,C,C+,Buy,+38.1%,,LITE,Lumentum Holdings Inc.,Buy,3.61,D,A+,C+,A+,A-,Buy,+7.2%,0.0%,FSI-SM,0.67
+Core,CRM,"Salesforce, Inc.",Technology,Hold,2.93,B,B-,B+,C,C+,Buy,+38.1%,,NVDA,NVIDIA Corporation,Buy,3.60,C,A,A,B,B-,Strong Buy,+45.4%,2.0%,FSI-LC,0.66
+Core,CRM,"Salesforce, Inc.",Technology,Hold,2.93,B,B-,B+,C,C+,Buy,+38.1%,,AVGO,Broadcom Inc.,Buy,3.51,C+,A-,A,C+,A-,Strong Buy,+39.2%,76.0%,FSI-LC,0.57
+Core,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,FIX,"Comfort Systems USA, Inc.",Buy,3.72,D+,A,B+,A+,B-,None,+23.5%,16.0%,FSI-SM,0.58
+Core,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,FTAI,FTAI Aviation Ltd.,Buy,3.95,D+,A,A,A,A-,Strong Buy,+40.9%,57.0%,,0.81
+Core,ATI,ATI Inc.,Industrials,Hold,3.14,C-,C-,B,A+,B,Strong Buy,+9.3%,,VRT,Vertiv Holdings Co,Buy,3.91,D,A,A-,A+,A-,Strong Buy,+0.9%,9.0%,,0.77
+Core,SLM,SLM Corporation,Financial Services,Hold,3.20,B+,A,A,D+,D+,Buy,+50.8%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.09
+Core,SLM,SLM Corporation,Financial Services,Hold,3.20,B+,A,A,D+,D+,Buy,+50.8%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,0.95
+Core,SLM,SLM Corporation,Financial Services,Hold,3.20,B+,A,A,D+,D+,Buy,+50.8%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.74
+Core,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.68
+Core,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.54
+Core,BRK-B,Berkshire Hathaway Inc.,Financial Services,Hold,2.61,B-,C-,B-,B+,F,Buy,+6.3%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,1.33
+Core,PLD,"Prologis, Inc.",Real Estate,Hold,2.92,C-,B-,B+,B,C,Buy,+7.5%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,1.20
+Core,PLD,"Prologis, Inc.",Real Estate,Hold,2.92,C-,B-,B+,B,C,Buy,+7.5%,,ARR,"ARMOUR Residential REIT, Inc.",Buy,3.96,A-,N/A,A,A-,C+,Buy,+6.3%,1654.0%,,1.04
+Core,PLD,"Prologis, Inc.",Real Estate,Hold,2.92,C-,B-,B+,B,C,Buy,+7.5%,,GTY,Getty Realty Corp.,Buy,3.86,B-,B+,A-,A,B-,Buy,+1.6%,587.0%,,0.94
+Core,VRDN,"Viridian Therapeutics, Inc.",Healthcare,Hold,2.82,C-,A+,D,B+,C,Strong Buy,+47.0%,,HALO,"Halozyme Therapeutics, Inc.",Buy,3.88,B-,A+,A,B-,A,Buy,+32.9%,0.0%,FSI-SM,1.05
+Core,VRDN,"Viridian Therapeutics, Inc.",Healthcare,Hold,2.82,C-,A+,D,B+,C,Strong Buy,+47.0%,,AMGN,Amgen Inc.,Buy,3.63,C,B+,A-,A,C+,Buy,-4.8%,267.0%,FSI-LC|FSI-UP,0.81
+Core,VRDN,"Viridian Therapeutics, Inc.",Healthcare,Hold,2.82,C-,A+,D,B+,C,Strong Buy,+47.0%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,1.15
+Income,OKE,"ONEOK, Inc.",Energy,Hold,2.77,C+,B+,B-,C,C,Buy,+5.6%,FSI-LC,TPL,Texas Pacific Land Corporation,Buy,4.00,C-,B,A+,A+,A+,Hold,-16.0%,46.0%,FSI-LC,1.22
+Income,OKE,"ONEOK, Inc.",Energy,Hold,2.77,C+,B+,B-,C,C,Buy,+5.6%,FSI-LC,AROC,"Archrock, Inc.",Buy,3.63,C,A-,A-,A-,B-,Strong Buy,+6.8%,237.0%,,0.85
+Income,OKE,"ONEOK, Inc.",Energy,Hold,2.77,C+,B+,B-,C,C,Buy,+5.6%,FSI-LC,INSW,"International Seaways, Inc.",Buy,3.62,B-,A,A-,A-,D+,Strong Buy,+12.7%,656.0%,,0.85
+Income,VZ,Verizon Communications Inc.,Communication Services,Hold,3.37,B+,C,B+,A,C,Buy,-0.7%,,OMC,Omnicom Group Inc.,Buy,3.77,B,A,C,B+,A+,Buy,+29.5%,400.0%,,0.41
+Income,VZ,Verizon Communications Inc.,Communication Services,Hold,3.37,B+,C,B+,A,C,Buy,-0.7%,,SCHL,Scholastic Corporation,Buy,3.71,B,B-,C+,A,A+,Hold,+7.4%,239.0%,,0.34
+Income,NMR,"Nomura Holdings, Inc.",Financial Services,Hold,2.66,B+,C,C+,B-,D,None,+30.2%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.63
+Income,NMR,"Nomura Holdings, Inc.",Financial Services,Hold,2.66,B+,C,C+,B-,D,None,+30.2%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.49
+Income,NMR,"Nomura Holdings, Inc.",Financial Services,Hold,2.66,B+,C,C+,B-,D,None,+30.2%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,1.29
+Income,BMY,Bristol-Myers Squibb Company,Healthcare,Buy,3.78,B,B,A-,A,B-,Hold,+5.8%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,0.19
+Income,PFE,Pfizer Inc.,Healthcare,Hold,3.28,B+,D+,B+,B+,B,Buy,+5.8%,,HALO,"Halozyme Therapeutics, Inc.",Buy,3.88,B-,A+,A,B-,A,Buy,+32.9%,0.0%,FSI-SM,0.60
+Income,PFE,Pfizer Inc.,Healthcare,Hold,3.28,B+,D+,B+,B+,B,Buy,+5.8%,,AMGN,Amgen Inc.,Buy,3.63,C,B+,A-,A,C+,Buy,-4.8%,267.0%,FSI-LC|FSI-UP,0.35
+Income,PFE,Pfizer Inc.,Healthcare,Hold,3.28,B+,D+,B+,B+,B,Buy,+5.8%,,INDV,"Indivior Pharmaceuticals, Inc.",Buy,3.97,B+,A,A,B,B,Strong Buy,+51.8%,0.0%,,0.70
+Income,ABEV,Ambev S.A.,Consumer Defensive,Hold,3.35,B+,C-,A-,A,C-,Hold,+7.8%,,COKE,"Coca-Cola Consolidated, Inc.",Buy,3.95,B-,B,B+,A+,A,None,N/A,48.0%,,0.59
+Income,ABEV,Ambev S.A.,Consumer Defensive,Hold,3.35,B+,C-,A-,A,C-,Hold,+7.8%,,PRDO,Perdoceo Education Corporation,Buy,3.84,B,A-,A-,A-,C+,None,+20.1%,172.0%,,0.49
+Income,ABEV,Ambev S.A.,Consumer Defensive,Hold,3.35,B+,C-,A-,A,C-,Hold,+7.8%,,LRN,"Stride, Inc.",Buy,3.69,B+,A+,B+,B-,B-,Buy,+26.8%,0.0%,,0.34
+Income,MO,"Altria Group, Inc.",Consumer Defensive,Hold,3.38,B-,C-,A+,A-,B-,Buy,-3.3%,,COKE,"Coca-Cola Consolidated, Inc.",Buy,3.95,B-,B,B+,A+,A,None,N/A,48.0%,,0.56
+Income,MO,"Altria Group, Inc.",Consumer Defensive,Hold,3.38,B-,C-,A+,A-,B-,Buy,-3.3%,,PRDO,Perdoceo Education Corporation,Buy,3.84,B,A-,A-,A-,C+,None,+20.1%,172.0%,,0.46
+Income,MO,"Altria Group, Inc.",Consumer Defensive,Hold,3.38,B-,C-,A+,A-,B-,Buy,-3.3%,,LRN,"Stride, Inc.",Buy,3.69,B+,A+,B+,B-,B-,Buy,+26.8%,0.0%,,0.31
+Income,CNQ,Canadian Natural Resources Lim,Energy,Hold,3.43,C+,B+,B+,A,D+,Buy,-10.5%,,TPL,Texas Pacific Land Corporation,Buy,4.00,C-,B,A+,A+,A+,Hold,-16.0%,46.0%,FSI-LC,0.57
+Income,CNQ,Canadian Natural Resources Lim,Energy,Hold,3.43,C+,B+,B+,A,D+,Buy,-10.5%,,AROC,"Archrock, Inc.",Buy,3.63,C,A-,A-,A-,B-,Strong Buy,+6.8%,237.0%,,0.20
+Income,CNQ,Canadian Natural Resources Lim,Energy,Hold,3.43,C+,B+,B+,A,D+,Buy,-10.5%,,INSW,"International Seaways, Inc.",Buy,3.62,B-,A,A-,A-,D+,Strong Buy,+12.7%,656.0%,,0.19
+Income,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.19
+Income,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,1.05
+Income,MFC,Manulife Financial Corporation,Financial Services,Hold,3.10,B,D+,B-,B+,B+,Buy,+2.9%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.84
+Income,EXR,Extra Space Storage Inc.,Real Estate,Hold,3.09,C,B,B+,B,B-,Buy,+8.7%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,1.03
+Income,EXR,Extra Space Storage Inc.,Real Estate,Hold,3.09,C,B,B+,B,B-,Buy,+8.7%,,ARR,"ARMOUR Residential REIT, Inc.",Buy,3.96,A-,N/A,A,A-,C+,Buy,+6.3%,1654.0%,,0.87
+Income,EXR,Extra Space Storage Inc.,Real Estate,Hold,3.09,C,B,B+,B,B-,Buy,+8.7%,,GTY,Getty Realty Corp.,Buy,3.86,B-,B+,A-,A,B-,Buy,+1.6%,587.0%,,0.76
+Income,ABR,"Arbor Realty Trust, Inc.",Real Estate,Hold,2.76,A-,D+,B-,D+,A-,Hold,+13.2%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,1.36
+Income,ABR,"Arbor Realty Trust, Inc.",Real Estate,Hold,2.76,A-,D+,B-,D+,A-,Hold,+13.2%,,ARR,"ARMOUR Residential REIT, Inc.",Buy,3.96,A-,N/A,A,A-,C+,Buy,+6.3%,1654.0%,,1.20
+Income,ABR,"Arbor Realty Trust, Inc.",Real Estate,Hold,2.76,A-,D+,B-,D+,A-,Hold,+13.2%,,GTY,Getty Realty Corp.,Buy,3.86,B-,B+,A-,A,B-,Buy,+1.6%,587.0%,,1.10
+Income,AXIA,AXIA Energia SA,Utilities,Buy,3.54,A-,B-,B-,B-,A+,Strong Buy,+13.8%,,EIX,Edison International,Buy,4.22,A,A+,A,A+,F,Hold,+3.4%,491.0%,,0.68
+Income,AXIA,AXIA Energia SA,Utilities,Buy,3.54,A-,B-,B-,B-,A+,Strong Buy,+13.8%,,FE,FirstEnergy Corp.,Buy,3.92,B-,A,B+,A-,A-,Buy,+2.0%,367.0%,,0.38
+Income,AXIA,AXIA Energia SA,Utilities,Buy,3.54,A-,B-,B-,B-,A+,Strong Buy,+13.8%,,CWEN-A,"Clearway Energy, Inc.",Buy,3.79,C+,A,C,A+,A,Strong Buy,+7.2%,476.0%,,0.25
+Income,STWD,"Starwood Property Trust, Inc.",Real Estate,Hold,3.38,B,A,B-,C,A-,Buy,+17.4%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,0.74
+Income,STWD,"Starwood Property Trust, Inc.",Real Estate,Hold,3.38,B,A,B-,C,A-,Buy,+17.4%,,ARR,"ARMOUR Residential REIT, Inc.",Buy,3.96,A-,N/A,A,A-,C+,Buy,+6.3%,1654.0%,,0.58
+Income,STWD,"Starwood Property Trust, Inc.",Real Estate,Hold,3.38,B,A,B-,C,A-,Buy,+17.4%,,GTY,Getty Realty Corp.,Buy,3.86,B-,B+,A-,A,B-,Buy,+1.6%,587.0%,,0.48
+Income,OMF,"OneMain Holdings, Inc.",Financial Services,Hold,3.26,B+,B+,B+,C-,B-,Buy,+36.9%,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,1.03
+Income,OMF,"OneMain Holdings, Inc.",Financial Services,Hold,3.26,B+,B+,B+,C-,B-,Buy,+36.9%,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,0.89
+Income,OMF,"OneMain Holdings, Inc.",Financial Services,Hold,3.26,B+,B+,B+,C-,B-,Buy,+36.9%,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.69
+Income,PINE,"Alpine Income Property Trust, ",Real Estate,Buy,3.83,B,A,C+,A-,A+,Buy,+12.5%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,0.29
+Income,NLCP,"NewLake Capital Partners, Inc.",Real Estate,Buy,3.69,A-,C,A-,A,C,None,-0.7%,,ADAM,"Adamas Trust, Inc.",Buy,4.12,A,A+,B+,A-,C+,Buy,+44.3%,1088.0%,,0.43
+Income,NLCP,"NewLake Capital Partners, Inc.",Real Estate,Buy,3.69,A-,C,A-,A,C,None,-0.7%,,ARR,"ARMOUR Residential REIT, Inc.",Buy,3.96,A-,N/A,A,A-,C+,Buy,+6.3%,1654.0%,,0.27
+Income,NLCP,"NewLake Capital Partners, Inc.",Real Estate,Buy,3.69,A-,C,A-,A,C,None,-0.7%,,GTY,Getty Realty Corp.,Buy,3.86,B-,B+,A-,A,B-,Buy,+1.6%,587.0%,,0.17
+Income,BST,BlackRock Science and Technolo,Financial Services,Hold,3.44,A+,N/A,D+,B+,N/A,None,N/A,,ECPG,"Encore Capital Group, Inc.",Buy,4.29,A-,A+,A-,A+,C+,Buy,+23.5%,0.0%,,0.85
+Income,BST,BlackRock Science and Technolo,Financial Services,Hold,3.44,A+,N/A,D+,B+,N/A,None,N/A,,JXN,Jackson Financial Inc.,Buy,4.15,A,A+,C-,A-,A+,None,+19.7%,344.0%,,0.71
+Income,BST,BlackRock Science and Technolo,Financial Services,Hold,3.44,A+,N/A,D+,B+,N/A,None,N/A,,BBT,Beacon Financial Corporation,Buy,3.94,B-,A+,C,A,A,None,+20.2%,448.0%,,0.51

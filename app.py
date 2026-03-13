@@ -20,6 +20,15 @@ st.markdown("""
     .main { background-color: #f8f9fa; }
     .stTabs [data-baseweb="tab"] { font-size: 15px; font-weight: 500; }
     h1, h2, h3 { color: #1a1a2e; }
+    /* Sticky tab bar */
+    .stTabs [data-baseweb="tab-list"] {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: white;
+        padding-top: 6px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -110,59 +119,55 @@ def fetch_prices(tickers):
 @st.cache_data(ttl=600)
 def fetch_performance(tickers):
     """Fetch today / weekly / MTD / YTD performance for a list of tickers."""
+    import datetime as dt
+    result = {}
     try:
         data = yf.download(list(tickers), period="ytd", interval="1d",
                            progress=False, auto_adjust=True)
         closes = data["Close"] if "Close" in data else data
-        today       = pd.Timestamp.today(tz="America/New_York").normalize()
+
+        today       = dt.date.today()
         month_start = today.replace(day=1)
         year_start  = today.replace(month=1, day=1)
+        week_ago    = today - dt.timedelta(days=7)
 
-        # Normalize index to tz-naive for comparison
-        if hasattr(closes.index, "tz") and closes.index.tz is not None:
-            idx_dates = closes.index.tz_convert("America/New_York").normalize()
-        else:
-            idx_dates = pd.DatetimeIndex([pd.Timestamp(d) for d in closes.index])
-
-        result = {}
         for t in tickers:
             try:
                 col = closes[t] if isinstance(closes, pd.DataFrame) else closes
                 col = col.dropna()
                 if col.empty:
                     continue
-                curr = float(col.iloc[-1])
-                dates = idx_dates[:len(col)]
 
-                def pct_since(target):
-                    mask = dates <= target
-                    if not mask.any():
+                # Convert index to plain date objects — avoids all tz issues
+                dates = [d.date() if hasattr(d, "date") else d for d in col.index]
+                values = col.values
+                curr = float(values[-1])
+
+                def pct_since(target_date):
+                    candidates = [(i, d) for i, d in enumerate(dates) if d <= target_date]
+                    if not candidates:
                         return None
-                    base = float(col.iloc[mask.values.nonzero()[0][-1]])
-                    return round((curr - base) / base * 100, 2)
+                    idx = candidates[-1][0]
+                    base = float(values[idx])
+                    return round((curr - base) / base * 100, 2) if base else None
 
-                # Today: yesterday's close vs today
                 today_pct = None
-                if len(col) >= 2:
-                    prev_close = float(col.iloc[-2])
-                    today_pct = round((curr - prev_close) / prev_close * 100, 2)
-
-                # Weekly: ~7 calendar days back
-                week_target = today - pd.Timedelta(days=7)
-                week_pct = pct_since(week_target)
+                if len(values) >= 2:
+                    prev = float(values[-2])
+                    today_pct = round((curr - prev) / prev * 100, 2) if prev else None
 
                 result[t] = {
                     "price":     curr,
                     "today_pct": today_pct,
-                    "week_pct":  week_pct,
+                    "week_pct":  pct_since(week_ago),
                     "mtd_pct":   pct_since(month_start),
                     "ytd_pct":   pct_since(year_start),
                 }
             except:
                 pass
-        return result
     except:
-        return {}
+        pass
+    return result
 
 def fmt_pct(val):
     if val is None: return "—"

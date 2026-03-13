@@ -20,14 +20,9 @@ st.markdown("""
     .main { background-color: #f8f9fa; }
     h1, h2, h3 { color: #1a1a2e; }
 
-    /* Dark sidebar */
+    /* Light sidebar */
     section[data-testid="stSidebar"] {
-        background-color: #1a1a2e !important;
-    }
-    section[data-testid="stSidebar"] label,
-    section[data-testid="stSidebar"] .stMarkdown p,
-    section[data-testid="stSidebar"] .stCaption {
-        color: #aab0c0 !important;
+        background-color: #ffffff !important;
     }
 
     /* Nav buttons — full-width, left-aligned, no border */
@@ -35,7 +30,7 @@ st.markdown("""
         width: 100% !important;
         text-align: left !important;
         background-color: transparent !important;
-        color: #c8cdd8 !important;
+        color: #333333 !important;
         border: none !important;
         border-radius: 8px !important;
         padding: 11px 18px !important;
@@ -46,15 +41,8 @@ st.markdown("""
         box-shadow: none !important;
     }
     section[data-testid="stSidebar"] .stButton > button:hover {
-        background-color: rgba(255,255,255,0.10) !important;
-        color: #ffffff !important;
-    }
-    /* Active nav item */
-    section[data-testid="stSidebar"] .stButton > button[data-active="true"],
-    section[data-testid="stSidebar"] .nav-active > button {
-        background-color: #3d1152 !important;
-        color: #ffffff !important;
-        font-weight: 700 !important;
+        background-color: #f0eaf4 !important;
+        color: #3d1152 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -286,8 +274,8 @@ for icon, label in NAV_ITEMS:
     if active:
         st.sidebar.markdown(
             f'<div style="background:#3d1152;border-radius:8px;margin-bottom:3px;">'
-            f'<span style="display:block;padding:11px 18px;color:#fff;font-size:15px;font-weight:700;">'
-            f'{icon} {label}</span></div>',
+            f'<span style="display:block;padding:11px 18px;color:#ffffff;font-size:15px;font-weight:700;">'
+            f'{icon}&nbsp;&nbsp;{label}</span></div>',
             unsafe_allow_html=True
         )
     else:

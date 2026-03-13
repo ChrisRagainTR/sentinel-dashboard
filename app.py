@@ -406,7 +406,7 @@ with tab2:
             if col in display_df.columns:
                 styled = styled.applymap(color_perf, subset=[col])
 
-        st.dataframe(styled, use_container_width=True, hide_index=True)
+        st.dataframe(styled, use_container_width=True, hide_index=True, height=800)
         st.markdown("---")
 
 # ═══════════ TAB 3: STOCK RATINGS ════════════════════════════════════════════
@@ -441,7 +441,7 @@ with tab3:
                          "growth_grade","profit_grade","mom_grade","rev_grade","price",
                          "div_yield","upside"] if c in filt.columns]
     st.caption(f"Showing {len(filt):,} of {len(ratings_df):,} stocks")
-    st.dataframe(filt[show], use_container_width=True, hide_index=True)
+    st.dataframe(filt[show], use_container_width=True, hide_index=True, height=1100)
 
 # ═══════════ TAB 4: MATCHUPS ═════════════════════════════════════════════════
 with tab4:
@@ -508,7 +508,8 @@ with tab4:
     st.dataframe(
         out_df.style.applymap(color_diff, subset=["Score ↑"]),
         use_container_width=True,
-        hide_index=True
+        hide_index=True,
+        height=1100
     )
 
 # ═══════════ TAB 5: RESEARCH ═════════════════════════════════════════════════

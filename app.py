@@ -108,6 +108,55 @@ def fetch_prices(tickers):
         return {}
 
 @st.cache_data(ttl=600)
+def fetch_performance(tickers):
+    """Fetch weekly / MTD / YTD performance for a list of tickers."""
+    try:
+        data = yf.download(list(tickers), period="ytd", interval="1d",
+                           progress=False, auto_adjust=True)
+        closes = data["Close"] if "Close" in data else data
+        today  = datetime.date.today()
+        month_start = today.replace(day=1)
+        year_start  = today.replace(month=1, day=1)
+
+        result = {}
+        for t in tickers:
+            try:
+                col = closes[t] if isinstance(closes, pd.DataFrame) else closes
+                col = col.dropna()
+                if col.empty:
+                    continue
+                curr = float(col.iloc[-1])
+
+                def pct_since(target_date):
+                    idx = col.index[col.index.date <= target_date]  # type: ignore
+                    if idx.empty:
+                        return None
+                    base = float(col.loc[idx[-1]])
+                    return round((curr - base) / base * 100, 2)
+
+                # Weekly: ~5 trading days back
+                week_idx = col.index[col.index <= col.index[-1] - pd.Timedelta(days=7)]
+                week_base = float(col.loc[week_idx[-1]]) if not week_idx.empty else None
+                week_pct = round((curr - week_base) / week_base * 100, 2) if week_base else None
+
+                result[t] = {
+                    "price":    curr,
+                    "week_pct": week_pct,
+                    "mtd_pct":  pct_since(month_start),
+                    "ytd_pct":  pct_since(year_start),
+                }
+            except:
+                pass
+        return result
+    except:
+        return {}
+
+def fmt_pct(val):
+    if val is None: return "—"
+    sign = "+" if val > 0 else ""
+    return f"{sign}{val:.2f}%"
+
+@st.cache_data(ttl=600)
 def fetch_news_for_holdings(tickers_tuple):
     """Fetch news via Yahoo Finance RSS — reliable from cloud."""
     import xml.etree.ElementTree as ET
@@ -261,18 +310,80 @@ with tab2:
             continue
         icon = "🚀" if pname=="Power" else "🏛️" if pname=="Core" else "💰"
         st.subheader(f"{icon} {pname} Model — {len(holdings)} holdings")
+
+        with st.spinner(f"Loading {pname} performance..."):
+            perf = fetch_performance(tuple(holdings))
+
         if not ratings_df.empty and "ticker" in ratings_df.columns:
             pdf = ratings_df[ratings_df["ticker"].isin(holdings)].copy()
-            if not pdf.empty:
-                show_cols = [c for c in ["ticker","name","sector","quant_rating","quant_score",
-                                         "val_grade","growth_grade","profit_grade","mom_grade",
-                                         "rev_grade","price","div_yield","upside"] if c in pdf.columns]
-                st.dataframe(pdf[show_cols].sort_values("quant_score", ascending=False),
-                             use_container_width=True, hide_index=True)
-            else:
-                st.info(", ".join(holdings))
         else:
-            st.info(", ".join(holdings))
+            pdf = pd.DataFrame({"ticker": holdings})
+
+        # Merge performance data
+        perf_rows = []
+        for t in holdings:
+            p = perf.get(t, {})
+            perf_rows.append({
+                "ticker":    t,
+                "Price":     f"${p['price']:.2f}" if p.get("price") else "—",
+                "Week":      fmt_pct(p.get("week_pct")),
+                "MTD":       fmt_pct(p.get("mtd_pct")),
+                "YTD":       fmt_pct(p.get("ytd_pct")),
+            })
+        perf_df = pd.DataFrame(perf_rows)
+
+        if not pdf.empty and "ticker" in pdf.columns:
+            merged = perf_df.merge(
+                pdf[["ticker"] + [c for c in ["name","sector","quant_score","quant_rating",
+                     "val_grade","growth_grade","profit_grade","mom_grade","rev_grade","div_yield"] if c in pdf.columns]],
+                on="ticker", how="left"
+            )
+        else:
+            merged = perf_df
+
+        # Rename for display
+        merged = merged.rename(columns={
+            "ticker": "Ticker", "name": "Name", "sector": "Sector",
+            "quant_score": "Score", "quant_rating": "Rating",
+            "val_grade": "Val", "growth_grade": "Growth",
+            "profit_grade": "Profit", "mom_grade": "Mom",
+            "rev_grade": "Rev", "div_yield": "Div Yield"
+        })
+
+        display_cols = [c for c in ["Ticker","Name","Price","Week","MTD","YTD","Score","Rating",
+                                     "Val","Growth","Profit","Mom","Rev","Div Yield","Sector"] if c in merged.columns]
+        display_df = merged[display_cols]
+        if "Score" in display_df.columns:
+            display_df = display_df.sort_values("Score", ascending=False)
+
+        def color_score(val):
+            try:
+                v = float(val)
+                if v >= 4.0:   return "background-color: #1a7a3c; color: white; font-weight: bold"
+                elif v >= 3.0: return "background-color: #c6efce; color: #1a4a2e; font-weight: bold"
+                elif v >= 2.0: return "background-color: #ffeb9c; color: #7d4a00"
+                elif v >= 1.0: return "background-color: #ffc7ce; color: #9c0006"
+                else:          return "background-color: #ff4444; color: white"
+            except:
+                return ""
+
+        def color_perf(val):
+            try:
+                v = float(str(val).replace("%","").replace("+",""))
+                if v > 0:  return "color: #1a7a3c; font-weight: bold"
+                elif v < 0: return "color: #9c0006; font-weight: bold"
+            except:
+                pass
+            return ""
+
+        styled = display_df.style
+        if "Score" in display_df.columns:
+            styled = styled.applymap(color_score, subset=["Score"])
+        for col in ["Week","MTD","YTD"]:
+            if col in display_df.columns:
+                styled = styled.applymap(color_perf, subset=[col])
+
+        st.dataframe(styled, use_container_width=True, hide_index=True)
         st.markdown("---")
 
 # ═══════════ TAB 3: STOCK RATINGS ════════════════════════════════════════════

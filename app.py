@@ -109,14 +109,20 @@ def fetch_prices(tickers):
 
 @st.cache_data(ttl=600)
 def fetch_performance(tickers):
-    """Fetch weekly / MTD / YTD performance for a list of tickers."""
+    """Fetch today / weekly / MTD / YTD performance for a list of tickers."""
     try:
         data = yf.download(list(tickers), period="ytd", interval="1d",
                            progress=False, auto_adjust=True)
         closes = data["Close"] if "Close" in data else data
-        today  = datetime.date.today()
+        today       = pd.Timestamp.today(tz="America/New_York").normalize()
         month_start = today.replace(day=1)
         year_start  = today.replace(month=1, day=1)
+
+        # Normalize index to tz-naive for comparison
+        if hasattr(closes.index, "tz") and closes.index.tz is not None:
+            idx_dates = closes.index.tz_convert("America/New_York").normalize()
+        else:
+            idx_dates = pd.DatetimeIndex([pd.Timestamp(d) for d in closes.index])
 
         result = {}
         for t in tickers:
@@ -126,24 +132,31 @@ def fetch_performance(tickers):
                 if col.empty:
                     continue
                 curr = float(col.iloc[-1])
+                dates = idx_dates[:len(col)]
 
-                def pct_since(target_date):
-                    idx = col.index[col.index.date <= target_date]  # type: ignore
-                    if idx.empty:
+                def pct_since(target):
+                    mask = dates <= target
+                    if not mask.any():
                         return None
-                    base = float(col.loc[idx[-1]])
+                    base = float(col.iloc[mask.values.nonzero()[0][-1]])
                     return round((curr - base) / base * 100, 2)
 
-                # Weekly: ~5 trading days back
-                week_idx = col.index[col.index <= col.index[-1] - pd.Timedelta(days=7)]
-                week_base = float(col.loc[week_idx[-1]]) if not week_idx.empty else None
-                week_pct = round((curr - week_base) / week_base * 100, 2) if week_base else None
+                # Today: yesterday's close vs today
+                today_pct = None
+                if len(col) >= 2:
+                    prev_close = float(col.iloc[-2])
+                    today_pct = round((curr - prev_close) / prev_close * 100, 2)
+
+                # Weekly: ~7 calendar days back
+                week_target = today - pd.Timedelta(days=7)
+                week_pct = pct_since(week_target)
 
                 result[t] = {
-                    "price":    curr,
-                    "week_pct": week_pct,
-                    "mtd_pct":  pct_since(month_start),
-                    "ytd_pct":  pct_since(year_start),
+                    "price":     curr,
+                    "today_pct": today_pct,
+                    "week_pct":  week_pct,
+                    "mtd_pct":   pct_since(month_start),
+                    "ytd_pct":   pct_since(year_start),
                 }
             except:
                 pass
@@ -326,6 +339,7 @@ with tab2:
             perf_rows.append({
                 "ticker":    t,
                 "Price":     f"${p['price']:.2f}" if p.get("price") else "—",
+                "Today":     fmt_pct(p.get("today_pct")),
                 "Week":      fmt_pct(p.get("week_pct")),
                 "MTD":       fmt_pct(p.get("mtd_pct")),
                 "YTD":       fmt_pct(p.get("ytd_pct")),
@@ -350,7 +364,7 @@ with tab2:
             "rev_grade": "Rev", "div_yield": "Div Yield"
         })
 
-        display_cols = [c for c in ["Ticker","Name","Price","Week","MTD","YTD","Score","Rating",
+        display_cols = [c for c in ["Ticker","Name","Price","Today","Week","MTD","YTD","Score","Rating",
                                      "Val","Growth","Profit","Mom","Rev","Div Yield","Sector"] if c in merged.columns]
         display_df = merged[display_cols]
         if "Score" in display_df.columns:
@@ -379,7 +393,7 @@ with tab2:
         styled = display_df.style
         if "Score" in display_df.columns:
             styled = styled.applymap(color_score, subset=["Score"])
-        for col in ["Week","MTD","YTD"]:
+        for col in ["Today","Week","MTD","YTD"]:
             if col in display_df.columns:
                 styled = styled.applymap(color_perf, subset=[col])
 

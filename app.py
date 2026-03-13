@@ -5,6 +5,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import yfinance as yf
 import json, os, datetime, requests
+from io import StringIO
 from pathlib import Path
 
 st.set_page_config(
@@ -14,20 +15,16 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ── Styling ──────────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
     .main { background-color: #f8f9fa; }
-    .metric-card { background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); margin: 4px; }
-    .alert-red { color: #cc0000; font-weight: bold; }
-    .alert-green { color: #007700; font-weight: bold; }
-    h1 { color: #1a1a2e; }
-    .stTabs [data-baseweb="tab"] { font-size: 15px; }
+    .stTabs [data-baseweb="tab"] { font-size: 15px; font-weight: 500; }
+    h1, h2, h3 { color: #1a1a2e; }
 </style>
 """, unsafe_allow_html=True)
 
-WORKSPACE = Path(r"C:\Users\craga\.openclaw\workspace")
-GITHUB_RAW = "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/data"
+WORKSPACE   = Path(r"C:\Users\craga\.openclaw\workspace")
+GITHUB_RAW  = "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/data"
 
 PORTFOLIOS = {
     "Power":  ["CIEN","DY","GM","NEM","KGC","CDE","EAT","AMD","INCY","CLS","MU","ALL",
@@ -40,69 +37,68 @@ PORTFOLIOS = {
 }
 ALL_HOLDINGS = sorted(set(t for h in PORTFOLIOS.values() for t in h))
 
+def fetch_from_github(filename):
+    try:
+        r = requests.get(f"{GITHUB_RAW}/{filename}", timeout=20)
+        r.raise_for_status()
+        return r.text
+    except:
+        return None
+
 @st.cache_data(ttl=300)
 def load_ratings():
-    try:
-        r = requests.get(f"{GITHUB_RAW}/weekly_ratings.csv", timeout=30)
-        r.raise_for_status()
-        from io import StringIO
-        return pd.read_csv(StringIO(r.text))
-    except Exception as e:
-        local = WORKSPACE / "weekly_ratings.csv"
-        if local.exists():
-            return pd.read_csv(local)
-        st.error(f"Could not load ratings: {e}")
-        return pd.DataFrame()
+    text = fetch_from_github("weekly_ratings.csv")
+    if text:
+        return pd.read_csv(StringIO(text))
+    local = WORKSPACE / "weekly_ratings.csv"
+    return pd.read_csv(local) if local.exists() else pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_comparisons():
-    try:
-        r = requests.get(f"{GITHUB_RAW}/portfolio_comparison.csv", timeout=30)
-        r.raise_for_status()
-        from io import StringIO
-        return pd.read_csv(StringIO(r.text))
-    except Exception as e:
-        local = WORKSPACE / "portfolio_comparison.csv"
-        if local.exists():
-            return pd.read_csv(local)
-        st.error(f"Could not load comparisons: {e}")
-        return pd.DataFrame()
+    text = fetch_from_github("portfolio_comparison.csv")
+    if text:
+        return pd.read_csv(StringIO(text))
+    local = WORKSPACE / "portfolio_comparison.csv"
+    return pd.read_csv(local) if local.exists() else pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_deep_research():
     results = []
     for fname in ["deep_research.json", "deep_research_expanded.json"]:
-        try:
-            r = requests.get(f"{GITHUB_RAW}/{fname}", timeout=15)
-            if r.status_code == 200:
-                data = r.json()
+        text = fetch_from_github(fname)
+        if text:
+            try:
+                data = json.loads(text)
                 if isinstance(data, list):
                     results.extend(data)
                 continue
-        except:
-            pass
+            except:
+                pass
         local = WORKSPACE / fname
         if local.exists():
             with open(local) as f:
-                data = json.load(f)
-                if isinstance(data, list):
-                    results.extend(data)
+                try:
+                    data = json.load(f)
+                    if isinstance(data, list):
+                        results.extend(data)
+                except:
+                    pass
     return results
 
 @st.cache_data(ttl=60)
 def fetch_prices(tickers):
     try:
-        data = yf.download(tickers, period="2d", interval="1d",
+        data = yf.download(list(tickers), period="2d", interval="1d",
                            progress=False, auto_adjust=True)
         closes = data["Close"]
         result = {}
         for t in tickers:
             try:
-                vals = closes[t].dropna() if isinstance(closes, pd.DataFrame) else closes.dropna()
+                col = closes[t] if isinstance(closes, pd.DataFrame) else closes
+                vals = col.dropna()
                 if len(vals) >= 2:
                     prev, curr = float(vals.iloc[-2]), float(vals.iloc[-1])
-                    pct = (curr - prev) / prev * 100
-                    result[t] = {"price": curr, "prev": prev, "pct": round(pct, 2)}
+                    result[t] = {"price": curr, "prev": prev, "pct": round((curr-prev)/prev*100, 2)}
                 elif len(vals) == 1:
                     result[t] = {"price": float(vals.iloc[-1]), "prev": None, "pct": None}
             except:
@@ -111,228 +107,305 @@ def fetch_prices(tickers):
     except:
         return {}
 
-@st.cache_data(ttl=300)
-def fetch_news(tickers):
-    news = {}
-    for t in tickers:
+@st.cache_data(ttl=600)
+def fetch_news_for_holdings(tickers_tuple):
+    """Fetch news using yfinance — cached 10 min."""
+    news_out = {}
+    for t in tickers_tuple:
         try:
             tk = yf.Ticker(t)
             items = tk.news or []
-            headlines = [n.get("title", "") for n in items[:4] if n.get("title")]
+            headlines = []
+            for n in items[:5]:
+                title = n.get("title", "")
+                link  = n.get("link", "")
+                pub   = n.get("providerPublishTime", 0)
+                if title:
+                    ts = datetime.datetime.fromtimestamp(pub).strftime("%b %d") if pub else ""
+                    headlines.append({"title": title, "link": link, "date": ts})
             if headlines:
-                news[t] = headlines
+                news_out[t] = headlines
         except:
             pass
-    return news
+    return news_out
+
+def grade_to_num(g):
+    """Convert letter grade to number for comparison."""
+    mapping = {"A+":12,"A":11,"A-":10,"B+":9,"B":8,"B-":7,"C+":6,"C":5,"C-":4,"D+":3,"D":2,"D-":1,"F":0}
+    return mapping.get(str(g).strip(), -1)
+
+def build_why(row):
+    """Generate a plain-English reason why the alt is better."""
+    reasons = []
+    grade_pairs = [
+        ("Holding Val","Alt Val","Valuation"),
+        ("Holding Growth","Alt Growth","Growth"),
+        ("Holding Profit","Alt Profit","Profitability"),
+        ("Holding Mom","Alt Mom","Momentum"),
+        ("Holding Rev","Alt Rev","EPS Revisions"),
+    ]
+    for hcol, acol, label in grade_pairs:
+        h = grade_to_num(row.get(hcol,""))
+        a = grade_to_num(row.get(acol,""))
+        if a > h and a >= 0:
+            reasons.append(label)
+    score_diff = row.get("Score Diff", 0)
+    if isinstance(score_diff, (int, float)) and score_diff > 0:
+        prefix = f"+{score_diff:.2f} score"
+    else:
+        prefix = ""
+    if reasons:
+        return f"{prefix} — stronger {', '.join(reasons[:3])}"
+    return prefix or "Higher composite score"
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
-st.sidebar.image("https://i.imgur.com/placeholder.png", width=40) if False else None
 st.sidebar.title("📊 Sentinel Wealth")
 st.sidebar.caption("Research Dashboard")
 st.sidebar.markdown("---")
-selected_portfolio = st.sidebar.selectbox("Portfolio Filter", ["All", "Power", "Core", "Income"])
+port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])
 move_threshold = st.sidebar.slider("Alert Threshold (%)", 1.0, 10.0, 3.0, 0.5)
 st.sidebar.markdown("---")
-st.sidebar.caption(f"Updated: {datetime.datetime.now().strftime('%b %d, %Y %I:%M %p ET')}")
+st.sidebar.caption(f"Last loaded: {datetime.datetime.now().strftime('%b %d %I:%M %p ET')}")
 
-# ── Main Tabs ─────────────────────────────────────────────────────────────────
+# ── Tabs ──────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🔔 Market Alerts", "📈 Portfolio", "⭐ Stock Ratings", "🔄 Matchups", "🔍 Research"
 ])
 
-# ═══════════════════════════════════════════════════════════
-# TAB 1 — MARKET ALERTS (live)
-# ═══════════════════════════════════════════════════════════
+# ═══════════ TAB 1: MARKET ALERTS ═══════════════════════════════════════════
 with tab1:
     st.header("Live Market Alerts — Sentinel Holdings")
-    st.caption("Prices refresh every 5 minutes · Pre/post market shown when available")
+    st.caption("Prices refresh every minute · Holdings across all three portfolios")
 
-    holdings = ALL_HOLDINGS
-    if selected_portfolio != "All":
-        holdings = PORTFOLIOS[selected_portfolio]
+    holdings = ALL_HOLDINGS if port_filter_global == "All" else PORTFOLIOS[port_filter_global]
 
     with st.spinner("Fetching live prices..."):
-        prices = fetch_prices(holdings)
+        prices = fetch_prices(tuple(holdings))
 
     if prices:
         rows = []
         for t in holdings:
             d = prices.get(t, {})
-            portfolios = [p for p, h in PORTFOLIOS.items() if t in h]
+            pct = d.get("pct")
+            port_list = [p for p, h in PORTFOLIOS.items() if t in h]
+            flag = "🔴" if (pct or 0) <= -move_threshold else "🟢" if (pct or 0) >= move_threshold else ""
             rows.append({
+                "": flag,
                 "Ticker": t,
-                "Portfolio": " / ".join(portfolios),
-                "Price": d.get("price"),
-                "Prev Close": d.get("prev"),
-                "Day Change %": d.get("pct"),
-                "Alert": "🔴" if (d.get("pct") or 0) <= -move_threshold
-                         else "🟢" if (d.get("pct") or 0) >= move_threshold
-                         else "—"
+                "Portfolio": " / ".join(port_list),
+                "Price": f"${d['price']:.2f}" if d.get("price") else "—",
+                "Day Change": f"{'+' if (pct or 0) > 0 else ''}{pct:.2f}%" if pct is not None else "—",
+                "_pct": pct or 0
             })
 
-        df = pd.DataFrame(rows)
-        df_sorted = df.sort_values("Day Change %", key=lambda x: x.abs(), ascending=False, na_position="last")
+        df = pd.DataFrame(rows).sort_values("_pct", key=abs, ascending=False).drop(columns=["_pct"])
 
-        # Big movers section
-        big_movers = df_sorted[df_sorted["Day Change %"].abs() >= move_threshold]
-        if not big_movers.empty:
-            st.subheader(f"⚠️ Big Movers (>{move_threshold}%)")
-            st.dataframe(
-                big_movers.style.format({"Price": "${:.2f}", "Prev Close": "${:.2f}", "Day Change %": "{:+.2f}%"})
-                .applymap(lambda v: "color: red" if isinstance(v, float) and v < -move_threshold
-                          else ("color: green" if isinstance(v, float) and v > move_threshold else ""),
-                          subset=["Day Change %"]),
-                use_container_width=True, hide_index=True
-            )
-        else:
-            st.success(f"✅ No holdings moving more than {move_threshold}% today.")
+        big = df[df[""].isin(["🔴","🟢"])]
+        if not big.empty:
+            st.subheader(f"⚠️ Big Movers Today (>{move_threshold}%)")
+            st.dataframe(big, use_container_width=True, hide_index=True)
 
         st.subheader("All Holdings")
-        st.dataframe(
-            df_sorted.style.format({"Price": "${:.2f}", "Prev Close": "${:.2f}", "Day Change %": "{:+.2f}%"},
-                                   na_rep="—"),
-            use_container_width=True, hide_index=True
-        )
+        st.dataframe(df, use_container_width=True, hide_index=True)
 
-        # News
-        st.subheader("📰 Latest News on Holdings")
-        with st.spinner("Loading news..."):
-            news = fetch_news(holdings[:30])
+        # ── News ──────────────────────────────────────────────────────────────
+        st.subheader("📰 Latest News")
+        with st.spinner("Loading news headlines..."):
+            news = fetch_news_for_holdings(tuple(holdings))
+
         if news:
-            for ticker, headlines in list(news.items())[:20]:
-                with st.expander(f"**{ticker}** — {headlines[0][:80]}..."):
-                    for h in headlines:
-                        st.write(f"• {h}")
+            # Prioritize big movers
+            priority = [r["Ticker"] for _, r in df.iterrows() if r[""] in ("🔴","🟢")]
+            other    = [t for t in holdings if t not in priority]
+            ordered  = priority + other
+            shown = 0
+            for t in ordered:
+                if t not in news or shown >= 25:
+                    break
+                port_list = [p for p, h in PORTFOLIOS.items() if t in h]
+                with st.expander(f"**{t}** ({', '.join(port_list)}) — {news[t][0]['title'][:80]}"):
+                    for item in news[t]:
+                        link = item.get("link","")
+                        date = item.get("date","")
+                        title = item.get("title","")
+                        if link:
+                            st.markdown(f"• [{title}]({link}) *{date}*")
+                        else:
+                            st.write(f"• {title} *{date}*")
+                shown += 1
+        else:
+            st.info("News headlines unavailable right now — try refreshing in a moment.")
     else:
-        st.warning("Could not fetch live price data.")
+        st.warning("Could not fetch live price data. Markets may be closed.")
 
-# ═══════════════════════════════════════════════════════════
-# TAB 2 — PORTFOLIO OVERVIEW
-# ═══════════════════════════════════════════════════════════
+# ═══════════ TAB 2: PORTFOLIO ════════════════════════════════════════════════
 with tab2:
-    st.header("Portfolio Holdings Overview")
-
+    st.header("Portfolio Holdings")
     ratings_df = load_ratings()
 
-    for port_name, holdings in PORTFOLIOS.items():
-        if selected_portfolio != "All" and selected_portfolio != port_name:
+    for pname, holdings in PORTFOLIOS.items():
+        if port_filter_global != "All" and port_filter_global != pname:
             continue
-        st.subheader(f"{'🚀' if port_name=='Power' else '🏛️' if port_name=='Core' else '💰'} {port_name} Model")
-
-        if not ratings_df.empty:
-            port_df = ratings_df[ratings_df["ticker"].isin(holdings)].copy() if "ticker" in ratings_df.columns else pd.DataFrame()
-            if not port_df.empty:
-                cols = [c for c in ["ticker","name","sector","quant_rating","quant_score","val_grade","growth_grade",
-                                    "profit_grade","mom_grade","rev_grade","div_yield","upside","price","pe_fwd","rev_growth"] if c in port_df.columns]
-                st.dataframe(port_df[cols].sort_values("quant_score", ascending=False) if "quant_score" in port_df.columns else port_df[cols],
+        icon = "🚀" if pname=="Power" else "🏛️" if pname=="Core" else "💰"
+        st.subheader(f"{icon} {pname} Model — {len(holdings)} holdings")
+        if not ratings_df.empty and "ticker" in ratings_df.columns:
+            pdf = ratings_df[ratings_df["ticker"].isin(holdings)].copy()
+            if not pdf.empty:
+                show_cols = [c for c in ["ticker","name","sector","quant_rating","quant_score",
+                                         "val_grade","growth_grade","profit_grade","mom_grade",
+                                         "rev_grade","price","div_yield","upside"] if c in pdf.columns]
+                st.dataframe(pdf[show_cols].sort_values("quant_score", ascending=False),
                              use_container_width=True, hide_index=True)
             else:
-                st.info(f"Holdings: {', '.join(holdings)}")
+                st.info(", ".join(holdings))
         else:
-            st.info(f"Holdings: {', '.join(holdings)}")
+            st.info(", ".join(holdings))
         st.markdown("---")
 
-# ═══════════════════════════════════════════════════════════
-# TAB 3 — STOCK RATINGS (full universe)
-# ═══════════════════════════════════════════════════════════
+# ═══════════ TAB 3: STOCK RATINGS ════════════════════════════════════════════
 with tab3:
-    st.header("Stock Ratings — Full Universe (1,600+ stocks)")
-
+    st.header("Stock Ratings — Full Universe")
     ratings_df = load_ratings()
+
     if ratings_df.empty:
-        st.warning("Ratings data not loaded. Run the weekly pipeline first.")
-    else:
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            sector_filter = st.selectbox("Sector", ["All"] + sorted(ratings_df["sector"].dropna().unique().tolist()) if "sector" in ratings_df.columns else ["All"])
-        with col2:
-            rating_filter = st.selectbox("Rating", ["All", "Buy", "Hold", "Sell"]) if "quant_rating" in ratings_df.columns else st.selectbox("Rating", ["All"])
-        with col3:
-            search = st.text_input("Search ticker / name")
+        st.warning("Loading ratings data...")
+        st.stop()
 
-        filtered = ratings_df.copy()
-        if sector_filter != "All" and "sector" in filtered.columns:
-            filtered = filtered[filtered["sector"] == sector_filter]
-        if rating_filter != "All" and "quant_rating" in filtered.columns:
-            filtered = filtered[filtered["quant_rating"] == rating_filter]
-        if search:
-            mask = filtered.apply(lambda r: search.upper() in str(r.get("ticker","")).upper()
-                                  or search.lower() in str(r.get("name","")).lower(), axis=1)
-            filtered = filtered[mask]
+    c1, c2, c3 = st.columns(3)
+    with c1:
+        sectors = ["All"] + sorted(ratings_df["sector"].dropna().unique().tolist()) if "sector" in ratings_df.columns else ["All"]
+        sector_f = st.selectbox("Sector", sectors)
+    with c2:
+        rating_f = st.selectbox("Rating", ["All","Buy","Hold","Sell"])
+    with c3:
+        search = st.text_input("Search ticker / name")
 
-        if "quant_score" in filtered.columns:
-            filtered = filtered.sort_values("quant_score", ascending=False)
+    filt = ratings_df.copy()
+    if sector_f != "All": filt = filt[filt["sector"]==sector_f]
+    if rating_f != "All": filt = filt[filt["quant_rating"]==rating_f]
+    if search:
+        s = search.upper()
+        filt = filt[filt.apply(lambda r: s in str(r.get("ticker","")).upper() or
+                                          search.lower() in str(r.get("name","")).lower(), axis=1)]
+    if "quant_score" in filt.columns:
+        filt = filt.sort_values("quant_score", ascending=False)
 
-        cols = [c for c in ["ticker","name","sector","quant_rating","quant_score","val_grade","growth_grade",
-                             "profit_grade","mom_grade","rev_grade","div_yield","upside"] if c in filtered.columns]
-        st.caption(f"Showing {len(filtered):,} of {len(ratings_df):,} stocks")
-        st.dataframe(filtered[cols], use_container_width=True, hide_index=True)
+    show = [c for c in ["ticker","name","sector","quant_rating","quant_score","val_grade",
+                         "growth_grade","profit_grade","mom_grade","rev_grade","price",
+                         "div_yield","upside"] if c in filt.columns]
+    st.caption(f"Showing {len(filt):,} of {len(ratings_df):,} stocks")
+    st.dataframe(filt[show], use_container_width=True, hide_index=True)
 
-# ═══════════════════════════════════════════════════════════
-# TAB 4 — REPLACEMENT MATCHUPS
-# ═══════════════════════════════════════════════════════════
+# ═══════════ TAB 4: MATCHUPS ═════════════════════════════════════════════════
 with tab4:
     st.header("Replacement Matchups")
-    st.caption("Top alternatives for each holding by quant score delta")
+    st.info("💡 Every alternative shown scores **higher** than the current holding. Green = significant upgrade. Color intensity reflects the score gap.")
 
     comp_df = load_comparisons()
     if comp_df.empty:
-        st.warning("Comparison data not found.")
-    else:
-        port_filter = st.selectbox("Portfolio", ["All", "Power", "Core", "Income"], key="matchup_port")
-        # Handle both capitalized and lowercase column name
-        port_col = "Portfolio" if "Portfolio" in comp_df.columns else "portfolio" if "portfolio" in comp_df.columns else None
-        if port_filter != "All" and port_col:
-            comp_df = comp_df[comp_df[port_col] == port_filter]
+        st.warning("Loading matchup data...")
+        st.stop()
 
-        cols = [c for c in comp_df.columns if c not in ("Unnamed: 0",)]
-        st.dataframe(comp_df[cols], use_container_width=True, hide_index=True)
+    # Normalize column names
+    comp_df.columns = [c.strip() for c in comp_df.columns]
+    port_col = "Portfolio" if "Portfolio" in comp_df.columns else "portfolio"
 
-# ═══════════════════════════════════════════════════════════
-# TAB 5 — DEEP RESEARCH
-# ═══════════════════════════════════════════════════════════
+    pf = st.selectbox("Portfolio", ["All","Power","Core","Income"], key="matchup_p")
+    if pf != "All" and port_col in comp_df.columns:
+        comp_df = comp_df[comp_df[port_col] == pf]
+
+    # Build "Why" column
+    comp_df["Why Better"] = comp_df.apply(build_why, axis=1)
+
+    # Build score diff numeric
+    comp_df["_diff"] = pd.to_numeric(comp_df.get("Score Diff", 0), errors="coerce").fillna(0)
+
+    # Select and reorder columns — most important on left
+    display_cols = []
+    col_map = {
+        "Portfolio":        port_col,
+        "Holding":          "Current Holding",
+        "Hold. Score":      "Holding Score",
+        "Hold. Rating":     "Holding Quant",
+        "→ Alt Ticker":     "Alt Ticker",
+        "Alt Name":         "Alt Name",
+        "Alt Score":        "Alt Score",
+        "Alt Rating":       "Alt Quant",
+        "Score ↑":          "Score Diff",
+        "Why Better":       "Why Better",
+        "Alt Div Yield":    "Alt Div Yield",
+        "Sector":           "Holding Sector",
+    }
+
+    out_rows = []
+    for _, row in comp_df.iterrows():
+        r = {}
+        for display, src in col_map.items():
+            r[display] = row.get(src, "")
+        out_rows.append(r)
+
+    out_df = pd.DataFrame(out_rows)
+
+    # Color the Score ↑ column
+    def color_diff(val):
+        try:
+            v = float(val)
+            if v >= 1.0:   return "background-color: #c6efce; color: #276221"
+            elif v >= 0.5: return "background-color: #e2efda; color: #375623"
+            elif v > 0:    return "background-color: #f2f9ee"
+        except:
+            pass
+        return ""
+
+    st.caption(f"Showing {len(out_df)} matchups")
+    st.dataframe(
+        out_df.style.applymap(color_diff, subset=["Score ↑"]),
+        use_container_width=True,
+        hide_index=True
+    )
+
+# ═══════════ TAB 5: RESEARCH ═════════════════════════════════════════════════
 with tab5:
     st.header("Deep Research")
-    st.caption("Fundamental analysis — SEC filings, earnings calls, key risks")
+    st.caption("Fundamental analysis from SEC filings, earnings calls, and analyst data")
 
     research = load_deep_research()
     if not research:
-        st.warning("Research data not found.")
-    else:
-        search_r = st.text_input("Search ticker or company", key="research_search")
-        verdict_filter = st.selectbox("Verdict", ["All", "BUY", "HOLD", "WATCH", "AVOID"])
+        st.warning("Loading research data...")
+        st.stop()
 
-        filtered_r = research
-        if search_r:
-            filtered_r = [r for r in filtered_r if
-                          search_r.upper() in str(r.get("ticker","")).upper() or
-                          search_r.lower() in str(r.get("name","")).lower()]
-        if verdict_filter != "All":
-            filtered_r = [r for r in filtered_r if str(r.get("verdict","")).startswith(verdict_filter)]
+    c1, c2 = st.columns(2)
+    with c1:
+        search_r = st.text_input("Search ticker or company")
+    with c2:
+        verdict_f = st.selectbox("Verdict", ["All","BUY","HOLD","WATCH","AVOID"])
 
-        st.caption(f"{len(filtered_r)} records")
+    filt_r = research
+    if search_r:
+        filt_r = [r for r in filt_r if search_r.upper() in str(r.get("ticker","")).upper()
+                  or search_r.lower() in str(r.get("name","")).lower()]
+    if verdict_f != "All":
+        filt_r = [r for r in filt_r if str(r.get("verdict","")).upper().startswith(verdict_f)]
 
-        for rec in filtered_r[:50]:
-            ticker = rec.get("ticker","?")
-            name   = rec.get("name", "")
-            verdict = rec.get("verdict","")
-            thesis  = rec.get("thesis","")
-            color   = "🟢" if "BUY" in str(verdict) else "🔴" if "AVOID" in str(verdict) else "🟡"
-            with st.expander(f"{color} **{ticker}** — {name} | {verdict}"):
-                c1, c2 = st.columns(2)
-                with c1:
-                    st.write(f"**Thesis:** {thesis}")
-                    st.write(f"**Revenue:** {rec.get('revenue_trend','—')}")
-                    st.write(f"**EPS:** Actual {rec.get('latest_eps_actual','—')} vs Est {rec.get('latest_eps_estimate','—')} → {rec.get('beat_miss','—')}")
-                    st.write(f"**Guidance:** {rec.get('guidance','—')}")
-                with c2:
-                    st.write(f"**Sector:** {rec.get('sector','—')}")
-                    st.write(f"**Div Yield:** {rec.get('div_yield','—')}")
-                    st.write(f"**D/E Ratio:** {rec.get('debt_equity_ratio','—')}")
-                    st.write(f"**Cash:** {rec.get('cash_position','—')}")
-                risks = rec.get("key_risks", [])
+    st.caption(f"{len(filt_r)} records")
+    for rec in filt_r[:60]:
+        ticker  = rec.get("ticker","?")
+        name    = rec.get("name","")
+        verdict = rec.get("verdict","")
+        icon    = "🟢" if "BUY" in str(verdict).upper() else "🔴" if "AVOID" in str(verdict).upper() else "🟡"
+        with st.expander(f"{icon} **{ticker}** — {name} | {verdict}"):
+            col1, col2 = st.columns(2)
+            with col1:
+                st.write(f"**Thesis:** {rec.get('thesis','—')}")
+                st.write(f"**Revenue:** {rec.get('revenue_trend','—')}")
+                st.write(f"**EPS:** {rec.get('latest_eps_actual','—')} actual vs {rec.get('latest_eps_estimate','—')} est → {rec.get('beat_miss','—')}")
+                st.write(f"**Guidance:** {rec.get('guidance','—')}")
+                st.write(f"**Earnings Tone:** {rec.get('earnings_call_tone','—')}")
+            with col2:
+                st.write(f"**Sector:** {rec.get('sector','—')}")
+                st.write(f"**Div Yield:** {rec.get('div_yield','—')}")
+                st.write(f"**D/E:** {rec.get('debt_equity_ratio','—')}")
+                st.write(f"**Cash:** {rec.get('cash_position','—')}")
+                risks = rec.get("key_risks",[])
                 if risks:
-                    st.write("**Key Risks:** " + " · ".join(risks))
-                tone = rec.get("earnings_call_tone","")
-                if tone:
-                    st.write(f"**Earnings Call:** {tone}")
+                    st.write("**Key Risks:** " + " · ".join(str(r) for r in risks[:3]))

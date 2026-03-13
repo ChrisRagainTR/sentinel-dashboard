@@ -443,11 +443,14 @@ elif page == "Portfolio":
                 styled = styled.applymap(color_perf, subset=[col])
 
         pct_col = st.column_config.NumberColumn(format="%.2f%%")
+        row_height = 36
+        header_h  = 42
+        dyn_height = min(900, len(display_df) * row_height + header_h)
         st.dataframe(
             styled,
             use_container_width=True,
             hide_index=True,
-            height=800,
+            height=dyn_height,
             column_config={
                 "Today": pct_col,
                 "Week":  pct_col,

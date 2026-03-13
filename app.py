@@ -374,17 +374,17 @@ elif page == "Portfolio":
         else:
             pdf = pd.DataFrame({"ticker": holdings})
 
-        # Merge performance data
+        # Merge performance data — store as raw floats so sorting is numeric
         perf_rows = []
         for t in holdings:
             p = perf.get(t, {})
             perf_rows.append({
-                "ticker":    t,
-                "Price":     f"${p['price']:.2f}" if p.get("price") else "—",
-                "Today":     fmt_pct(p.get("today_pct")),
-                "Week":      fmt_pct(p.get("week_pct")),
-                "MTD":       fmt_pct(p.get("mtd_pct")),
-                "YTD":       fmt_pct(p.get("ytd_pct")),
+                "ticker":  t,
+                "Price":   f"${p['price']:.2f}" if p.get("price") else "—",
+                "Today":   p.get("today_pct"),
+                "Week":    p.get("week_pct"),
+                "MTD":     p.get("mtd_pct"),
+                "YTD":     p.get("ytd_pct"),
             })
         perf_df = pd.DataFrame(perf_rows)
 
@@ -425,8 +425,8 @@ elif page == "Portfolio":
 
         def color_perf(val):
             try:
-                v = float(str(val).replace("%","").replace("+",""))
-                if v > 0:  return "color: #1a7a3c; font-weight: bold"
+                v = float(val)
+                if v > 0:   return "color: #1a7a3c; font-weight: bold"
                 elif v < 0: return "color: #9c0006; font-weight: bold"
             except:
                 pass
@@ -439,7 +439,19 @@ elif page == "Portfolio":
             if col in display_df.columns:
                 styled = styled.applymap(color_perf, subset=[col])
 
-        st.dataframe(styled, use_container_width=True, hide_index=True, height=800)
+        pct_col = st.column_config.NumberColumn(format="%.2f%%")
+        st.dataframe(
+            styled,
+            use_container_width=True,
+            hide_index=True,
+            height=800,
+            column_config={
+                "Today": pct_col,
+                "Week":  pct_col,
+                "MTD":   pct_col,
+                "YTD":   pct_col,
+            }
+        )
         st.markdown("---")
 
 elif page == "Stock Ratings":

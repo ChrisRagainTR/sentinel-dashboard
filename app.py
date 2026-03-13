@@ -408,7 +408,10 @@ elif page == "Portfolio":
 
         display_cols = [c for c in ["Ticker","Name","Price","Today","Week","MTD","YTD","Score","Rating",
                                      "Val","Growth","Profit","Mom","Rev","Div Yield","Sector"] if c in merged.columns]
-        display_df = merged[display_cols]
+        display_df = merged[display_cols].dropna(how="all", subset=[c for c in ["Price","Today","Score"] if c in merged.columns])
+        if display_df.empty:
+            st.markdown("---")
+            continue
         if "Score" in display_df.columns:
             display_df = display_df.sort_values("Score", ascending=False)
 

@@ -211,7 +211,7 @@ with tab2:
             port_df = ratings_df[ratings_df["ticker"].isin(holdings)].copy() if "ticker" in ratings_df.columns else pd.DataFrame()
             if not port_df.empty:
                 cols = [c for c in ["ticker","name","sector","quant_rating","quant_score","val_grade","growth_grade",
-                                    "profit_grade","mom_grade","rev_grade","div_yield","upside"] if c in port_df.columns]
+                                    "profit_grade","mom_grade","rev_grade","div_yield","upside","price","pe_fwd","rev_growth"] if c in port_df.columns]
                 st.dataframe(port_df[cols].sort_values("quant_score", ascending=False) if "quant_score" in port_df.columns else port_df[cols],
                              use_container_width=True, hide_index=True)
             else:
@@ -268,10 +268,12 @@ with tab4:
         st.warning("Comparison data not found.")
     else:
         port_filter = st.selectbox("Portfolio", ["All", "Power", "Core", "Income"], key="matchup_port")
-        if port_filter != "All" and "portfolio" in comp_df.columns:
-            comp_df = comp_df[comp_df["portfolio"] == port_filter]
+        # Handle both capitalized and lowercase column name
+        port_col = "Portfolio" if "Portfolio" in comp_df.columns else "portfolio" if "portfolio" in comp_df.columns else None
+        if port_filter != "All" and port_col:
+            comp_df = comp_df[comp_df[port_col] == port_filter]
 
-        cols = [c for c in comp_df.columns if c != "Unnamed: 0"]
+        cols = [c for c in comp_df.columns if c not in ("Unnamed: 0",)]
         st.dataframe(comp_df[cols], use_container_width=True, hide_index=True)
 
 # ═══════════════════════════════════════════════════════════

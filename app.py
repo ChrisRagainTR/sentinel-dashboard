@@ -109,20 +109,30 @@ def fetch_prices(tickers):
 
 @st.cache_data(ttl=600)
 def fetch_news_for_holdings(tickers_tuple):
-    """Fetch news using yfinance — cached 10 min."""
+    """Fetch news via Yahoo Finance RSS — reliable from cloud."""
+    import xml.etree.ElementTree as ET
     news_out = {}
+    headers = {"User-Agent": "Mozilla/5.0"}
     for t in tickers_tuple:
         try:
-            tk = yf.Ticker(t)
-            items = tk.news or []
+            url = f"https://finance.yahoo.com/rss/headline?s={t}"
+            r = requests.get(url, headers=headers, timeout=8)
+            if r.status_code != 200:
+                continue
+            root = ET.fromstring(r.content)
+            items = root.findall(".//item")
             headlines = []
-            for n in items[:5]:
-                title = n.get("title", "")
-                link  = n.get("link", "")
-                pub   = n.get("providerPublishTime", 0)
+            for item in items[:5]:
+                title = item.findtext("title", "")
+                link  = item.findtext("link", "")
+                pub   = item.findtext("pubDate", "")
                 if title:
-                    ts = datetime.datetime.fromtimestamp(pub).strftime("%b %d") if pub else ""
-                    headlines.append({"title": title, "link": link, "date": ts})
+                    try:
+                        dt = datetime.datetime.strptime(pub, "%a, %d %b %Y %H:%M:%S %z")
+                        date_str = dt.strftime("%b %d")
+                    except:
+                        date_str = pub[:12] if pub else ""
+                    headlines.append({"title": title, "link": link, "date": date_str})
             if headlines:
                 news_out[t] = headlines
         except:

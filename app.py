@@ -1,5 +1,6 @@
 """Sentinel Wealth & Tax — Research Dashboard"""
 import streamlit as st
+import streamlit.components.v1 as components
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
@@ -12,7 +13,7 @@ st.set_page_config(
     page_title="Sentinel Research Dashboard",
     page_icon="📊",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="auto"
 )
 
 st.markdown("""
@@ -281,9 +282,34 @@ for icon, label in NAV_ITEMS:
     else:
         if st.sidebar.button(f"{icon}  {label}", key=f"nav_{label}"):
             st.session_state.page = label
+            st.session_state.close_sidebar = True
             st.rerun()
 
 page = st.session_state.page
+
+# Auto-close sidebar on mobile after navigation
+if st.session_state.get("close_sidebar"):
+    st.session_state.close_sidebar = False
+    components.html("""
+    <script>
+    setTimeout(function() {
+        try {
+            // Try multiple selectors for the sidebar close button
+            var selectors = [
+                '[data-testid="collapsedControl"]',
+                '[data-testid="stSidebarCollapseButton"] button',
+                'button[aria-label="Close sidebar"]',
+                'section[data-testid="stSidebar"] button'
+            ];
+            for (var i = 0; i < selectors.length; i++) {
+                var btn = window.parent.document.querySelector(selectors[i]);
+                if (btn) { btn.click(); break; }
+            }
+        } catch(e) {}
+    }, 150);
+    </script>
+    """, height=0)
+
 st.sidebar.markdown("---")
 port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])
 move_threshold = st.sidebar.slider("Alert Threshold (%)", 1.0, 10.0, 3.0, 0.5)

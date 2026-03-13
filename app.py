@@ -360,10 +360,10 @@ with tab2:
             try:
                 v = float(val)
                 if v >= 4.0:   return "background-color: #1a7a3c; color: white; font-weight: bold"
-                elif v >= 3.0: return "background-color: #c6efce; color: #1a4a2e; font-weight: bold"
-                elif v >= 2.0: return "background-color: #ffeb9c; color: #7d4a00"
-                elif v >= 1.0: return "background-color: #ffc7ce; color: #9c0006"
-                else:          return "background-color: #ff4444; color: white"
+                elif v >= 3.0: return "background-color: #1565c0; color: white; font-weight: bold"
+                elif v >= 2.0: return "background-color: #ffeb9c; color: #7d4a00; font-weight: bold"
+                elif v >= 1.0: return "background-color: #ff9800; color: white; font-weight: bold"
+                else:          return "background-color: #c62828; color: white; font-weight: bold"
             except:
                 return ""
 

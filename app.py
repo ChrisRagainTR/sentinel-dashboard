@@ -241,23 +241,25 @@ def build_why(row):
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 st.sidebar.image(
-    "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/sentinel_logo.jpg",
+    "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/sentinel_logo_cropped.png",
     use_container_width=True
 )
-st.sidebar.caption("Research Dashboard")
+st.sidebar.markdown("---")
+page = st.sidebar.radio("", [
+    "🔔 Market Alerts",
+    "📈 Portfolio",
+    "⭐ Stock Ratings",
+    "🔄 Matchups",
+    "🔍 Research"
+])
 st.sidebar.markdown("---")
 port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])
 move_threshold = st.sidebar.slider("Alert Threshold (%)", 1.0, 10.0, 3.0, 0.5)
 st.sidebar.markdown("---")
-st.sidebar.caption(f"Last loaded: {datetime.datetime.now().strftime('%b %d %I:%M %p ET')}")
+st.sidebar.caption(f"Updated: {datetime.datetime.now().strftime('%b %d %I:%M %p ET')}")
 
-# ── Tabs ──────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "🔔 Market Alerts", "📈 Portfolio", "⭐ Stock Ratings", "🔄 Matchups", "🔍 Research"
-])
-
-# ═══════════ TAB 1: MARKET ALERTS ═══════════════════════════════════════════
-with tab1:
+# ═══════════════════════════════════════════════════════════════════════════
+if page == "🔔 Market Alerts":
     st.header("Live Market Alerts — Sentinel Holdings")
     st.caption("Prices refresh every minute · Holdings across all three portfolios")
 
@@ -322,8 +324,7 @@ with tab1:
     else:
         st.warning("Could not fetch live price data. Markets may be closed.")
 
-# ═══════════ TAB 2: PORTFOLIO ════════════════════════════════════════════════
-with tab2:
+elif page == "📈 Portfolio":
     st.header("Portfolio Holdings")
     ratings_df = load_ratings()
 
@@ -409,8 +410,7 @@ with tab2:
         st.dataframe(styled, use_container_width=True, hide_index=True, height=800)
         st.markdown("---")
 
-# ═══════════ TAB 3: STOCK RATINGS ════════════════════════════════════════════
-with tab3:
+elif page == "⭐ Stock Ratings":
     st.header("Stock Ratings — Full Universe")
     ratings_df = load_ratings()
 
@@ -443,8 +443,7 @@ with tab3:
     st.caption(f"Showing {len(filt):,} of {len(ratings_df):,} stocks")
     st.dataframe(filt[show], use_container_width=True, hide_index=True, height=1100)
 
-# ═══════════ TAB 4: MATCHUPS ═════════════════════════════════════════════════
-with tab4:
+elif page == "🔄 Matchups":
     st.header("Replacement Matchups")
     st.info("💡 Every alternative shown scores **higher** than the current holding. Green = significant upgrade. Color intensity reflects the score gap.")
 
@@ -512,8 +511,7 @@ with tab4:
         height=1100
     )
 
-# ═══════════ TAB 5: RESEARCH ═════════════════════════════════════════════════
-with tab5:
+elif page == "🔍 Research":
     st.header("Deep Research")
     st.caption("Fundamental analysis from SEC filings, earnings calls, and analyst data")
 

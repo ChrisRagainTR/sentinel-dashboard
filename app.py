@@ -291,7 +291,7 @@ st.sidebar.markdown("---")
 st.sidebar.caption(f"Updated: {datetime.datetime.now().strftime('%b %d %I:%M %p ET')}")
 
 # ═══════════════════════════════════════════════════════════════════════════
-if page == "🔔 Market Alerts":
+if page == "Market Alerts":
     st.header("Live Market Alerts — Sentinel Holdings")
     st.caption("Prices refresh every minute · Holdings across all three portfolios")
 
@@ -356,7 +356,7 @@ if page == "🔔 Market Alerts":
     else:
         st.warning("Could not fetch live price data. Markets may be closed.")
 
-elif page == "📈 Portfolio":
+elif page == "Portfolio":
     st.header("Portfolio Holdings")
     ratings_df = load_ratings()
 
@@ -442,7 +442,7 @@ elif page == "📈 Portfolio":
         st.dataframe(styled, use_container_width=True, hide_index=True, height=800)
         st.markdown("---")
 
-elif page == "⭐ Stock Ratings":
+elif page == "Stock Ratings":
     st.header("Stock Ratings — Full Universe")
     ratings_df = load_ratings()
 
@@ -475,7 +475,7 @@ elif page == "⭐ Stock Ratings":
     st.caption(f"Showing {len(filt):,} of {len(ratings_df):,} stocks")
     st.dataframe(filt[show], use_container_width=True, hide_index=True, height=1100)
 
-elif page == "🔄 Matchups":
+elif page == "Matchups":
     st.header("Replacement Matchups")
     st.info("💡 Every alternative shown scores **higher** than the current holding. Green = significant upgrade. Color intensity reflects the score gap.")
 
@@ -543,7 +543,7 @@ elif page == "🔄 Matchups":
         height=1100
     )
 
-elif page == "🔍 Research":
+elif page == "Research":
     st.header("Deep Research")
     st.caption("Fundamental analysis from SEC filings, earnings calls, and analyst data")
 
@@ -587,3 +587,4 @@ elif page == "🔍 Research":
                 risks = rec.get("key_risks",[])
                 if risks:
                     st.write("**Key Risks:** " + " · ".join(str(r) for r in risks[:3]))
+

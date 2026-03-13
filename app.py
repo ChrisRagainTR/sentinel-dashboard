@@ -159,7 +159,10 @@ def build_why(row):
     return prefix or "Higher composite score"
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
-st.sidebar.title("📊 Sentinel Wealth")
+st.sidebar.image(
+    "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/sentinel_logo.jpg",
+    use_container_width=True
+)
 st.sidebar.caption("Research Dashboard")
 st.sidebar.markdown("---")
 port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])

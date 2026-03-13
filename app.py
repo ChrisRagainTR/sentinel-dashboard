@@ -43,18 +43,30 @@ ALL_HOLDINGS = sorted(set(t for h in PORTFOLIOS.values() for t in h))
 @st.cache_data(ttl=300)
 def load_ratings():
     try:
-        return pd.read_csv(f"{GITHUB_RAW}/weekly_ratings.csv")
-    except:
+        r = requests.get(f"{GITHUB_RAW}/weekly_ratings.csv", timeout=30)
+        r.raise_for_status()
+        from io import StringIO
+        return pd.read_csv(StringIO(r.text))
+    except Exception as e:
         local = WORKSPACE / "weekly_ratings.csv"
-        return pd.read_csv(local) if local.exists() else pd.DataFrame()
+        if local.exists():
+            return pd.read_csv(local)
+        st.error(f"Could not load ratings: {e}")
+        return pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_comparisons():
     try:
-        return pd.read_csv(f"{GITHUB_RAW}/portfolio_comparison.csv")
-    except:
+        r = requests.get(f"{GITHUB_RAW}/portfolio_comparison.csv", timeout=30)
+        r.raise_for_status()
+        from io import StringIO
+        return pd.read_csv(StringIO(r.text))
+    except Exception as e:
         local = WORKSPACE / "portfolio_comparison.csv"
-        return pd.read_csv(local) if local.exists() else pd.DataFrame()
+        if local.exists():
+            return pd.read_csv(local)
+        st.error(f"Could not load comparisons: {e}")
+        return pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_deep_research():

@@ -27,6 +27,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 WORKSPACE = Path(r"C:\Users\craga\.openclaw\workspace")
+GITHUB_RAW = "https://raw.githubusercontent.com/ChrisRagainTR/sentinel-dashboard/master/data"
 
 PORTFOLIOS = {
     "Power":  ["CIEN","DY","GM","NEM","KGC","CDE","EAT","AMD","INCY","CLS","MU","ALL",
@@ -41,25 +42,36 @@ ALL_HOLDINGS = sorted(set(t for h in PORTFOLIOS.values() for t in h))
 
 @st.cache_data(ttl=300)
 def load_ratings():
-    path = WORKSPACE / "weekly_ratings.csv"
-    if path.exists():
-        return pd.read_csv(path)
-    return pd.DataFrame()
+    try:
+        return pd.read_csv(f"{GITHUB_RAW}/weekly_ratings.csv")
+    except:
+        local = WORKSPACE / "weekly_ratings.csv"
+        return pd.read_csv(local) if local.exists() else pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_comparisons():
-    path = WORKSPACE / "portfolio_comparison.csv"
-    if path.exists():
-        return pd.read_csv(path)
-    return pd.DataFrame()
+    try:
+        return pd.read_csv(f"{GITHUB_RAW}/portfolio_comparison.csv")
+    except:
+        local = WORKSPACE / "portfolio_comparison.csv"
+        return pd.read_csv(local) if local.exists() else pd.DataFrame()
 
 @st.cache_data(ttl=300)
 def load_deep_research():
     results = []
     for fname in ["deep_research.json", "deep_research_expanded.json"]:
-        path = WORKSPACE / fname
-        if path.exists():
-            with open(path) as f:
+        try:
+            r = requests.get(f"{GITHUB_RAW}/{fname}", timeout=15)
+            if r.status_code == 200:
+                data = r.json()
+                if isinstance(data, list):
+                    results.extend(data)
+                continue
+        except:
+            pass
+        local = WORKSPACE / fname
+        if local.exists():
+            with open(local) as f:
                 data = json.load(f)
                 if isinstance(data, list):
                     results.extend(data)

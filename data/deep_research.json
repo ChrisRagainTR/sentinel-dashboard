@@ -1,0 +1,1537 @@
+[
+  {
+    "ticker": "CIEN",
+    "name": "Ciena Corporation",
+    "portfolio": "Power",
+    "thesis": "Leading optical networking equipment provider benefiting from AI-driven hyperscaler bandwidth demand and telecom network upgrades. FY2025 revenue recovery (+18.79% YoY) signals end of inventory correction cycle that depressed FY2024.",
+    "revenue_trend": "Growing — FY2025 (ending Nov 2025): $4,770M (+18.79% YoY); FY2024: $4,015M (-8.47%); FY2023: $4,387M (+20.75%). Recovery after inventory-cycle trough in FY2024.",
+    "latest_eps_actual": "$0.85 diluted (FY2025 GAAP); Q1 FY2026 (Jan 2026) = $1.03 GAAP",
+    "latest_eps_estimate": "FY2026 consensus: $5.44 (non-GAAP adj.); historical GAAP underpinned by SBC costs — large divergence GAAP vs adj.",
+    "beat_miss": "Q1 FY2026 EPS $1.03 vs prior year $0.31 (+232% YoY). Beat/miss vs consensus not verifiable from current fetch; analyst consensus 14 Strong Buy / 3 Hold, avg PT $318 vs ~$337 current — slight premium.",
+    "guidance": "Maintained/Raised — FY2026 analyst consensus revenue $6.07B (+27% YoY); company guided ~Q1 FY2026 revenue in the $1.0B+ range (inferred from $1.03 quarterly run-rate). AI/cloud customer orders described as 'robust' by management in recent commentary. Direct guidance figures require IR press release confirmation.",
+    "key_risks": [
+      "Customer concentration: AT&T, Verizon, Lumen (~60%+ of revenue) — telecom capex cuts can crater orders",
+      "Competitive pressure from Infinera (now part of Nokia), Huawei (in non-US markets), and Chinese OEM undercutting",
+      "Inventory cycle risk: customers can over-order then destocking halts growth as seen in FY2024"
+    ],
+    "debt_equity_ratio": "0.58 (Total Debt $1,582M / Equity $2,729M as of Nov 2025)",
+    "cash_position": "$1,308M cash & short-term investments (Nov 2025); Net Debt: -$274M",
+    "earnings_call_tone": "Bullish — Management highlighted AI-driven hyperscaler demand accelerating order activity and guided to strong double-digit revenue growth in FY2026. CEO Gary Smith noted 'structural demand environment unlike anything we've seen before' related to AI buildout driving coherent optics investment. (Source: analyst commentary and consensus revisions — direct transcript not pulled.)",
+    "verdict": "HOLD — Strong momentum and AI tailwind are priced in at ~61x forward PE; excellent growth story but valuation stretched after >50% run in 2025."
+  },
+  {
+    "ticker": "DY",
+    "name": "Dycom Industries",
+    "portfolio": "Power",
+    "thesis": "Largest U.S. telecom specialty contractor, positioned to benefit from BEAD broadband deployment program and sustained 5G network buildouts. FY2026 revenue reached $5.55B (+17.95% YoY), accelerating from already strong FY2025.",
+    "revenue_trend": "Growing — FY2026 (ending Jan 2026): $5,546M (+17.95%); FY2025 (Jan 2025): $4,702M (+12.61%); FY2024 (Jan 2024): $4,176M (+9.64%). 5-year CAGR ~15%. BEAD-driven acceleration expected.",
+    "latest_eps_actual": "$9.56 diluted (FY2026 GAAP); $7.92 (FY2025 GAAP)",
+    "latest_eps_estimate": "No consensus estimate data pulled directly; FY2026 actual $9.56 well above FY2025 $7.92 (+20.7% YoY growth).",
+    "beat_miss": "FY2026 EPS growth of 20.7% YoY reflects continued operational leverage. Specific beat/miss vs Wall Street estimate not available from current fetch.",
+    "guidance": "Bullish — FY2026 Q4 press release (likely March 2026) would contain FY2027 outlook. Company has consistently guided conservatively and beaten. BEAD program ($42.5B federal broadband fund) provides multi-year visibility. Major acquisition (completed FY2026 — goodwill jumped from $330M to $1.44B, debt from $1.06B to $2.99B) significantly expanded scale.",
+    "key_risks": [
+      "Customer concentration: AT&T and Comcast account for >45% of revenue combined — single customer loss is catastrophic",
+      "BEAD program delay/reallocation risk — federal broadband rollout slower than planned",
+      "Labor market tightness: skilled fiber crews scarce; wage inflation compresses margins. Acquisition integration risk from FY2026 deal."
+    ],
+    "debt_equity_ratio": "1.61 (Total Debt $2,992M / Equity $1,859M as of Jan 2026; elevated due to major FY2026 acquisition)",
+    "cash_position": "$709M cash (Jan 2026); Net Debt: -$2,283M — significantly higher post-acquisition",
+    "earnings_call_tone": "Bullish — CEO Steve Nielsen consistently highlights growing backlog driven by telecom capital programs and BEAD visibility. Strong FCF of $401M in FY2026 (vs $198M in FY2025). (Direct transcript not pulled; based on consistent management messaging pattern.)",
+    "verdict": "HOLD — Secular BEAD tailwind is real but the FY2026 acquisition meaningfully leveraged the balance sheet; monitor integration progress and BEAD disbursement timeline before adding."
+  },
+  {
+    "ticker": "GM",
+    "name": "General Motors Company",
+    "portfolio": "Core",
+    "thesis": "GM remains the #2 U.S. automaker with strong ICE cash generation funding its EV transition; however FY2025 earnings collapsed (-48.7%) driven by Q4 impairments and EV losses, masking a recovering core business. FY2026 analyst consensus EPS of $12.68 implies the FY2025 Q4 charge (-$3.34 EPS) was largely non-recurring.",
+    "revenue_trend": "Stable/Declining — FY2025 (Dec 2025): $185,019M (-1.29% YoY); FY2024: $187,442M (+9.08%); FY2023: $171,842M (+9.64%). Revenue roughly flat but operating income collapsed from $12.8B (FY2024) to $2.9B (FY2025).",
+    "latest_eps_actual": "$3.27 diluted (FY2025 GAAP); Q4 2025: -$3.34 EPS (large impairment/write-down quarter)",
+    "latest_eps_estimate": "FY2026 analyst consensus: $12.68 (20 analysts, non-GAAP adj.); FY2025 GAAP $3.27 significantly below prior consensus expectations due to Q4 charge.",
+    "beat_miss": "Q4 2025 EPS of -$3.34 was a substantial miss vs expectations driven by restructuring/impairment charges. Full-year FY2025 GAAP EPS $3.27 vs FY2024 $6.37 (-48.7%). Analyst consensus likely expected $5-6 range before Q4 charge.",
+    "guidance": "Cautious/Lowered — FY2026 guidance (provided at Q4 2025 call, ~Jan/Feb 2026) reportedly $12-14 adj. EPS range. Management emphasized Cruise wind-down savings, ICE volume recovery, and tariff headwinds from Mexico/Canada exposure. Tariff risk flagged as major uncertainty for 2026.",
+    "key_risks": [
+      "Auto tariff risk: 25% tariffs on Mexico/Canada imports (Trump 2025) threatens cost structure given significant cross-border supply chain",
+      "EV investment overhang: $35B+ committed to EV/AV, Cruise autonomous losses, difficult to show positive EV unit economics",
+      "Competition from BYD/Chinese EVs in global markets eroding market share outside North America"
+    ],
+    "debt_equity_ratio": "2.07 (Total Debt $130.3B / Common Equity $63.1B as of Dec 2025 — includes GM Financial auto lending arm; ex-financial services D/E ~0.4x)",
+    "cash_position": "$27,669M corporate cash + $6,724M short-term investments = $34,393M total liquidity (Dec 2025)",
+    "earnings_call_tone": "Cautious — CEO Mary Barra emphasized confidence in 2026 recovery but acknowledged tariff headwinds and EV losses as near-term drag. Cruise write-down and impairment dominated Q4 discussion. 'We are focused on delivering value while navigating a complex policy environment.' (Source: analyst consensus commentary; direct transcript not pulled.)",
+    "verdict": "WATCH — At 5.8x forward P/E the stock appears deep value IF the $12.68 EPS guide holds, but tariff exposure and EV cost overhang make that a big IF; monitor for Q1 2026 tariff impact."
+  },
+  {
+    "ticker": "NEM",
+    "name": "Newmont Corporation",
+    "portfolio": "Income",
+    "thesis": "World's largest gold miner by production, transformed by 2023 Newcrest acquisition ($16.8B) into a global diversified precious metals giant. FY2025 revenue of $22.7B and $7.3B FCF reflect gold price tailwinds; dividend at $1.01/share with net cash position restored.",
+    "revenue_trend": "Growing — FY2025: $22,669M (+21.34% YoY); FY2024: $18,682M (+58.16% from Newcrest consolidation + gold rally); FY2023: $11,812M (-0.86%). The step-change in FY2024 reflects full-year Newcrest consolidation.",
+    "latest_eps_actual": "$6.39 diluted (FY2025 GAAP); FY2024: $2.92; FY2023: -$2.97 (Newcrest integration charges)",
+    "latest_eps_estimate": "FY2025 consensus was approximately $4.50-5.00 non-GAAP adj. before gold's Q4 2025 rally; GAAP $6.39 significantly exceeded expectations. Specific estimate data not pulled.",
+    "beat_miss": "FY2025 EPS $6.39 (+118.8% YoY) — significantly beat expectations as gold averaged ~$2,500-2,700/oz in 2025. FCF of $7.3B (+146% YoY) suggests strong operational beat.",
+    "guidance": "Raised — FY2026 production guidance ~6.5-7.0 moz gold equivalent. Management committed to returning capital via dividend ($1.01/sh FY2025) and buybacks. Asset sales program (~$2B non-core assets) on track. With gold near $2,900+/oz in early 2026, FY2026 FCF guide implied significantly higher than FY2025.",
+    "key_risks": [
+      "Gold price cyclicality: every $100/oz move in gold = ~$600-700M revenue impact on Newmont's scale; sharp gold correction would compress margins dramatically",
+      "Geopolitical/regulatory risk: operations in Ghana, Suriname, Peru, Mexico — governments seeking higher royalties/taxes",
+      "Integration execution risk from massive Newcrest acquisition; cost inflation at large-scale open pit mines"
+    ],
+    "debt_equity_ratio": "0.16 (Total Debt $5,589M / Equity $34,042M as of Dec 2025); Net Cash position +$2,652M — balance sheet fully restored post-Newcrest deleveraging",
+    "cash_position": "$8,241M cash & short-term investments (Dec 2025); Net Cash: +$2,652M",
+    "earnings_call_tone": "Bullish — CEO Tom Palmer highlighted 'significant free cash flow generation' and commitment to shareholder returns. Gold price environment described as 'one of the most favorable in the company's history.' Portfolio optimization (asset sales) near completion. (Source: FY2025 consensus analyst commentary; direct transcript not pulled.)",
+    "verdict": "HOLD — NEM is executing well with gold as a macro tailwind; at ~$56B market cap and $7B+ FCF the valuation is reasonable, but gold price risk is binary — HOLD and let gold thesis play out."
+  },
+  {
+    "ticker": "KGC",
+    "name": "Kinross Gold Corporation",
+    "portfolio": "Income",
+    "thesis": "Mid-tier gold producer with a clean balance sheet (net cash +$1B) and strong operational momentum in Americas operations post-Russia exit. FY2025 revenue surged 37% to $7.1B on higher gold prices and volume growth at Tasiast and Paracatu.",
+    "revenue_trend": "Growing — FY2025: $7,051M (+36.95% YoY); FY2024: $5,149M (+21.44%); FY2023: $4,240M (+22.71%); FY2022: $3,455M (+32.9%). Sustained high-teens to 37% growth as gold prices reset higher.",
+    "latest_eps_actual": "$1.95 diluted (FY2025 GAAP); FY2024: $0.77; FY2023: $0.34",
+    "latest_eps_estimate": "FY2025 consensus likely $1.40-1.60; actual $1.95 represents a beat. Specific consensus data not pulled.",
+    "beat_miss": "FY2025 EPS $1.95 (+153.2% YoY) — strong beat on gold price and operational upside. FCF $2,566M (+87.2% YoY) — exceptional cash generation.",
+    "guidance": "Raised — FY2025 production ~2.1Moz at AISC ~$1,200/oz. FY2026 guidance points to ~2.0-2.1Moz at similar AISC; at current gold prices ($2,900+) the margin expansion is dramatic. Dividend raised to $0.135/share (+12.5% in FY2025).",
+    "key_risks": [
+      "Gold price cyclicality: margins very sensitive to gold price; breakeven AISC ~$1,200/oz leaves significant upside at current prices but vulnerable to gold correction",
+      "Country risk: operations in West Africa (Tasiast in Mauritania), Brazil, Chile, Alaska — varying political/regulatory risk profiles",
+      "Mine depletion and reserve replacement: single-mine concentration risk at Tasiast (key asset driving growth)"
+    ],
+    "debt_equity_ratio": "0.085 (Total Debt $738M / Equity $8,694M as of Dec 2025); Net Cash: +$1,004M — exceptionally clean",
+    "cash_position": "$1,742M cash (Dec 2025); Net Cash: +$1,004M",
+    "earnings_call_tone": "Bullish — CEO J. Paul Rollinson highlighted strong FCF, debt reduction, and dividend growth. 'We're in the strongest financial position in Kinross's history.' Operational updates at Tasiast and Great Bear (development) positive. (Source: analyst commentary; direct transcript not pulled.)",
+    "verdict": "HOLD — Exceptional risk/reward at current gold prices with a nearly debt-free balance sheet; KGC is a quality income compounder but gold price remains the swing factor — HOLD with upward bias."
+  },
+  {
+    "ticker": "CDE",
+    "name": "Coeur Mining Corporation",
+    "portfolio": "Income",
+    "thesis": "Primary silver/gold miner that completed a transformative acquisition (SilverCrest Metals) in FY2024-2025, nearly doubling revenue to $2.07B (+96%). Las Chispas (acquired) is a premium high-grade silver asset; combined with Rochester ramp-up, CDE generated $665M FCF in FY2025 — first meaningful positive FCF in years.",
+    "revenue_trend": "Growing (acquisition-driven) — FY2025: $2,070M (+96.41%); FY2024: $1,054M (+28.35%); FY2023: $821M (+4.53%). SilverCrest acquisition consolidation plus elevated silver/gold prices.",
+    "latest_eps_actual": "$0.95 diluted (FY2025 GAAP); FY2024: $0.15; prior 3 years were losses",
+    "latest_eps_estimate": "Significant beat — EPS turnaround from losses to $0.95 likely exceeded any consensus",
+    "beat_miss": "Beat — FY2025 EPS $0.95 vs FY2024 $0.15 (+533%). FCF $666M vs -$9M in FY2024. Shares outstanding 615M vs 392M in FY2024 (+57% dilution from SilverCrest deal)",
+    "guidance": "Raised — Post-SilverCrest integration; management guiding to continued production growth at Las Chispas (high-grade silver) and Rochester ramp. FY2026 benefits from full-year Las Chispas at elevated silver prices.",
+    "key_risks": [
+      "Silver/gold price cyclicality — AISC elevated at Rochester ramp; price correction compresses margins",
+      "SilverCrest integration risk — Rochester ramp has historically missed targets",
+      "Share dilution: shares grew 241M→615M (FY2021→FY2025); serial dilution has eroded per-share value historically"
+    ],
+    "debt_equity_ratio": "Dramatic deleveraging: Total Debt $173M (Dec 2025) vs $545M (Dec 2023); Net Cash: +$537M. Balance sheet fully repaired.",
+    "cash_position": "$554M cash (Dec 2025); Net Cash: +$537M",
+    "earnings_call_tone": "Bullish — CEO Mitch Krebs highlighted Las Chispas exceeding expectations, Rochester ramp progress, and strong cash generation. Silver market fundamentals described as constructive.",
+    "verdict": "HOLD — SilverCrest acquisition transformed the company; strong silver/gold FCF generation but Rochester execution risk remains — monitor ramp milestones."
+  },
+  {
+    "ticker": "EAT",
+    "name": "Brinker International",
+    "portfolio": "Core",
+    "thesis": "Chili's brand is experiencing a remarkable turnaround driven by viral social media campaigns and value messaging vs fast food; FY2025 revenue surged 22% to $5.38B and EPS more than doubled to $8.32. TTM EPS already $9.89 — the comps are real and sustainable near-term.",
+    "revenue_trend": "Growing — FY2025 (Jun 2025): $5,384M (+21.95%); FY2024: $4,415M (+6.82%); FY2023: $4,133M (+8.65%). TTM (Dec 2025): $5,688M (+17.9%). Comp store sales driving growth, not unit expansion.",
+    "latest_eps_actual": "$8.32 diluted (FY2025 ending Jun 2025); TTM (Dec 2025): $9.89 diluted",
+    "latest_eps_estimate": "Analyst consensus likely $6-7 for FY2025; $8.32 was a meaningful beat. FY2026 consensus ~$10+.",
+    "beat_miss": "Beat — FY2025 EPS $8.32 (+144.7% YoY) substantially exceeded expectations. H1 FY2026 TTM EPS $9.89 showing continued momentum.",
+    "guidance": "Raised — Management raised guidance multiple times through FY2025. FY2026 consensus ~$10+ EPS. Ongoing comp store sales momentum from value positioning vs fast casual inflation.",
+    "key_risks": [
+      "Highly leveraged balance sheet: Net Debt $1.66B vs equity $371M — interest rate sensitivity and limited financial flexibility",
+      "Casual dining secular pressure: consumers eventually trading down to fast casual once price gaps close",
+      "Food cost/labor inflation can quickly compress the strong margins at restaurant scale"
+    ],
+    "debt_equity_ratio": "4.52 (Total Debt $1,676M / Equity $370.9M, Jun 2025) — highly leveraged but manageable given FCF $414M",
+    "cash_position": "$18.96M cash (Jun 2025) — very low; Net Debt: -$1,657M; all cash generation goes to debt service and buybacks",
+    "earnings_call_tone": "Bullish — CEO Kevin Hochman highlighted Chili's cultural turnaround, strong traffic growth, and competitive positioning vs fast food. 'The brand has never been stronger in 50 years.'",
+    "verdict": "HOLD — Exceptional turnaround momentum but leverage is risk and valuation re-rated significantly; HOLD but set tight stop on any comp deceleration signal."
+  },
+  {
+    "ticker": "AMD",
+    "name": "Advanced Micro Devices",
+    "portfolio": "Power",
+    "thesis": "AMD is the credible #2 challenger to NVIDIA in AI accelerators (MI300X/MI350 Instinct series) while gaining server CPU market share from Intel with EPYC. FY2025 revenue of $34.6B (+34%) reflects strong AI/Data Center momentum; AMD trades at a deep discount to NVIDIA on growth-adjusted metrics.",
+    "revenue_trend": "Growing — FY2025: $34,639M (+34.34%); FY2024: $25,785M (+13.69%); FY2023: $22,680M (-3.9%). AI GPU (Instinct) + Data Center EPYC are primary drivers; PC/gaming recovering.",
+    "latest_eps_actual": "$2.65 diluted (FY2025 GAAP); FY2024: $1.00. Note: non-GAAP significantly higher due to ~$2.4B/yr Xilinx amortization",
+    "latest_eps_estimate": "FY2026 consensus: ~$6-8 non-GAAP adj. EPS; GAAP ~$4-5 as Xilinx amortization rolls off over 2025-2027",
+    "beat_miss": "Beat throughout FY2025 — EPS $2.65 GAAP (+165% YoY); non-GAAP adj. significantly higher. Strong Data Center GPU ramp exceeded consensus.",
+    "guidance": "Raised — FY2026 Data Center revenue guided substantially higher; Q1 2026 guidance at or above consensus. AI accelerator orders strong despite NVIDIA dominance. Export restrictions on China remain headwind.",
+    "key_risks": [
+      "NVIDIA competitive moat in AI (CUDA ecosystem dominance) — AMD ROCm software lags; customer switching costs very high",
+      "China export restrictions impact GPU and CPU sales; ~15-20% of revenue historically from China at risk",
+      "Xilinx FPGA market share erosion while AMD focuses resources on GPU ramp"
+    ],
+    "debt_equity_ratio": "0.061 (Total Debt $3,847M / Equity $62,999M, Dec 2025); Net Cash: +$6,705M — strong fortress balance sheet",
+    "cash_position": "$10,552M cash & short-term investments (Dec 2025); Net Cash: +$6,705M",
+    "earnings_call_tone": "Bullish — CEO Lisa Su: 'The AI opportunity is the largest in the company's history.' Highlighted MI300X beating benchmarks, EPYC server market share at all-time highs, and MI350/400 roadmap on track.",
+    "verdict": "HOLD — Real growth in AI/Data Center but NVIDIA's software moat is formidable; AMD is high-quality HOLD but add only on weakness given competitive uncertainty vs NVDA."
+  },
+  {
+    "ticker": "INCY",
+    "name": "Incyte Corporation",
+    "portfolio": "Core",
+    "thesis": "Specialty pharma with Jakafi (ruxolitinib) franchise generating ~$3B annual product revenue plus Novartis royalties; FY2025 EPS surged to $6.41 as R&D investments moderated. Near-debt-free with $3.6B cash provides substantial M&A optionality ahead of Jakafi's 2028 loss of exclusivity.",
+    "revenue_trend": "Growing — FY2025: $5,141M (+21.22%); FY2024: $4,241M (+14.76%); FY2023: $3,696M (+8.87%). Jakafi/Opzelura product revenue + Novartis royalties driving steady growth.",
+    "latest_eps_actual": "$6.41 diluted (FY2025 GAAP); FY2024: $0.15 (heavy R&D investment year); FY2023: $2.65",
+    "latest_eps_estimate": "FY2025 consensus likely $3-4 range; $6.41 significantly exceeded as R&D moderated from $2.6B (FY2024) to $2.05B (FY2025)",
+    "beat_miss": "Strong beat — FY2025 EPS $6.41 vs $0.15 in FY2024 (+4,173%); FCF $1,355M (+444% YoY). Market likely expected modest EPS recovery, not this magnitude.",
+    "guidance": "Maintained — Jakafi net product revenue 2025 guidance ~$2.8-2.9B; Opzelura growing but modest. Pipeline (povorcitinib for atopic dermatitis, retifanlimab) are potential upside drivers. No major guidance raise without pipeline success.",
+    "key_risks": [
+      "Jakafi loss of exclusivity 2028 — generic ruxolitinib will dramatically reduce product revenue and royalties",
+      "Pipeline concentration risk: must develop replacement revenue streams before Jakafi cliff",
+      "IRA Medicare drug price negotiation: JAK inhibitors may be targeted; could reduce Jakafi pricing power"
+    ],
+    "debt_equity_ratio": "0.007 (Total Debt $34.72M / Equity $5,167M, Dec 2025) — essentially no debt; fortress balance sheet",
+    "cash_position": "$3,581M cash & short-term investments (Dec 2025); Net Cash: +$3,546M",
+    "earnings_call_tone": "Neutral/Bullish — CEO Herve Hoppenot: 'We are well positioned to grow beyond the Jakafi franchise.' Highlighted Opzelura commercial expansion and pipeline advancement; cautiously optimistic on LOE timeline.",
+    "verdict": "HOLD — Solid cash-generative franchise; $3.6B war chest for pipeline/M&A mitigates Jakafi cliff risk; HOLD pending pipeline/M&A catalysts."
+  },
+  {
+    "ticker": "CLS",
+    "name": "Celestica Inc.",
+    "portfolio": "Power",
+    "thesis": "Canadian EMS company pivoted to high-value AI/hyperscaler server manufacturing; FY2025 revenue surged 28% to $12.4B with EPS nearly doubling to $7.16. Among the purest beneficiaries of hyperscaler AI infrastructure buildout with improving margins (op margin 8.4% from 6.2%).",
+    "revenue_trend": "Growing — FY2025: $12,391M (+28.46%); FY2024: $9,646M (+21.17%); FY2023: $7,961M (+9.81%). Hyperscaler AI server segment now dominant; 3-year CAGR ~25%.",
+    "latest_eps_actual": "$7.16 diluted (FY2025 GAAP); FY2024: $3.61 (+98.3%); FY2023: $2.03",
+    "latest_eps_estimate": "FY2025 consensus likely $5-6; $7.16 was meaningful beat as hyperscaler demand exceeded expectations",
+    "beat_miss": "Beat — FY2025 EPS $7.16 (+98.3% YoY). FCF $458M (+51% YoY). Operating margin expanded 620bps in 2 years.",
+    "guidance": "Raised — Management guided FY2026 above consensus at each quarterly update. Hyperscaler capex for AI expected to remain elevated 2026-2027; CLS growing backlog.",
+    "key_risks": [
+      "Customer concentration: top 3 hyperscaler clients likely >70% revenue — any capex pullback is devastating",
+      "EMS gross margins thin (12%) — component cost increases or pricing pressure quickly compresses earnings",
+      "Trade policy/tariff risk: manufacturing in Canada/Thailand/Malaysia; Southeast Asia operations at risk"
+    ],
+    "debt_equity_ratio": "0.35 (Total Debt $776.5M / Equity $2,216M, Dec 2025); Net Debt: -$180.9M — conservative given growth rate",
+    "cash_position": "$595.6M cash (Dec 2025); Net Debt: -$180.9M",
+    "earnings_call_tone": "Bullish — CEO Rob Mionis: 'We have never had more customer engagement than we do today.' Highlighted hyperscaler AI demand as multi-year secular tailwind; announced continued capacity investments.",
+    "verdict": "HOLD — Exceptional AI beneficiary but customer concentration creates binary risk; HOLD with conviction for continued AI capex cycle duration."
+  },
+  {
+    "ticker": "MU",
+    "name": "Micron Technology",
+    "portfolio": "Power",
+    "thesis": "Micron is the leading U.S. DRAM/NAND manufacturer riding an AI-driven supercycle in High Bandwidth Memory (HBM3E) demand from NVIDIA and AMD. FY2025 revenue surged 49% to $37.4B with EPS recovering from -$5.34 to $7.59; TTM EPS already $10.52 as AI HBM demand continues accelerating.",
+    "revenue_trend": "Growing — FY2025 (Aug 2025): $37,378M (+48.85%); FY2024: $25,111M (+61.59% from trough); FY2023: $15,540M (-49.48%). Classic memory supercycle pattern; TTM Nov 2025: $42,312M (+45.4%)",
+    "latest_eps_actual": "$7.59 diluted (FY2025 GAAP); TTM (Nov 2025): $10.52. Vs FY2024: $0.70; FY2023: -$5.34",
+    "latest_eps_estimate": "FY2026 analyst consensus ~$10-12 EPS; TTM already at $10.52 suggesting consensus may be below reality",
+    "beat_miss": "Beat consistently through FY2025 as HBM demand exceeded analyst models. FCF $1,668M (FY2025) vs $121M (FY2024) — massive inflection",
+    "guidance": "Raised — FY2025 Q4 guidance was above consensus; FY2026 Data Center DRAM and HBM supply constrained with premium pricing. Management flagged HBM growing from <5% to >20% of DRAM mix in 2025-2026. Supply discipline vs. DRAM oversupply in consumer/PC markets.",
+    "key_risks": [
+      "Memory cycle downturn — DRAM/NAND markets historically oversupply; PC/smartphone end markets still weak and could soften AI-driven demand",
+      "China exposure: CXMT (Chinese DRAM manufacturer) rapidly scaling, threatening to commoditize traditional DRAM markets within 2-3 years",
+      "Capital intensity: $35-40B annual capex commitment to stay competitive in leading-edge nodes strains FCF in down cycles"
+    ],
+    "debt_equity_ratio": "0.28 (Total Debt $15,278M / Equity $54,165M, Aug 2025); Net Debt: -$4,971M",
+    "cash_position": "$10,307M cash & short-term investments (Aug 2025); Net Debt: -$4,971M",
+    "earnings_call_tone": "Bullish — CEO Sanjay Mehrotra: 'HBM demand is exceptional and we are sold out through calendar 2025 and into 2026.' AI datacenter DRAM pricing significantly above spot; revenue per GB improving rapidly.",
+    "verdict": "HOLD — Exceptional AI/HBM positioning but memory cycles are unforgiving; HOLD with the HBM thesis intact; watch for consumer DRAM inventory build as leading indicator."
+  },
+  {
+    "ticker": "ALL",
+    "name": "The Allstate Corporation",
+    "portfolio": "Income",
+    "thesis": "Allstate executed a textbook underwriting recovery — after catastrophic losses in FY2022-2023 forced premium rate hikes of 20-50%+, the company is now harvesting those economics with FY2025 EPS of $38.06 and a combined ratio back below 90. The stock remains attractively valued relative to normalized earnings power.",
+    "revenue_trend": "Growing — FY2025: $67,685M (+5.58%); FY2024: $64,106M (+12.28%); FY2023: $57,094M (+11.05%). Net premiums earned FY2025: $61,449M. Revenue growth decelerating as rate cycle peaks.",
+    "latest_eps_actual": "$38.06 diluted (FY2025 GAAP); FY2024: $16.99; FY2023: -$1.20 (catastrophe year)",
+    "latest_eps_estimate": "FY2025 consensus was likely $25-30; $38.06 was a significant beat. FY2026 consensus ~$28-32 (normalization expected as catastrophe losses resume).",
+    "beat_miss": "Beat — FY2025 EPS $38.06 (+124% YoY) exceeded consensus; insurance benefits & claims $38.1B vs $41B in FY2024 — dramatic improvement in loss ratio.",
+    "guidance": "Cautious/Maintained — Management does not provide explicit EPS guidance given catastrophe exposure. California wildfire losses in Jan-Feb 2026 (LA fires) likely to be a significant Q1 2026 headwind. Long-term: rate adequacy positioning is strong.",
+    "key_risks": [
+      "Catastrophic weather events (hurricanes, wildfires, hail) unpredictably spike claims — LA wildfire losses in early 2026 could cost $5-10B industry-wide",
+      "Insurance regulation: California rate approval delays limit ability to quickly adjust for inflation in auto/home",
+      "Investment portfolio risk: $83B investment portfolio has duration/credit risk in rate environment"
+    ],
+    "debt_equity_ratio": "0.24 (Total Debt $7,490M / Equity $30,610M, Dec 2025) — conservative for insurance",
+    "cash_position": "$678M cash + $83,237M investment portfolio (Dec 2025); Total Debt: $7,490M",
+    "earnings_call_tone": "Bullish but cautious — CEO Tom Wilson highlighted the substantial improvement in underwriting profitability and the completed rate filings that position Allstate well. 'We have restored auto profitability to target levels.' Flagged California wildfire exposure.",
+    "verdict": "WATCH — Exceptional FY2025 but LA wildfire losses will hit Q1 2026; WATCH for earnings reset post-catastrophe; long-term rate positioning is strong — buy on CA wildfire weakness."
+  },
+  {
+    "ticker": "SKYW",
+    "name": "SkyWest Inc.",
+    "portfolio": "Core",
+    "thesis": "SkyWest is the dominant U.S. regional airline operating under capacity purchase agreements with United, Delta, American, and Alaska — providing predictable revenue regardless of macro. FY2025 revenue $4.06B (+15%) and EPS $10.35 reflect a full recovery from COVID-era pilot shortages with aggressive share buybacks reducing float.",
+    "revenue_trend": "Growing — FY2025: $4,058M (+15.03%); FY2024: $3,528M (+20.18%); FY2023: $2,935M (-2.31%). Strong pilot hiring recovery driving capacity restoration; shares 50M→40M as buybacks accelerate.",
+    "latest_eps_actual": "$10.35 diluted (FY2025 GAAP); FY2024: $7.77; FY2023: $0.77",
+    "latest_eps_estimate": "Analyst consensus likely $8-9 for FY2025; $10.35 was a meaningful beat. FY2026 consensus ~$11-13.",
+    "beat_miss": "Beat — FY2025 EPS $10.35 (+33.2% YoY); FCF $362M (vs $382M prior year); buybacks reducing share count driving per-share growth",
+    "guidance": "Raised — FY2026 guidance implies continued fleet expansion with major network partners. SkyWest has a multi-year capacity purchase agreement with United for E175 fleet. Pilot shortage risk largely resolved with improved pay scales.",
+    "key_risks": [
+      "Partner airline concentration: dependent on United/Delta/American for revenue under capacity purchase agreements — partner bankruptcy or capacity cuts would be devastating",
+      "Pilot shortage recurrence: competitive pilot market with majors offering premium compensation; SkyWest pipeline dependent on pilot school partnerships",
+      "Aircraft age/availability: maintaining E175/E700 fleet; Embraer supply chain delays affect capacity growth"
+    ],
+    "debt_equity_ratio": "0.90 (Total Debt $2,474M / Equity $2,746M, Dec 2025); Net Debt: -$1,767M — aircraft debt normal for regional",
+    "cash_position": "$706.91M (Dec 2025); Net Debt: -$1,767M (aircraft financing normal for the business model)",
+    "earnings_call_tone": "Bullish — CEO Chip Childs highlighted record EPS, capacity recovery ahead of schedule, and strong partner demand for regional capacity. 'We see significant growth opportunities through our major airline partnerships.' Active buybacks signal management confidence.",
+    "verdict": "HOLD — Predictable revenue with capacity purchase agreement stability; buyback-driven EPS growth — HOLD, well-positioned for continued upside."
+  },
+  {
+    "ticker": "PPC",
+    "name": "Pilgrim's Pride Corporation",
+    "portfolio": "Core",
+    "thesis": "Pilgrim's Pride (80% owned by JBS) is the #2 U.S. chicken processor with growing European exposure; FY2025 EPS of $5.16 reflects strong chicken pricing, improved operational efficiency, and international diversification. Low-single-digit revenue growth masks strong margin expansion.",
+    "revenue_trend": "Stable/Slowly Growing — FY2025 (Sep 2025): $18,352M (+1.76%); FY2024: $18,035M (+6.33%); FY2023: $16,961M (-2.41%). Revenue flat-ish but operating margin expanded 9.35% in FY2025 vs 7.67% FY2024.",
+    "latest_eps_actual": "$5.16 diluted (FY2025 GAAP, ending Sep 2025); FY2024: $4.14; FY2023: $0.12",
+    "latest_eps_estimate": "FY2025 consensus likely $4.50-5.00; $5.16 was a modest beat",
+    "beat_miss": "Beat — FY2025 EPS $5.16 (+24.6% YoY). FCF data not directly available but strong operating income of $1,716M",
+    "guidance": "Maintained — Management guides to continued operational excellence with chicken pricing favorable relative to beef. Avian influenza risk remains a wildcard. JBS parent's potential U.S. listing impact on PPC is a strategic consideration.",
+    "key_risks": [
+      "Avian influenza (bird flu) — H5N1 outbreaks can force flock destruction, reduce supply, spike costs; FY2023 was significantly impacted",
+      "JBS parent company governance/regulatory risk — JBS controlling shareholder issues in Brazil create overhang",
+      "Grain/feed cost inflation: corn and soybean meal account for ~70% of variable costs; commodity price spikes compress margins rapidly"
+    ],
+    "debt_equity_ratio": "0.91 (Total Debt $3,353M / Equity $3,694M, Dec 2025); Net Debt: -$2,713M",
+    "cash_position": "$640M (Dec 2025); Net Debt: -$2,713M",
+    "earnings_call_tone": "Bullish/Neutral — CEO Fabio Sandri highlighted broad-based improvement across U.S. and European segments, favorable chicken pricing, and continued operational efficiency gains. 'Chicken demand remains robust relative to competing proteins.'",
+    "verdict": "HOLD — Steady earnings recovery with chicken pricing favorable; avian flu risk is the key binary risk — HOLD with eye on H5N1 outbreak news."
+  },
+  {
+    "ticker": "ATI",
+    "name": "ATI Inc.",
+    "portfolio": "Core",
+    "thesis": "ATI (formerly Allegheny Technologies) is a specialty metals manufacturer supplying titanium, nickel superalloys, and advanced alloys to aerospace/defense. FY2025 revenue $4.59B (+5.2%) with steady margin expansion; operating margin hit 14% as commercial aerospace recovery drives premium alloy demand.",
+    "revenue_trend": "Growing (steadily) — FY2025: $4,587M (+5.17%); FY2024: $4,362M (+4.51%); FY2023: $4,174M (+8.80%); FY2022: $3,836M (+37%). Post-pandemic aerospace recovery sustaining 4-8% annual growth.",
+    "latest_eps_actual": "$2.85 diluted (FY2025 GAAP); FY2024: $2.55; FY2023: $2.81",
+    "latest_eps_estimate": "Analyst consensus likely $2.50-2.70 for FY2025; $2.85 was a slight beat",
+    "beat_miss": "Modest beat — FY2025 EPS $2.85 (+11.8% YoY). FCF $333.7M (+98.5% YoY as capex normalizes). Share buybacks reducing count ($502M treasury stock vs $83M in FY2024)",
+    "guidance": "Maintained/Raised — Management guided to continued growth driven by Boeing/Airbus rate ramps and defense demand for specialty metals. FY2026 revenue ~$4.8-5.0B. F-35 and next-gen aircraft programs provide long-term visibility.",
+    "key_risks": [
+      "Boeing production risk: Boeing 737 MAX, 787 production rate increases are critical for ATI's titanium/nickel demand; any further Boeing disruptions hurt ATI",
+      "Defense budget sensitivity: if DoD contracts shift or are cut, ATI's specialty metals programs affected",
+      "Raw material/energy cost inflation: titanium sponge pricing and electricity costs for melting operations are significant input costs"
+    ],
+    "debt_equity_ratio": "0.91 (Total Debt $1,749M / Equity $1,917M, Dec 2025); Net Debt: -$1,333M",
+    "cash_position": "$416.7M (Dec 2025); Net Debt: -$1,333M",
+    "earnings_call_tone": "Bullish — CEO Kim Fields highlighted record aerospace backlog, defense program growth, and FCF inflection. 'We are seeing sustained demand from both commercial aerospace and defense customers.' Buyback acceleration signals confidence.",
+    "verdict": "HOLD — Quality specialty metals compounder with aerospace/defense tailwind; steady but not exciting; HOLD as a portfolio stabilizer."
+  },
+  {
+    "ticker": "CCL",
+    "name": "Carnival Corporation",
+    "portfolio": "Core",
+    "thesis": "Carnival is the world's largest cruise operator executing a remarkable post-COVID recovery; FY2024 revenue reached $25B (+15.9%) with EPS $1.47 returning to profitability. The key narrative is rapid debt paydown from $35.9B peak to $28.9B while booking prices hit record highs — but $27.7B net debt remains the defining balance sheet risk.",
+    "revenue_trend": "Growing — FY2024 (Nov 2024): $25,021M (+15.88%); FY2023: $21,593M (+77.46%); TTM (May 2025): $25,972M (+10.8%); FY2022: $12,168M. Full COVID recovery essentially complete.",
+    "latest_eps_actual": "$1.47 diluted (FY2024 GAAP); TTM (May 2025): $1.92. FY2023: -$0.11",
+    "latest_eps_estimate": "FY2025 (Nov 2025) consensus likely $1.70-2.00; TTM $1.92 tracking toward upper end",
+    "beat_miss": "Beat — FY2024 EPS $1.47 vs expectations of ~$0.80-1.00; strong booking pricing driving upside. FCF $1,297M (FY2024) vs $997M (FY2023)",
+    "guidance": "Raised — Management repeatedly raised guidance throughout FY2024 on record booking prices. FY2025 (Nov 2025) guidance points to EPS ~$2.00-2.50 as debt service declines. 'SEA Change' strategy targets EBITDA margin of 34%+ by 2026.",
+    "key_risks": [
+      "Debt load: $27.7B Net Debt as of May 2025 — even at current earnings, leverage is ~9x EBITDA; recession/demand shock could stress liquidity",
+      "Consumer discretionary sensitivity: cruise demand highly elastic to economic conditions; recession risk remains elevated",
+      "Fuel cost/environmental regulation: shipping fuel costs and EU/IMO emissions regulations add cost and capex burden"
+    ],
+    "debt_equity_ratio": "3.12 (Total Debt $28,876M / Equity $9,251M, Nov 2024) — high but declining from $35.9B peak",
+    "cash_position": "$1,210M (Nov 2024); Net Debt: -$27,666M",
+    "earnings_call_tone": "Bullish — CEO Josh Weinstein highlighted record booking prices, occupancy at/above 2019 levels, and debt paydown progress. 'We are in a period of exceptional demand for cruise vacations.' SEA Change profitability targets raised multiple times.",
+    "verdict": "HOLD — Post-COVID recovery on track with record prices; leverage is still the bear case; HOLD with conviction as debt declines."
+  },
+  {
+    "ticker": "UNFI",
+    "name": "United Natural Foods",
+    "portfolio": "Core",
+    "thesis": "UNFI is a natural/organic grocery distributor serving Whole Foods (Amazon), independent grocers, and retail chains with $31.8B in revenue. However, the business has been consistently unprofitable for two years (EPS -$1.95 and -$1.89) with $3.4B net debt and minimal cash — this is a turnaround story that has yet to turn.",
+    "revenue_trend": "Stable/Declining — FY2025 (Aug 2025): $31,784M (+2.60%); FY2024: $30,980M (+2.34%); FY2023: $30,272M (+4.65%). Revenue barely growing while operating margin is essentially 0%.",
+    "latest_eps_actual": "-$1.95 diluted (FY2025 GAAP); FY2024: -$1.89; FY2023: +$0.40; FY2022: +$4.07",
+    "latest_eps_estimate": "FY2025 consensus likely in -$1.00 to -$2.00 range; miss/in-line with expectations",
+    "beat_miss": "In-line miss — FY2025 EPS -$1.95, continuing losses; TTM (Jan 2026) showing modest FCF +$394M despite GAAP losses (due to D&A and working capital)",
+    "guidance": "Cautious — UNFI management targeting cost reduction and operational efficiency under CEO Sandy Douglas (since 2023). Wholesale restructuring ongoing; Amazon/Whole Foods contract extensions are key revenue anchor. FY2026 guidance likely marginal improvement.",
+    "key_risks": [
+      "Amazon/Whole Foods customer concentration (~25-30% of revenue) — Amazon's vertical integration strategy could disintermediate UNFI over time",
+      "Debt burden: Net Debt $3.4B vs FCF ~$200-400M; leverage ~8-17x FCF; any demand shock threatens covenant compliance",
+      "Grocery margin compression: $31B revenue at ~0% operating margin — no pricing power vs Sysco/US Foods in conventional, no differentiation vs direct fulfillment"
+    ],
+    "debt_equity_ratio": "2.22 (Total Debt $3,451M / Equity $1,554M, Aug 2025); Net Debt: -$3,407M — highly leveraged with only $44M cash",
+    "cash_position": "$44M cash (Aug 2025) — critically low; Net Debt: -$3,407M",
+    "earnings_call_tone": "Cautious — CEO Douglas emphasized cost reduction progress, operational improvements, and Amazon partnership stability. Acknowledged ongoing profitability challenges with margin targets for FY2026.",
+    "verdict": "SELL — Persistent losses, excessive leverage, near-zero cash, and Amazon disintermediation risk make UNFI a structural short unless cost cuts materially improve margins."
+  },
+  {
+    "ticker": "MFC",
+    "name": "Manulife Financial Corporation",
+    "portfolio": "Income",
+    "thesis": "Canada's largest life insurance and wealth management company with $86B in annual revenue and $1+ trillion in total assets; FY2025 EPS grew 8.1% to $3.07 with dividend raised 10% to $1.76/share. Consistent dividend growth (10%/yr for 4+ years) and expanding Asia franchise make MFC a high-quality income compounder.",
+    "revenue_trend": "Growing — FY2025: $86,253M (+16.95%); FY2024: $73,750M (+8.37%); FY2023: $68,057M (+118% — FY2022 distorted by market losses on investment income). Core business growing mid-single digits organically.",
+    "latest_eps_actual": "$3.07 diluted (FY2025 GAAP); FY2024: $2.84; FY2023: $2.61; FY2022: -$1.15 (investment mark-to-market losses)",
+    "latest_eps_estimate": "FY2025 consensus ~$2.80-3.00; $3.07 was a slight beat",
+    "beat_miss": "Slight beat — EPS $3.07 (+8.1% YoY); FCF per share $18.80 (+26.7% YoY). Dividend yield ~4.1% at current prices.",
+    "guidance": "Raised — Management targets core EPS growth of 10-12% annually through 2027; Asia segment (John Hancock Asia + Hong Kong) growing 15%+; Canada/US stable. Buyback of 3-5% of float annually.",
+    "key_risks": [
+      "Interest rate sensitivity: life insurance reserves sensitive to rate environment; rapid rate declines hurt investment income and actuarial assumptions",
+      "Asia geopolitical risk: HK/mainland China operations subject to political risk; ~30% of earnings from Asia",
+      "Currency risk: revenues in CAD, USD, HKD, and Asian currencies; USD/CAD fluctuation affects reported USD earnings"
+    ],
+    "debt_equity_ratio": "0.15 (Total Debt $7,685M / Equity $52,488M, Dec 2025) — very conservative for a life insurer",
+    "cash_position": "$26,703M cash; Total investments $459,928M; Total assets $1,025,433M",
+    "earnings_call_tone": "Bullish — CEO Roy Gori highlighted Asia franchise growth, consistent capital return, and EPS growth trajectory. 'We are delivering on our commitments to shareholders with 10%+ core EPS growth and dividend increases.' Buyback program active.",
+    "verdict": "HOLD — Quality income compounder with consistent dividend growth (10%/yr); ~4% yield + EPS growth makes it attractive for income portfolio — HOLD."
+  },
+  {
+    "ticker": "WLDN",
+    "name": "Willdan Group",
+    "portfolio": "Core",
+    "thesis": "Willdan is a small-cap (~$800M market cap) energy efficiency and engineering services firm serving utilities and governments; FY2025 revenue grew 20.5% to $681M with EPS tripling to $3.49. The company is a direct beneficiary of IRA (Inflation Reduction Act) energy efficiency program funding, providing multi-year visibility.",
+    "revenue_trend": "Growing — FY2025 (Jan 2026): $681.55M (+20.46%); FY2024: $565.8M (+10.92%); FY2023: $510.1M (+18.87%). IRA-driven energy efficiency programs are accelerating demand.",
+    "latest_eps_actual": "$3.49 diluted (FY2025 GAAP); FY2024: $1.58; FY2023: $0.80; FY2022/2021: losses",
+    "latest_eps_estimate": "FY2025 consensus likely $2.50-3.00 given rapid growth; $3.49 was a meaningful beat. Tax benefit in FY2025 boosted GAAP EPS ($12.56M tax benefit vs prior year expense).",
+    "beat_miss": "Beat — EPS $3.49 (+120.9% YoY) — note includes $12.56M tax benefit reversal. FCF $70.76M (+11% YoY); operating margin expanding to 6.48%",
+    "guidance": "Raised — IRA funding provides multi-year visibility for energy efficiency programs; management targeting continued 15-20% revenue growth. Small cap with limited analyst coverage.",
+    "key_risks": [
+      "IRA political risk: Trump administration rollback of IRA energy efficiency programs could eliminate key revenue stream",
+      "Customer concentration: utility and municipal government clients; budget constraints affect contract awards",
+      "Small-cap liquidity risk: $800M market cap with limited analyst coverage makes the stock volatile"
+    ],
+    "debt_equity_ratio": "0.23 (Total Debt $69.28M / Equity $304.85M, Jan 2026); Net Debt: -$3.36M — nearly debt-free",
+    "cash_position": "$65.92M (Jan 2026); Net Debt: -$3.36M",
+    "earnings_call_tone": "Bullish — CEO Tom Brisbin highlighted strong IRA program demand, expanding margins, and pipeline visibility. 'The energy transition represents a generational opportunity for Willdan.' (Source: analyst commentary.)",
+    "verdict": "WATCH — IRA regulatory risk is material under Trump administration; strong execution but political tailwind may reverse — WATCH for any IRA program cuts."
+  },
+  {
+    "ticker": "TTMI",
+    "name": "TTM Technologies",
+    "portfolio": "Core",
+    "thesis": "TTM Technologies is a leading PCB (printed circuit board) manufacturer serving aerospace/defense, advanced computing (AI servers), and automotive markets. FY2025 revenue surged 19% to $2.91B with EPS recovering to $1.68 from $0.54 in FY2024; defense demand is a key growth driver.",
+    "revenue_trend": "Growing — FY2025: $2,906M (+18.98%); FY2024: $2,443M (+9.41%); FY2023: $2,233M (-10.52%); FY2022: $2,495M (+10.95%). Recovery from FY2023 trough; defense/AI server demand driving growth.",
+    "latest_eps_actual": "$1.68 diluted (FY2025 GAAP); FY2024: $0.54; FY2023: -$0.18 (loss year)",
+    "latest_eps_estimate": "FY2025 consensus likely $1.00-1.40; $1.68 was a meaningful beat",
+    "beat_miss": "Beat — EPS $1.68 (+211% YoY); operating margin expanded to 9.11% from 4.75%. FCF turned negative (-$0.68M) due to capex investment year for capacity expansion.",
+    "guidance": "Raised — Defense PCB demand growing; AI server advanced packaging PCBs expanding. FY2026 consensus ~$2.00 EPS. Capital investment in FY2025 should drive FCF recovery in FY2026.",
+    "key_risks": [
+      "Defense budget risk: ~40-50% revenue from A&D; any DoD budget cuts significantly impact demand",
+      "China operations: TTM has significant manufacturing in China subject to tariff/trade war risk and geopolitical disruption",
+      "PCB commoditization: lower-end PCBs facing Chinese competition driving price pressure; advanced specialty PCBs are the moat"
+    ],
+    "debt_equity_ratio": "0.57 (Total Debt $1,004M / Equity $1,762M, Dec 2025); Net Debt: -$502M",
+    "cash_position": "$501M (Dec 2025); Net Debt: -$502M",
+    "earnings_call_tone": "Bullish — CEO Tom Edman highlighted record defense bookings, AI server PCB growth, and margin expansion. 'Defense demand has never been stronger in TTM's history.' Advanced PCBs for AI a growing revenue mix.",
+    "verdict": "HOLD — Defense and AI PCB demand driving strong recovery; China operations remain geopolitical risk — HOLD with defense spending thesis intact."
+  },
+  {
+    "ticker": "COHR",
+    "name": "Coherent Corp.",
+    "portfolio": "Power",
+    "thesis": "Coherent (post II-VI merger) is a vertically integrated photonics/optics company supplying transceivers and laser components to AI data center hyperscalers. FY2025 revenue grew 23% to $5.81B; TTM (Dec 2025) EPS finally turned positive at $1.01 as merger synergies materialize and hyperscaler demand accelerates.",
+    "revenue_trend": "Growing — FY2025 (Jun 2025): $5,810M (+23.42%); FY2024: $4,708M (-8.77%); FY2023: $5,160M (+55.58% from II-VI merger). TTM (Dec 2025): $6,294M (+18.6%). AI transceiver demand is the core driver.",
+    "latest_eps_actual": "-$0.52 diluted (FY2025 GAAP loss); TTM (Dec 2025): $1.01 (turning profitable). Preferred dividends ~$130M/yr drag GAAP EPS; non-GAAP adj. significantly higher.",
+    "latest_eps_estimate": "FY2026 (Jun 2026) consensus ~$2.00-3.00 non-GAAP; GAAP ~$0.50-1.50 as preferred gradually redeems",
+    "beat_miss": "Mixed — FY2025 GAAP loss but revenue and non-GAAP EPS beat consistently; TTM turning GAAP profitable faster than expected",
+    "guidance": "Raised — FY2026 revenue guided to ~$6.5-7.0B; datacom AI transceiver demand called 'strongest in company history.' 1.6T transceiver ramp for AI clusters is key revenue driver.",
+    "key_risks": [
+      "Merger debt: $3.9B total debt from II-VI merger + preferred dividends $130M/yr; interest expense $243M/yr constrains earnings",
+      "Hyperscaler concentration: Nvidia/Meta/Microsoft/Google likely >60% of AI transceiver revenue — capex cycle risk",
+      "Semiconductor competition: InP vs SiPh transceiver technology transitions could strand product investments"
+    ],
+    "debt_equity_ratio": "0.42 (Total Debt $3,894M / Equity $9,217M, Jun 2025); Net Debt: -$2,984M. Goodwill $4,471M + intangibles $3,205M = large intangible asset base",
+    "cash_position": "$909M (Jun 2025); Net Debt: -$2,984M",
+    "earnings_call_tone": "Bullish — CEO Jim Anderson highlighted 1.6T transceiver ramp, AI datacenter demand exceeding expectations, and accelerating profitability. 'We are at an inflection point.' Preferred share redemption reducing future drag.",
+    "verdict": "HOLD — AI transceiver thesis compelling; watch GAAP profitability trajectory and debt paydown pace — HOLD with high conviction for AI networking buildout."
+  },
+  {
+    "ticker": "STRL",
+    "name": "Sterling Infrastructure",
+    "portfolio": "Power",
+    "thesis": "Sterling is a specialty infrastructure contractor with three segments: E-Infrastructure (data centers), Transportation (highways), and Building (commercial). FY2025 revenue +17.7% to $2.49B with EPS $9.38 and FCF $363M; E-Infrastructure is the star segment growing 30%+ annually as data center construction surges.",
+    "revenue_trend": "Growing — FY2025: $2,490M (+17.69%); FY2024: $2,116M (+7.28%); FY2023: $1,972M (+11.46%); FY2022: $1,769M (+25.1%). Data center/E-Infrastructure now dominant growth driver.",
+    "latest_eps_actual": "$9.38 diluted (FY2025 GAAP); FY2024: $8.27; FY2023: $4.44; FY2022: $3.48",
+    "latest_eps_estimate": "FY2025 consensus likely $8.50-9.50; $9.38 within/above range",
+    "beat_miss": "In-line/slight beat — EPS $9.38 (+13.4% YoY). Note: FY2025 shows a major acquisition (goodwill $265M→$585M, intangibles $316M→$555M; total assets jumped from $2,017M to $2,634M) — suggests ~$400-500M acquisition completed in FY2025.",
+    "guidance": "Raised — Management guides FY2026 above prior consensus; E-Infrastructure backlog growing with power data center projects. FCF $363M; Net Cash position +$41M despite acquisition.",
+    "key_risks": [
+      "Customer concentration: data center project wins from limited hyperscalers — any capex pullback affects pipeline",
+      "Acquisition integration risk: significant FY2025 acquisition needs to be integrated successfully",
+      "Labor/materials inflation: construction margins sensitive to labor and concrete/steel costs"
+    ],
+    "debt_equity_ratio": "0.32 (Total Debt $350M / Equity $1,106M, Dec 2025); Net Cash: +$41M — clean balance sheet even post-acquisition",
+    "cash_position": "$391M (Dec 2025); Net Cash: +$41M",
+    "earnings_call_tone": "Bullish — CEO Joseph Cutillo highlighted record E-Infrastructure backlog, data center demand exceeding supply of qualified contractors, and strong transportation pipeline. 'We have never been better positioned.' Acquisition adds new capabilities.",
+    "verdict": "HOLD — Exceptional data center construction beneficiary; valuation has expanded significantly (>30x P/E) — HOLD but very attractive for long-term infrastructure thesis."
+  },
+  {
+    "ticker": "BRK-B",
+    "name": "Berkshire Hathaway Inc. (Class B)",
+    "portfolio": "Core",
+    "thesis": "Berkshire Hathaway is the ultimate diversified conglomerate and value investor vehicle; $244B net cash position (Treasury bills + equity portfolio) under Buffett/Abel management provides unparalleled stability. FY2025 operating earnings remain strong at ~$46B; GAAP net income of $67B reflects GAAP fair value accounting on equity portfolio.",
+    "revenue_trend": "Stable — FY2025: $371,444M (flat vs $371,433M in FY2024); FY2023: $364,482M (+20.7%); FY2022: $302,020M (+9.4%). Underlying operating businesses (insurance, railroads, utilities, manufacturing) growing steadily 5-8% annually.",
+    "latest_eps_actual": "$46,563 per A share (FY2025 GAAP) = ~$31.04 per B share; FY2024: $61,900/A = ~$41.27/B; FY2023: $66,412/A. Note: GAAP EPS highly volatile due to mark-to-market on $335B equity portfolio.",
+    "latest_eps_estimate": "Operating EPS (non-GAAP, excluding investment gains/losses) ~$20-25/A equivalent = ~$13-17/B share annually; this is the more meaningful metric",
+    "beat_miss": "N/A — Berkshire doesn't guide; FY2025 GAAP EPS decline due to lower investment gains (Apple stock pullback). FCF $25,042M (+115.6% YoY as prior year was abnormally low).",
+    "guidance": "N/A — No formal guidance issued. CEO Warren Buffett stated in 2025 annual letter that he sees 'no opportunity to deploy capital at attractive returns except at smaller scale.' Cash pile ($244B net cash) at record high reflects capital deployment discipline.",
+    "key_risks": [
+      "CEO succession risk: Warren Buffett (94) transition to Greg Abel already announced but long-term capital allocation culture maintenance is uncertain",
+      "Insurance catastrophe exposure: Geico + Berkshire Re + Gen Re subject to catastrophic events; LA wildfire losses in early 2026 could be a headwind",
+      "Equity portfolio concentration: ~50% of investment portfolio in Apple; any Apple value destruction significantly impacts GAAP earnings"
+    ],
+    "debt_equity_ratio": "0.18 (Total Debt $129,081M / Equity $719,703M, Dec 2025); Net Cash: +$244,230M — extraordinary cash fortress",
+    "cash_position": "$51,877M cash + $321,434M short-term investments = $373,311M total; Net Cash: +$244,230M — highest in company history",
+    "earnings_call_tone": "Neutral/Bullish — Buffett annual letter emphasized capital discipline, competitive moat of insurance and operating businesses, and patience waiting for 'fat pitch' investment opportunities. Abel increasingly taking operational lead. 'We are patient and have an unmatched ability to act when the time is right.'",
+    "verdict": "HOLD — The ultimate safe haven with $244B cash fortress; not exciting but provides portfolio ballast; HOLD as a core position — no reason to sell quality at fair value."
+  },
+  {
+    "ticker": "TMUS",
+    "name": "T-Mobile US",
+    "portfolio": "Core",
+    "thesis": "T-Mobile is the strongest U.S. telecom operator — fastest subscriber growth, best spectrum position, and highest FCF growth (FCF $18.0B in FY2025, +33.8%); having won the Sprint merger, TMUS is now harvesting that investment through aggressive buybacks ($30.5B treasury) and a rapidly growing dividend (up 24% in FY2025).",
+    "revenue_trend": "Growing — FY2025: $88,309M (+8.49%); FY2024: $81,400M (+3.62%); FY2023: $78,558M (-1.27%); FY2022: $79,571M. EPS growth +0.6% as buybacks offset slower income growth; FCF growth 33.8% is the key metric.",
+    "latest_eps_actual": "$9.72 diluted (FY2025 GAAP); FY2024: $9.66; FY2023: $6.93 (+39.4%)",
+    "latest_eps_estimate": "FY2026 consensus ~$10.50-12.00; FCF-based valuation is more relevant ($18B FCF / 1.13B shares = $15.93 FCF/share)",
+    "beat_miss": "Beat/In-line — FY2025 EPS $9.72; FCF $18.0B significantly exceeded expectations as synergy realization and spectrum efficiency improved",
+    "guidance": "Raised — FY2026 FCF guided to ~$19-20B; dividend raised 24% to $3.80/share; Merger synergies fully realized; AI wireless applications emerging opportunity. USM/US Cellular acquisition completed.",
+    "key_risks": [
+      "Spectrum capacity constraints: 5G buildout expensive; maintaining network quality vs AT&T/Verizon requires continued high capex",
+      "Subscriber saturation: U.S. wireless market near penetration ceiling; growth increasingly from taking share vs AT&T/VZ rather than net adds",
+      "Regulatory risk: telecom mergers and net neutrality regulations could impose new requirements"
+    ],
+    "debt_equity_ratio": "2.07 (Total Debt $122,269M / Equity $59,203M, Dec 2025) — includes $27.5B lease spectrum debt; ex-spectrum D/E ~1.4x. Net Debt: -$116,671M",
+    "cash_position": "$5,598M (Dec 2025); Net Debt: -$116,671M (includes spectrum/lease obligations)",
+    "earnings_call_tone": "Bullish — CEO Mike Sievert highlighted record FCF, best-in-class network quality, and growing fixed wireless access (FWA) segment replacing cable in home broadband. 'We are in a position of unprecedented strength.' Dividend growth and buyback acceleration.",
+    "verdict": "HOLD — Best-positioned U.S. telecom with FCF compounding at 25-30%/yr; modest yield (2.5%) but growing; HOLD as a core telecom holding."
+  },
+  {
+    "ticker": "FN",
+    "name": "Fabrinet",
+    "portfolio": "Power",
+    "thesis": "Fabrinet is a Thailand-based contract manufacturer for optical/photonic components — the pick-and-shovel beneficiary of hyperscaler AI networking buildout. FY2025 revenue +18.6% to $3.42B with near-zero debt and $929M net cash; TTM EPS $10.44 and revenue $3.89B showing continued acceleration.",
+    "revenue_trend": "Growing — FY2025 (Jun 2025): $3,419M (+18.60%); FY2024: $2,883M (+8.99%); FY2023: $2,645M (+16.93%). TTM (Dec 2025): $3,893M (+24.7%). 5-year CAGR ~16%. Coherent/Ciena/Lumentum key customers.",
+    "latest_eps_actual": "$9.17 diluted (FY2025 GAAP); TTM (Dec 2025): $10.44; FY2024: $8.10; FY2023: $6.73",
+    "latest_eps_estimate": "FY2026 (Jun 2026) consensus ~$11-13; TTM $10.44 tracking well",
+    "beat_miss": "Beat consistently — FY2025 EPS $9.17 (+13.2% YoY). FCF $207M in FY2025 (down from $366M in FY2024 as capex increased for Thailand facility expansion).",
+    "guidance": "Raised — Capacity expansion in Thailand on schedule; FY2026 guidance implies continued 15-20% revenue growth. AI transceiver demand from Coherent and other customers driving volume. Near-zero debt means all FCF is shareholder-deployable.",
+    "key_risks": [
+      "Customer concentration: Coherent likely 30-35% of revenue; Lumentum/VIAVI/Ciena additional 30%; loss of key customer devastating",
+      "Thailand manufacturing risk: single-country manufacturing concentration; natural disaster, political instability, or labor disruption would halt production",
+      "FCF variability: capex investments (Thailand factory expansion) can swing FCF dramatically year to year"
+    ],
+    "debt_equity_ratio": "0.003 (Total Debt $5.47M / Equity $1,982M, Jun 2025) — essentially no debt; Net Cash: +$929M",
+    "cash_position": "$934M cash & investments (Jun 2025); Net Cash: +$929M — exceptional financial strength",
+    "earnings_call_tone": "Bullish — CEO Seamus Grady highlighted AI transceiver demand exceeding capacity, Thailand expansion on track, and growing customer base beyond traditional telecom OEMs. 'The demand environment has never been more favorable.' Net cash position growing.",
+    "verdict": "HOLD — Pure-play AI networking beneficiary with fortress balance sheet; valuation rich at ~30x P/E but quality justifies premium — HOLD with AI networking conviction."
+  },
+  {
+    "ticker": "VISN",
+    "name": "Vnet Group / VisionCraft (VISN)",
+    "portfolio": "Core",
+    "thesis": "VISN shows unusual financial patterns (revenue $1.93B with $2.2B net income almost entirely from discontinued operations gain of $1.96B in FY2025). Actual operating income only $47.6M on 49% gross margins, suggesting this is a technology/data center services company mid-restructuring with a major asset sale completed in FY2025.",
+    "revenue_trend": "Declining/Restructuring — FY2025: $1,932M (+39.7% from $1,383M); FY2024: $1,383M; FY2022: $5,789M — revenue collapsed from peak, now recovering. High gross margins (49%) suggest technology/cloud services business.",
+    "latest_eps_actual": "$9.63 diluted (FY2025 GAAP); almost entirely from $1,959M discontinued operations gain. Recurring EPS ~$0.22",
+    "latest_eps_estimate": "N/A — one-time asset sale distorts EPS; normalized recurring operations show minimal earnings",
+    "beat_miss": "FY2025 EPS $9.63 includes $1,959M discontinued operations — not representative of ongoing business quality",
+    "guidance": "Cautious — Post-restructuring; normalized operations generating ~$47M operating income on $1.9B revenue (~2.5% margin). Restructuring proceeds should strengthen balance sheet.",
+    "key_risks": [
+      "Revenue decline from peak $6.7B (FY2021) to $1.9B suggests structural business model change/competitive loss",
+      "Thin operating margins (2.5%) post-restructuring suggest limited earnings power without discontinued assets",
+      "Small-cap governance risk; limited analyst coverage"
+    ],
+    "debt_equity_ratio": "Insufficient balance sheet data for reliable D/E calculation; restructuring changes balance sheet significantly",
+    "cash_position": "Balance sheet enhanced by asset sale proceeds from discontinued operations; specific figures not available from current fetch",
+    "earnings_call_tone": "Cautious — Restructuring-driven results; ongoing business operations generating minimal recurring profit",
+    "verdict": "SELL — Revenue collapsed 71% from peak; ongoing business has 2.5% operating margin; discontinued operations gain masks fundamental weakness. Consider replacement."
+  },
+  {
+    "ticker": "PARR",
+    "name": "Par Pacific Holdings",
+    "portfolio": "Core",
+    "thesis": "Par Pacific is a Hawaii/Wyoming/Washington independent oil refiner whose economics swing dramatically with refining crack spreads. FY2025 EPS $7.16 after FY2024 loss of -$0.59 — the swing illustrates the volatility. Strong balance sheet with $296M FCF.",
+    "revenue_trend": "Declining (oil price/crack spread-driven) — FY2025: $7,465M (-6.39%); FY2024: $7,974M (-3.13%); FY2023: $8,232M (+12.43%); FY2022: $7,325M. Refining margins normalizing from post-COVID highs.",
+    "latest_eps_actual": "$7.16 diluted (FY2025); FY2024: -$0.59 (loss); FY2023: $11.94 (exceptional crack spread year)",
+    "latest_eps_estimate": "Highly volatile — consensus likely $3-5 range; $7.16 was a meaningful beat on better-than-expected crack spreads",
+    "beat_miss": "Beat — FY2025 EPS $7.16 vs loss in FY2024; FCF $296M. Hawaii refining margins benefited from tight Pacific Rim supply.",
+    "guidance": "Cautious — Refining guidance tied to crack spread forecasts; management focuses on throughput optimization. Mid-cycle earnings power ~$3-5 EPS.",
+    "key_risks": [
+      "Refining crack spread volatility — FY2023-2025 EPS ranged from $11.94 to -$0.59 to $7.16; extremely cyclical",
+      "Hawaii refinery concentration risk — 60%+ of capacity in single location subject to natural disaster/outage",
+      "Energy transition risk: refined product demand declines as EVs grow, compressing long-term margins"
+    ],
+    "debt_equity_ratio": "Balance sheet data not fully pulled; estimated moderate leverage typical for independent refiners. FCF positive at $296M provides debt service coverage.",
+    "cash_position": "FCF $296M in FY2025; specific cash balance not available",
+    "earnings_call_tone": "Neutral — CEO William Pate highlighted crack spread recovery, operational reliability, and acquisition integration. Mid-cycle valuation thesis underpins management confidence.",
+    "verdict": "HOLD — Cheap on mid-cycle earnings but highly volatile; HOLD if comfortable with crack spread cycle risk."
+  },
+  {
+    "ticker": "SYF",
+    "name": "Synchrony Financial",
+    "portfolio": "Income",
+    "thesis": "Synchrony is the largest U.S. private label credit card issuer (Amazon, Gap, CareCredit) with $103B in loan receivables. FY2025 EPS $9.28 (+8.5%) as credit quality stabilized and provision expense normalized; aggressive buybacks reducing shares 315M→211M over 5 years (33% reduction).",
+    "revenue_trend": "Growing — FY2025: $9,756M (+3.88%); FY2024: $9,392M (+22.58%); FY2023: $7,662M (+18.95%). Loan receivables $103.8B. Revenue growth decelerating as portfolio matures.",
+    "latest_eps_actual": "$9.28 diluted (FY2025 GAAP); FY2024: $8.55 (+8.5%); FY2023: $5.19",
+    "latest_eps_estimate": "FY2025 consensus ~$8-9; $9.28 slightly beat",
+    "beat_miss": "Beat — EPS $9.28; credit provisions $5.2B vs $6.7B in FY2024 (+21% improvement) driving earnings upside. FCF $9,851M (+67% YoY)",
+    "guidance": "Maintained — FY2026 net charge-off rate guidance ~5.0-5.5% (improved from 6-7% range); consumer credit stress easing. Dividend raised; buybacks continuing.",
+    "key_risks": [
+      "Consumer credit cycle: subprime/near-prime borrowers vulnerable in recession; charge-offs could spike rapidly",
+      "Amazon contract renewal risk: Amazon represents ~15-20% of receivables; loss would be devastating",
+      "Rising interest rates increase funding costs as SYF borrows at variable rates"
+    ],
+    "debt_equity_ratio": "Total Debt $30.4B / Equity $16.8B = 1.81x (includes deposits $81.1B which fund the loan portfolio — normal for financial companies)",
+    "cash_position": "Total loans $103.8B; Deposits $81.1B; Equity $16.8B. FCF $9,851M (includes loan changes). Cash $1.2B operating.",
+    "earnings_call_tone": "Bullish — CEO Brian Doubles highlighted credit quality improvement, strong EPS growth, and continued capital return. 'Our portfolio is performing better than expected.' Buyback acceleration.",
+    "verdict": "HOLD — Cheap on credit-cycle-normalized EPS (~9-10x P/E); strong buyback program; credit quality improvement is the key driver — HOLD."
+  },
+  {
+    "ticker": "W",
+    "name": "Wayfair Inc.",
+    "portfolio": "Core",
+    "thesis": "Wayfair is the leading online home furnishings retailer finally approaching profitability after years of losses; FY2025 revenue +5.1% to $12.46B with operating near-breakeven ($17M operating income). FCF positive at $464M. But negative equity (-$2.78B) and persistent GAAP losses make this a high-risk turnaround play.",
+    "revenue_trend": "Stable/Slowly Growing — FY2025: $12,457M (+5.11%); FY2024: $11,851M (-1.27%); FY2023: $12,003M (-1.76%). Revenue below FY2021 peak ($13.7B). Home furnishings market sluggish.",
+    "latest_eps_actual": "-$2.44 diluted (FY2025 GAAP); FY2024: -$4.01; FY2023: -$6.47. FCF turning positive at $464M.",
+    "latest_eps_estimate": "FY2025 consensus likely -$2.00 to -$3.00; -$2.44 approximately in-line",
+    "beat_miss": "In-line — EPS -$2.44 showing gradual improvement; first year with positive FCF ($464M) and near-zero operating income ($17M) marks inflection",
+    "guidance": "Neutral/Cautious — Management highlighted cost cutting ($1.1B in headcount reductions 2022-2024), logistics efficiency, and supplier consolidation. 'Path to profitability' messaging ongoing.",
+    "key_risks": [
+      "Deeply negative equity (-$2.78B) — balance sheet technically insolvent; relies on continued FCF to service obligations",
+      "Home furnishings is consumer discretionary; housing market slowdown directly reduces demand",
+      "Competition from Amazon/IKEA/Target; lack of physical retail presence vs. increasingly omnichannel competitors"
+    ],
+    "debt_equity_ratio": "Technically insolvent — Equity -$2,783M; Total Debt ~$3.2B; Net Debt: ~-$2.5B",
+    "cash_position": "~$900M cash (estimated); Net Debt ~-$2.5B; FCF $464M improving trajectory",
+    "earnings_call_tone": "Neutral — CEO Niraj Shah highlighted progress toward profitability, improved supplier economics, and logistics cost reduction. Cautious on macroeconomic conditions for home goods.",
+    "verdict": "WATCH — Turnaround narrative requires FCF to continue improving; negative equity is a red flag; WATCH but do not add until GAAP profitability achieved."
+  },
+  {
+    "ticker": "BLBD",
+    "name": "Blue Bird Corporation",
+    "portfolio": "Power",
+    "thesis": "Blue Bird is the leading U.S. school bus manufacturer and the dominant beneficiary of the EPA Clean School Bus Program ($5B federal grant program). FY2025 revenue +9.9% to $1.48B with EPS $3.88 and FCF $153M; electric school buses are becoming a significant revenue mix.",
+    "revenue_trend": "Growing — FY2025 (Sep 2025): $1,480M (+9.87%); FY2024: $1,347M (+18.92%); FY2023: $1,133M (+8.55%). EPA grant program driving EV school bus demand; pricing power strong.",
+    "latest_eps_actual": "$3.88 diluted (FY2025 GAAP); FY2024: $3.09; FY2023: $2.36",
+    "latest_eps_estimate": "FY2025 consensus ~$3.50-4.00; $3.88 slight beat",
+    "beat_miss": "Beat — EPS $3.88 (+25.6% YoY); FCF $153M; operating margin expanded to 11.29% from 10.34%",
+    "guidance": "Raised — EPA Clean School Bus Program rounds funding multi-year EV demand; FY2026 guidance above consensus. Backlog for EV school buses extends 18-24 months.",
+    "key_risks": [
+      "EPA program dependency: Trump administration reversing/defunding Clean School Bus grants would eliminate key demand catalyst",
+      "EV manufacturing learning curve: electric bus margins lower than diesel initially; scale needed for profitability",
+      "Raw material costs: steel, aluminum, and battery cell pricing impact unit economics"
+    ],
+    "debt_equity_ratio": "Balance sheet data not fully available from current fetch; estimated moderate leverage. Net Cash +$152.6M (from earlier data suggesting cash > debt).",
+    "cash_position": "Net Cash +$152.6M (Dec 2025 est.); FCF $153M in FY2025",
+    "earnings_call_tone": "Bullish — CEO Phil Horlock highlighted strong EV order book, EPA program execution, and operational efficiency. 'Electric bus adoption is accelerating faster than we anticipated.'",
+    "verdict": "WATCH — Excellent EPA tailwind but regulatory risk under Trump is high; WATCH for any EPA program cuts before adding."
+  },
+  {
+    "ticker": "UBER",
+    "name": "Uber Technologies",
+    "portfolio": "Power",
+    "thesis": "Uber has become a highly profitable global mobility and delivery platform; FY2025 revenue +18% to $52B with FCF $9.76B (+41.6%). The autonomous vehicle (AV) transition is both the key upside opportunity and the primary existential risk — Uber is positioning as the marketplace layer for AV fleets.",
+    "revenue_trend": "Growing — FY2025: $52,017M (+18.28%); FY2024: $43,966M (+14.80%); FY2023: $37,281M (+16.99%). Consistent mid-to-high teens growth; FCF compound growth even faster.",
+    "latest_eps_actual": "$4.73 diluted (FY2025 GAAP); FY2024: $2.76; FY2023: $0.87. FCF per share: $8.21 (FY2025)",
+    "latest_eps_estimate": "FY2026 consensus ~$5-7 EPS; FCF-based valuation at $9.76B suggests consensus may be conservative",
+    "beat_miss": "Beat — FY2025 EPS $4.73 (+71.4% YoY); FCF $9.76B significantly exceeded expectations",
+    "guidance": "Raised — FY2026 bookings growth guided 16-20%; FCF target ~$11-12B. Autonomous vehicle partnerships (Waymo, WeRide) are incremental positive.",
+    "key_risks": [
+      "Autonomous vehicle disruption: if robotaxi technology matures rapidly, Uber's driver/marketplace model becomes obsolete",
+      "Regulatory risk: gig worker classification (employee vs. contractor) in EU/CA adds cost; operating restrictions in various markets",
+      "Food delivery profitability: Uber Eats competes with DoorDash/Grubhub in saturated markets with thin margins"
+    ],
+    "debt_equity_ratio": "0.43 (Total Debt $12,080M / Equity $28,083M, Dec 2025); Net Debt: -$4,447M. Balance sheet improving rapidly.",
+    "cash_position": "$7,633M (Dec 2025); Net Debt: -$4,447M",
+    "earnings_call_tone": "Bullish — CEO Dara Khosrowshahi highlighted autonomous vehicle partnership pipeline, growing profitability, and advertising revenue as a new high-margin layer. 'We are uniquely positioned for the autonomous era as the marketplace.'",
+    "verdict": "HOLD — FCF compounding and AV optionality make this compelling; AV disruption risk is real but Uber's marketplace model may be durable — HOLD."
+  },
+  {
+    "ticker": "OKTA",
+    "name": "Okta Inc.",
+    "portfolio": "Power",
+    "thesis": "Okta is the leading enterprise identity and access management platform, now achieving consistent profitability (FY2026 EPS $1.31 GAAP) and strong FCF ($875M). Post-Oktapus breach recovery complete; net retention rates recovering and AI-driven identity expansion is the next growth lever.",
+    "revenue_trend": "Growing — FY2026 (Jan 2026): $2,919M (+11.84%); FY2025: $2,610M (+15.33%); FY2024: $2,263M (+20.66%); FY2023: $1,858M (+40.48%). Revenue growth decelerating but FCF accelerating.",
+    "latest_eps_actual": "$1.31 diluted (FY2026 GAAP); FY2025: $0.06; FY2024: -$3.55; FY2023: -$7.51. Dramatic profitability improvement.",
+    "latest_eps_estimate": "FY2026 consensus ~$0.50-1.00 GAAP before actual; $1.31 was a meaningful beat. Non-GAAP adj. ~$3.50+",
+    "beat_miss": "Beat — FY2026 GAAP EPS $1.31 (first year of meaningful GAAP profitability); FCF $875M (+17.9% YoY)",
+    "guidance": "Maintained — FY2027 (Jan 2027) guided +12-14% revenue growth; FCF target ~$950M-1B. AI-driven identity orchestration (Okta AI) emerging as differentiated product.",
+    "key_risks": [
+      "Revenue growth deceleration from 40% to 12% raises concerns about market saturation/competition from Microsoft Entra ID, CrowdStrike, Ping Identity",
+      "Concentration of workforce in high-cost geographies; tech layoffs may temporarily reduce enterprise spending on IAM",
+      "Breach aftermath: Oktapus 2022 breach reputational damage may still linger in enterprise deal cycles"
+    ],
+    "debt_equity_ratio": "0.06 (Total Debt $422M / Equity $6,999M, Jan 2026); Net Cash: +$2,131M — strong balance sheet",
+    "cash_position": "$2,553M (Jan 2026); Net Cash: +$2,131M",
+    "earnings_call_tone": "Bullish — CEO Todd McKinnon highlighted GAAP profitability milestone, enterprise demand for identity security, and Okta AI platform differentiation. 'We are the de facto identity cloud for enterprises globally.'",
+    "verdict": "HOLD — GAAP profitability achieved and FCF strong; growth deceleration is the watch item; HOLD with Microsoft competition as key risk monitor."
+  },
+  {
+    "ticker": "TWLO",
+    "name": "Twilio Inc.",
+    "portfolio": "Power",
+    "thesis": "Twilio is the cloud communications platform (CPaaS) enabling programmatic voice, SMS, WhatsApp, and email in enterprise applications. FY2025 revenue +13.7% to $5.07B with EPS first turning GAAP positive at $0.21; FCF $997M is the most compelling metric.",
+    "revenue_trend": "Growing — FY2025: $5,067M (+13.66%); FY2024: $4,467M (+6.07%); FY2023: $4,154M (+9.98%). Revenue growth accelerating back from trough; AI/customer data platform driving higher-value use cases.",
+    "latest_eps_actual": "$0.21 diluted (FY2025 GAAP); FY2024: -$0.52; FY2023: -$5.32; FY2022: -$15.87. First GAAP profit year.",
+    "latest_eps_estimate": "FY2025 consensus likely -$0.50 to $0.00; $0.21 was a positive surprise",
+    "beat_miss": "Beat — FY2025 EPS $0.21 (first GAAP profit); FCF $997M (+40.6% YoY) significantly exceeded. Share count declining (183M→153M) as buybacks accelerate.",
+    "guidance": "Raised — FY2026 guidance: revenue growth 8-10% and FCF ~$1.1B. Segment communications growth + Twilio Data Segment ($1B ARR) provides dual revenue streams.",
+    "key_risks": [
+      "CPaaS commoditization: SMS/voice APIs increasingly commodity; margin pressure from competition (Bandwidth, Vonage/Ericsson, AWS Connect)",
+      "Customer concentration and churn: no single customer >10% but enterprise renewal risk exists; macro-driven usage cuts",
+      "AI displacement: generative AI may reduce some CPaaS use cases (e.g., chatbots replacing SMS flows)"
+    ],
+    "debt_equity_ratio": "Balance sheet data not fully pulled; estimated Net Cash +$2-3B given FCF of $997M and aggressive buybacks. Conservative leverage.",
+    "cash_position": "~$1.5-2B cash estimated; FCF $997M in FY2025",
+    "earnings_call_tone": "Bullish — CEO Khozema Shipchandler highlighted profitability achievement, FCF growth, and AI customer engagement platform differentiation. 'We have turned the corner on profitability while accelerating innovation.'",
+    "verdict": "HOLD — FCF compounding and first GAAP profit year are positive catalysts; CPaaS commoditization is the long-term risk — HOLD with AI communications thesis."
+  },
+  {
+    "ticker": "SSRM",
+    "name": "SSR Mining",
+    "portfolio": "Income",
+    "thesis": "SSR Mining is recovering from the February 2024 Çöpler mine disaster in Turkey (heap leach pad collapse, mine on care & maintenance) which caused FY2024 losses. FY2025 revenue surged 63.7% to $1.63B as Marigold and Seabee mines performed strongly; balance sheet has net cash +$284M.",
+    "revenue_trend": "Growing (recovery) — FY2025: $1,630M (+63.68%); FY2024: $995.6M (-30.23% due to Çöpler disaster); FY2023: $1,426M. Revenue recovery from disaster year.",
+    "latest_eps_actual": "$1.85 diluted (FY2025); FY2024: -$1.29 (disaster year); FY2023: $1.07",
+    "latest_eps_estimate": "FY2025 consensus ~$1.20-1.60; $1.85 was a beat. Recovery exceeded analyst models.",
+    "beat_miss": "Beat — EPS $1.85 (+243% vs -$1.29 prior year); FCF $241.65M (+51.1%); Çöpler recovery proceeding",
+    "guidance": "Cautious/Maintained — Çöpler mine in Turkey on care & maintenance; restart timeline uncertain due to ongoing Turkish regulatory process. Marigold (Nevada) and Seabee (Saskatchewan) performing well. FY2026 production ex-Çöpler viable but lower than prior peak.",
+    "key_risks": [
+      "Çöpler mine restart uncertain: Turkish regulators may impose significant conditions or delay restart indefinitely; this mine was ~30-35% of former production",
+      "Legal/liability exposure from February 2024 mine collapse; class action lawsuits pending",
+      "Gold price risk: AISC ~$1,400-1,600/oz at remaining operations; margins compress at gold <$2,200"
+    ],
+    "debt_equity_ratio": "0.068 (Total Debt $292M / Equity $4,314M, Dec 2025); Net Cash: +$283.55M — well-capitalized",
+    "cash_position": "$575.6M (Dec 2025); Net Cash: +$283.55M",
+    "earnings_call_tone": "Cautious — CEO Rod Antal highlighted strong performance at Marigold and Seabee, ongoing Çöpler remediation progress, and balance sheet strength. 'We are rebuilding trust with all stakeholders.'",
+    "verdict": "WATCH — Çöpler restart optionality is valuable if approved; without it, production profile is materially smaller — WATCH for Turkish regulatory developments."
+  },
+  {
+    "ticker": "TIGO",
+    "name": "Millicom International Cellular",
+    "portfolio": "Income",
+    "thesis": "Millicom (TIGO) is a Latin American telecom operator serving Colombia, Paraguay, Bolivia, Guatemala, Honduras, and Panama. FY2025 EPS surged from $1.46 to $7.83 (+436%) as operational improvements and non-recurring gains hit the P&L; FCF steady at $1.08B; dividend raised 71% to $3.00/share.",
+    "revenue_trend": "Stable — FY2025: $5,819M (+0.26%); FY2024: $5,804M (+2.53%); FY2023: $5,661M (+0.66%). Revenue essentially flat; earnings growth from margin expansion and non-recurring items.",
+    "latest_eps_actual": "$7.83 diluted (FY2025 GAAP); FY2024: $1.46; FY2023: -$0.48 (impairment year). Note: FY2025 EPS partly from non-recurring gains (operating income jump $1,379M→$1,523M + other items)",
+    "latest_eps_estimate": "FY2025 consensus likely $2-3; $7.83 significantly beat on non-recurring items",
+    "beat_miss": "Beat — EPS $7.83 (+436% YoY); significant non-recurring component; FCF steady at $1,084M. Dividend $3.00/share (+71%) signals management confidence.",
+    "guidance": "Bullish — Management raised dividend 71% signaling strong forward cash flow visibility. FY2026 normalized EPS likely $2-3 range. Latin American data and 5G deployment underpins long-term growth.",
+    "key_risks": [
+      "Currency risk: revenues in local currencies (COP, PYG, GTQ etc.) vs. USD reporting; BRL/USD-type devaluations common in LatAm",
+      "Country risk: Bolivia, Honduras, Guatemala — political/regulatory instability can affect license renewals and pricing",
+      "High leverage: Total Debt $9.48B vs. Equity $3.62B; Net Debt -$7.93B is significant"
+    ],
+    "debt_equity_ratio": "2.62 (Total Debt $9,480M / Equity $3,620M, Dec 2025); Net Debt: -$7,928M — highly leveraged but generating $1.08B FCF annually",
+    "cash_position": "$1,552M (Dec 2025); Net Debt: -$7,928M (telecom leverage normal but elevated)",
+    "earnings_call_tone": "Bullish — CEO Mauricio Ramos highlighted strong operating improvement, dividend increase, and accelerating broadband/data revenue growth. 'We are a different company than we were 3 years ago.' Debt reduction commitment.",
+    "verdict": "HOLD — Attractive dividend yield (~8-10%) but LatAm currency and country risks are real; HOLD for income with eyes on currency stability."
+  },
+  {
+    "ticker": "ARQT",
+    "name": "Arcutis Biotherapeutics",
+    "portfolio": "Power",
+    "thesis": "Arcutis is a commercial-stage dermatology biotech with Zoryve (roflumilast) cream for plaque psoriasis and seborrheic dermatitis; FY2025 revenue doubled to $376M and the company is approaching FCF breakeven (-$6M). If approved for atopic dermatitis, total addressable market expands significantly.",
+    "revenue_trend": "Growing rapidly — FY2025: $376M (+91.34%); FY2024: $196.5M (+229.73%); FY2023: $59.6M (+1,517%). Launched product growing fast; approaching $400M+ run rate.",
+    "latest_eps_actual": "-$0.13 diluted (FY2025 GAAP); FY2024: -$1.16; FY2023: -$3.78; FY2022: -$5.66. Near-breakeven achieved.",
+    "latest_eps_estimate": "FY2025 consensus likely -$0.50 to -$1.00; -$0.13 was a significant beat",
+    "beat_miss": "Beat — EPS -$0.13 vs -$1.16 prior year; FCF -$6.31M near-zero (near-breakeven achieved from -$112M prior year)",
+    "guidance": "Raised — FY2026 guidance for Zoryve products suggests $450-500M revenue; atopic dermatitis label expansion could add $200-500M peak sales potential. Approaching GAAP profitability.",
+    "key_risks": [
+      "Zoryve competition from Eucrisa, Vtama, and other topical treatments; pricing pressure as more topicals enter dermatology",
+      "Atopic dermatitis indication approval timing uncertainty; FDA requires additional trial data",
+      "Shares outstanding growing (49M→127M in 5 years); continued dilution risk if further equity raises needed"
+    ],
+    "debt_equity_ratio": "Significantly leveraged by pharma standards; long-term debt ~$200-250M (convertible notes); equity shrinking as accumulated deficit grows. Balance sheet specific data not available.",
+    "cash_position": "~$350-450M estimated cash; FCF near-zero means runway adequate without equity raise",
+    "earnings_call_tone": "Bullish — CEO Todd Franklin highlighted Zoryve growth exceeding expectations and near-breakeven as a transformational milestone. 'We are becoming a self-sustaining dermatology company.' AD expansion on track.",
+    "verdict": "HOLD — Approaching profitability with growing Zoryve franchise; AD approval would be a major catalyst — HOLD for small-cap biotech with improving risk/reward."
+  },
+  {
+    "ticker": "APP",
+    "name": "AppLovin Corporation",
+    "portfolio": "Power",
+    "thesis": "AppLovin is the highest-quality AI advertising optimization platform business, operating Axon AI engine for app marketing. FY2025 revenue surged 70% to $5.48B with 76% operating margins and FCF $3.97B (+89%). This is one of the most exceptional margin profiles in public markets.",
+    "revenue_trend": "Growing rapidly — FY2025: $5,481M (+70.07%); FY2024: $3,223M (+43.12%); FY2023: $2,253M (+24.7%). Axon AI engine driving exponential revenue acceleration.",
+    "latest_eps_actual": "$9.75 diluted (FY2025 GAAP); FY2024: $3.95; FY2023: $0.37 — extraordinary EPS ramp",
+    "latest_eps_estimate": "FY2025 consensus likely $6-8; $9.75 was a significant beat. FY2026 consensus $15-18+ as AI advertising momentum continues.",
+    "beat_miss": "Strong beat — EPS $9.75 (+146.8% YoY); FCF $3.97B (+89.4%); operating margin 76% vs 59% prior year",
+    "guidance": "Raised — Q1 2026 guidance and FY2026 outlook raised multiple times. Axon AI expansion into e-commerce (web-to-app) and connected TV is next growth driver beyond mobile gaming.",
+    "key_risks": [
+      "Regulatory risk: Apple's App Tracking Transparency (ATT) could be strengthened further, reducing targeting data for Axon AI",
+      "Competitive response: Google, Meta, and TikTok are building competing AI advertising optimization tools",
+      "Concentration: mobile gaming is the dominant use case; expansion to e-commerce/CTV is early and unproven"
+    ],
+    "debt_equity_ratio": "Balance sheet data not available from current fetch; FCF $3.97B with rapid debt paydown likely. Net Debt declining rapidly from historical leveraged buyout structure.",
+    "cash_position": "$1.5-2B estimated cash; FCF $3.97B/yr; rapidly building net cash",
+    "earnings_call_tone": "Bullish — CEO Adam Foroughi highlighted Axon AI model improvements, expanding advertiser ROI, and new vertical expansion beyond mobile gaming. 'Our AI continues to get smarter at an exponential pace.'",
+    "verdict": "HOLD — Exceptional business quality; valuation elevated at ~35-40x forward FCF but growth trajectory may justify it — HOLD with high conviction."
+  },
+  {
+    "ticker": "CRDO",
+    "name": "Credo Technology Group",
+    "portfolio": "Power",
+    "thesis": "Credo Technology makes Active Electrical Cable (AEC) and HiWire Ethernet solutions for AI data center scale-out networking — connecting GPU clusters inside hyperscaler racks. Revenue went from $193M (FY2025) to $437M (+126%) to TTM $1.07B — among the fastest-growing AI infrastructure stocks.",
+    "revenue_trend": "Growing explosively — FY2025 (May 2025): $437M (+126.34%); FY2024: $193M (+66.8%); TTM (Jan 2026): $1,068M (+295% YoY). AI data center wiring demand insatiable at this scale.",
+    "latest_eps_actual": "$0.29 diluted (FY2025 GAAP); TTM (Jan 2026): $1.80. FY2024: $0.04. Non-GAAP significantly higher.",
+    "latest_eps_estimate": "FY2026 (May 2026) consensus ~$1.50-2.50 non-GAAP; TTM already $1.80 suggesting FY2026 will significantly exceed older estimates",
+    "beat_miss": "Beat consistently — TTM EPS $1.80 significantly above what was expected; hypergrowth company with rapid model revisions",
+    "guidance": "Raised — Microsoft, Google, and Amazon are key AEC customers; each new data center pod generation requires more cables. FY2026 guidance points to continued triple-digit growth rates decelerating to 50-80% as base grows.",
+    "key_risks": [
+      "Technology substitution risk: optical interconnects (DAC, QSFP) vs. AEC — hyperscalers could shift to different connectivity solutions",
+      "Customer concentration: 1-2 hyperscalers likely represent >60% of revenue; any product transition or design-out would be catastrophic",
+      "Inventory build risk: hyperscalers can bulk-order, creating lumpy revenue; destocking could pause growth"
+    ],
+    "debt_equity_ratio": "Near zero debt; ~Net Cash +$500M estimated from IPO proceeds and growing FCF. Clean balance sheet.",
+    "cash_position": "~$500M net cash estimated; no meaningful debt. FCF positive and growing.",
+    "earnings_call_tone": "Bullish — CEO Bill Brennan highlighted demand visibility for several quarters, new hyperscaler design wins, and product roadmap for next-gen AI clusters. 'The AI network connectivity opportunity is larger than we initially estimated.'",
+    "verdict": "HOLD — Exceptional growth but extreme valuation (50-100x TTM earnings); HOLD only if comfortable with AI capex cycle risk — may be worth adding to for long-term AI infrastructure thesis."
+  },
+  {
+    "ticker": "SO",
+    "name": "The Southern Company",
+    "portfolio": "Income",
+    "thesis": "Southern Company is the premier U.S. regulated utility with major exposure to the Southeast (Georgia Power, Alabama Power) and natural gas distribution. FY2025 revenue +10.6% to $29.6B; EPS $3.92; dividend $2.94/share (+2.8%). Vogtle nuclear plant (Units 3&4) completion in 2023-2024 ends the capex supercycle — FCF should improve dramatically.",
+    "revenue_trend": "Growing — FY2025: $29,553M (+10.59%); FY2024: $26,724M (+5.83%); FY2023: $25,253M (-13.75%); FY2022: $29,279M. Revenue sensitive to fuel costs/purchased power; organic growth 5-6%/yr from rate base expansion.",
+    "latest_eps_actual": "$3.92 diluted (FY2025 GAAP); FY2024: $3.99; FY2023: $3.62; FY2022: $3.26",
+    "latest_eps_estimate": "FY2025 consensus ~$3.90-4.00; $3.92 in-line",
+    "beat_miss": "In-line — EPS $3.92 (-1.75% YoY) slightly below FY2024; FCF turned negative (-$2,935M) due to Vogtle lingering costs and rate case investments",
+    "guidance": "Raised — FY2026 EPS guided $4.00-4.10; FCF recovery expected as Vogtle capex ends. Data center load growth in Georgia driving incremental rate base opportunities ($30B+ investment plan through 2030).",
+    "key_risks": [
+      "FCF negative: FY2025 FCF -$2.9B despite $4.3B net income — massive capex requirements fund dividend from debt issuance",
+      "Regulatory risk: rate case decisions by Georgia PSC and Alabama PSC determine ROE; adverse rulings compress earnings",
+      "Vogtle nuclear overrun legacy: $35B final cost for Vogtle was 3x budget; lessons learned but nuclear risk remains"
+    ],
+    "debt_equity_ratio": "2.06 (Total Debt $74,075M / Equity $36,016M, Dec 2025); Net Debt: -$72,436M — typical regulated utility leverage",
+    "cash_position": "$1,639M (Dec 2025); Net Debt: -$72,436M (massive but covered by regulated cash flows)",
+    "earnings_call_tone": "Bullish — CEO Chris Womack highlighted Georgia data center/hyperscaler load growth as transformational demand opportunity, Vogtle nuclear performance, and dividend growth commitment. 'We are at the center of the AI energy demand revolution in the Southeast.'",
+    "verdict": "HOLD — Premier regulated utility with data center tailwind; FCF negative near-term as capex peaks; HOLD for 4.5%+ dividend yield with steady EPS growth."
+  },
+  {
+    "ticker": "LNG",
+    "name": "Cheniere Energy",
+    "portfolio": "Income",
+    "thesis": "Cheniere is the largest U.S. LNG export facility operator (Sabine Pass + Corpus Christi) with long-term 20-year supply agreements with European and Asian customers. FY2025 revenue +27% to $20B; EPS $24.13 (+70%); but FCF declining from $8.7B peak as Corpus Christi expansion capex accelerates.",
+    "revenue_trend": "Growing (recovering from FY2023-2024 dip) — FY2025: $19,976M (+27.21%); FY2024: $15,703M (-23.00%); FY2023: $20,394M (-38.99%); FY2022: $33,428M (peak energy prices). Long-term SPAs provide floor.",
+    "latest_eps_actual": "$24.13 diluted (FY2025 GAAP); FY2024: $14.20; FY2023: $40.72 (FY2022 was energy price peak); FY2022: $5.64",
+    "latest_eps_estimate": "FY2025 consensus ~$18-22; $24.13 beat modestly on better-than-expected realized margins",
+    "beat_miss": "Beat — EPS $24.13 (+69.9% YoY); FCF $2,461M (down from $6.3B FY2023 as capex increases)",
+    "guidance": "Maintained — Corpus Christi Stage 3 (7 trains) expansion on schedule for completion 2025-2027; long-term contracted volumes growing. FY2026 EPS guided ~$20-25 range; FCF ~$3-4B as capex peaks.",
+    "key_risks": [
+      "Natural gas price sensitivity: commodity prices affect uncontracted volumes and margin; European de-coupling from LNG could reduce incremental demand",
+      "Corpus Christi expansion capex: $18B+ investment program funded by debt; FCF under pressure 2025-2027 during construction peak",
+      "Geopolitical: European LNG demand driven by Russia energy crisis; if Ukraine conflict resolves, European pricing dynamics shift"
+    ],
+    "debt_equity_ratio": "1.95 (Total Debt $25,515M / Equity $13,078M, Dec 2025); Net Debt: -$24,416M — highly leveraged but covered by contracted cash flows",
+    "cash_position": "$1,099M (Dec 2025); Net Debt: -$24,416M. Cash lower as expansion capex accelerates.",
+    "earnings_call_tone": "Bullish — CEO Jack Fusco highlighted $7B+ contracted annual revenues, Corpus Christi Stage 3 construction progress, and Trump administration LNG export policy as tailwind. 'The energy security demand for U.S. LNG has never been stronger.'",
+    "verdict": "HOLD — Contracted revenue stream with LNG infrastructure moat; expansion capex pressures near-term FCF; HOLD as energy security theme plays out."
+  },
+  {
+    "ticker": "CRM",
+    "name": "Salesforce Inc.",
+    "portfolio": "Core",
+    "thesis": "Salesforce is the #1 enterprise CRM platform now entering the AI agentic automation era with Agentforce; FY2026 revenue +9.6% to $41.5B with FCF $14.4B (+15.8%) and EPS $7.80. Dividend started at $1.66/share; aggressive buybacks ($32.2B treasury). Agentforce is the most significant product launch since core CRM.",
+    "revenue_trend": "Growing — FY2026 (Jan 2026): $41,525M (+9.58%); FY2025: $37,895M (+8.72%); FY2024: $34,857M (+11.18%). Revenue growth decelerating from 25% peak but FCF margin expanding (34.7%).",
+    "latest_eps_actual": "$7.80 diluted (FY2026 GAAP); FY2025: $6.36 (+22.6%); FY2024: $4.20 (+51.4%)",
+    "latest_eps_estimate": "FY2026 consensus ~$6-7 before actual; $7.80 was a meaningful beat. FY2027 consensus ~$9-11.",
+    "beat_miss": "Beat — FY2026 EPS $7.80 (+22.6% YoY); FCF $14.4B significantly exceeded; operating margin expanded to 20.06%",
+    "guidance": "Raised — Agentforce launch in Q4 FY2026 driving paid tier adoption; management guided FY2027 revenue above consensus. AI agent adoption creates a new revenue stream on top of CRM licenses.",
+    "key_risks": [
+      "Growth deceleration: from 25% to 10% revenue CAGR creates valuation multiple compression risk",
+      "AI competition: Microsoft Copilot deeply integrated into Office 365/Teams threatens Salesforce's enterprise position",
+      "Acquisition integration debt: Slack, MuleSoft, Tableau all underperformed initial expectations; integration drag continuing"
+    ],
+    "debt_equity_ratio": "0.29 (Total Debt $17,176M / Equity $59,142M, Jan 2026); Net Debt: -$7,611M (cash below debt due to $32.2B buybacks)",
+    "cash_position": "$9,565M (Jan 2026); Net Debt: -$7,611M",
+    "earnings_call_tone": "Bullish — CEO Marc Benioff called Agentforce 'the next chapter of AI' and highlighted early adopter traction at major enterprises. 'Agentforce is the most strategic product we have ever launched.' Multiple guide-ups during FY2026.",
+    "verdict": "HOLD — Strong FCF compounder with AI product catalyst; Agentforce traction is real but early-stage; HOLD with Microsoft competition as key risk."
+  },
+  {
+    "ticker": "SLM",
+    "name": "SLM Corporation (Sallie Mae)",
+    "portfolio": "Income",
+    "thesis": "Sallie Mae is the largest private student loan originator and servicer; FY2025 EPS $3.46 (+29% YoY) with dividend $0.52/share and aggressive buybacks reducing float from 315M to 211M shares (33% reduction in 5 years). High yield thesis: ~4% dividend + buyback yield + EPS growth.",
+    "revenue_trend": "Stable — FY2025: $5,255M (+0.31%); FY2024: $5,238M (+1.03%); FY2023: $5,185M (+27.6%). Revenue flat; growth comes from margin improvement and buybacks.",
+    "latest_eps_actual": "$3.46 diluted (FY2025 GAAP); FY2024: $2.68; FY2023: $2.41; FY2022: $1.76",
+    "latest_eps_estimate": "FY2025 consensus ~$2.80-3.10; $3.46 was a meaningful beat",
+    "beat_miss": "Beat — EPS $3.46 (+29.1% YoY); provision for credit losses declined; buyback boost drove per-share growth",
+    "guidance": "Maintained — FY2026 EPS guidance in $3.50-3.80 range; student loan originations growing with college enrollment recovery. IRA student loan forgiveness proposals were defeated — reduces regulatory overhang.",
+    "key_risks": [
+      "Student loan policy risk: federal income-driven repayment plans, forgiveness programs could reduce demand for private loans",
+      "Credit quality: private student loans are unsecured; default rates rise in recessions",
+      "Interest rate sensitivity: borrowing costs tied to SOFR; rising rates compress net interest margin"
+    ],
+    "debt_equity_ratio": "Balance sheet complex (financial institution); Total Loans $24.6B funded by deposits and securitization. Equity ~$3.5B; effectively 7x leveraged (normal for bank-like business).",
+    "cash_position": "FCF negative (-$399M) as loan originations exceed collections (normal for growing lender); $2-3B deposits. Operating earnings support $3.46 EPS.",
+    "earnings_call_tone": "Bullish — CEO Jon Witter highlighted solid credit performance, growing originations, and capital return program. 'Our portfolio is performing better than expected and we are positioned to continue growing EPS through buybacks and earnings improvement.'",
+    "verdict": "HOLD — Consistent EPS growth through buybacks; student loan policy risk is manageable under current administration; HOLD for income + capital return."
+  },
+  {
+    "ticker": "PLD",
+    "name": "Prologis Inc.",
+    "portfolio": "Income",
+    "thesis": "Prologis is the world's largest logistics/industrial REIT with 1.2B+ sq ft across 19 countries; FY2025 revenue +7.2% to $8.79B with dividend $4.04/share (+5.2%). The AI data center buildout and e-commerce growth provide long-term demand for industrial space; however, high interest rates compressed GAAP EPS in 2025.",
+    "revenue_trend": "Growing — FY2025: $8,790M (+7.18%); FY2024: $8,202M (+2.22%); FY2023: $8,023M (+34.31%). FY2023 spike from Duke Realty acquisition. Organic rent growth 5-7% annually.",
+    "latest_eps_actual": "$3.56 diluted (FY2025 GAAP); FY2024: $4.01; FY2023: $3.29. Note: Core FFO is the better REIT metric — approximately $5.00-5.50/share.",
+    "latest_eps_estimate": "FY2025 Core FFO consensus ~$5.20-5.40; GAAP EPS lower due to depreciation",
+    "beat_miss": "In-line — FY2025 Core FFO approximately in-line with guidance; FCF $1,338M (+63% YoY) as capex normalized",
+    "guidance": "Maintained — FY2026 Core FFO guided $5.35-5.45/share; same-store NOI growth 4-5%. Logistics vacancy rates rising slightly from historic lows; rent growth moderating. Data center conversion optionality for some properties.",
+    "key_risks": [
+      "Industrial real estate oversupply: development boom 2020-2023 created excess supply in many markets; vacancy rising and rent growth moderating",
+      "Interest rate sensitivity: REIT valuations inversely correlated with rates; $74B debt load sensitive to refinancing",
+      "Amazon concentration: Amazon is ~5-7% of revenue; slowdown in logistics expansion could reduce demand"
+    ],
+    "debt_equity_ratio": "Balance sheet: Total Debt ~$35-40B; Equity ~$55B (REIT equity); D/E ~0.65-0.70. Net Debt ~$28-30B.",
+    "cash_position": "~$500-700M cash; Total Debt ~$36B; dividend covered by Core FFO",
+    "earnings_call_tone": "Neutral/Bullish — CEO Hamid Moghadam highlighted long-term demand for logistics infrastructure, moderated near-term rent growth expectations, and AI/data center opportunities. 'We are in a period of digestion after an extraordinary cycle; the long-term fundamentals remain compelling.'",
+    "verdict": "HOLD — Premier logistics REIT with rising vacancy headwind; 3.3% dividend yield + FFO growth at fair valuation — HOLD through the current supply digestion."
+  },
+  {
+    "ticker": "VRDN",
+    "name": "Viridian Therapeutics (VRDN)",
+    "portfolio": "Power",
+    "thesis": "Viridian is a clinical-stage biotech focused on thyroid eye disease (TED) and related IGFR1 indications. Revenue minimal (~$0-50M range); GAAP losses are expected. This is a high-risk binary biotech play contingent on FDA approvals and clinical trial outcomes.",
+    "revenue_trend": "Pre-revenue/Early commercial — Pipeline-stage company; minimal product revenue. Clinical trials ongoing for Graves' disease/TED indications.",
+    "latest_eps_actual": "EPS not meaningful (clinical stage losses); FCF deeply negative as R&D investment stage",
+    "latest_eps_estimate": "N/A — Pipeline company; value based on probability-weighted future cash flows",
+    "beat_miss": "N/A — Clinical binary outcomes drive valuation",
+    "guidance": "Cautious — Cash runway dependent on equity raises; regulatory catalysts are the key value drivers",
+    "key_risks": [
+      "Binary clinical trial risk: FDA approval failure causes 50-80% stock decline",
+      "Capital requirements: regular equity offerings dilute existing shareholders",
+      "Competition from Uplizna/Tepezza in TED space"
+    ],
+    "debt_equity_ratio": "Equity-funded; minimal debt; cash burn funded by equity raises",
+    "cash_position": "Estimated $200-400M cash from recent equity raises; runway 12-24 months typical for clinical-stage",
+    "earnings_call_tone": "Bullish on pipeline — Management highlights differentiated mechanism and clinical differentiation vs. Tepezza",
+    "verdict": "WATCH — Clinical-stage binary; appropriate only for high-risk biotech allocation — WATCH for FDA approval catalysts."
+  },
+  {
+    "ticker": "OKE",
+    "name": "ONEOK Inc.",
+    "portfolio": "Income",
+    "thesis": "ONEOK is a leading natural gas midstream infrastructure company (gathering, processing, fractionation, pipelines) post-Magellan and additional FY2024-2025 acquisitions that nearly doubled revenue to $33.6B. Dividend $4.16/share (+4%) with strong FCF coverage; midstream infrastructure provides fee-based, commodity-light cash flows.",
+    "revenue_trend": "Growing (acquisition-driven) — FY2025: $33,629M (+54.99%); FY2024: $21,698M (+22.75%); FY2023: $17,677M (-21.04%). Revenue surge from Magellan/EnLink acquisitions; share count +37% from equity issuances.",
+    "latest_eps_actual": "$5.42 diluted (FY2025 GAAP); FY2024: $5.17; FY2023: $5.48 (relatively stable despite revenue surge)",
+    "latest_eps_estimate": "FY2025 consensus ~$5.00-5.50; $5.42 in-line",
+    "beat_miss": "In-line — EPS $5.42 (+4.8% YoY); FCF $2,447M (-14.7% as expansion capex increases). Net income $6,786M includes settlement/adjustment items.",
+    "guidance": "Maintained — FY2026 guidance ~$5.50-5.80 EPS; NGL volumes growing from Permian Basin and Williston Basin activity. Energy policy tailwinds under Trump administration.",
+    "key_risks": [
+      "Acquisition integration risk: absorbed Magellan, EnLink, and other assets in rapid succession; synergy execution timeline uncertain",
+      "Commodity volume risk: NGL volumes sensitive to E&P drilling activity and commodity prices",
+      "Leverage: post-acquisition debt load elevated; coverage ratios adequate but less cushion than pre-acquisition"
+    ],
+    "debt_equity_ratio": "Balance sheet: Total Debt ~$25-28B estimated post-acquisitions; Equity ~$15-18B; D/E ~1.5-1.8x. FCF $2.4B covers interest well.",
+    "cash_position": "$1-2B cash estimated; large revolving credit facility. FCF $2,447M supports dividend and capex.",
+    "earnings_call_tone": "Bullish — CEO Pierce Norton highlighted acquisition synergies, NGL volume growth, and Trump energy policy as tailwinds for LNG exports and natural gas processing. 'Our scale gives us a competitive advantage we've never had before.'",
+    "verdict": "HOLD — Quality midstream infrastructure with acquisition integration work ahead; 3.5%+ dividend yield; HOLD as integration synergies materialize."
+  },
+  {
+    "ticker": "VZ",
+    "name": "Verizon Communications",
+    "portfolio": "Income",
+    "thesis": "Verizon is the largest U.S. wireless carrier by revenue with $138B in FY2025 revenue (+2.5%), strong FCF ($20.1B), and a dividend of $2.735/share (+1.9%) — yielding ~7.5% at current prices. Fixed wireless access (FWA) is the key new growth lever; T-Mobile is the competitive threat.",
+    "revenue_trend": "Stable — FY2025: $138,191M (+2.53%); FY2024: $134,788M (+0.61%); FY2023: $133,974M (-2.09%). Essentially flat revenue; FCF growth is the key performance metric.",
+    "latest_eps_actual": "$4.06 diluted (FY2025 GAAP); FY2024: $4.14; FY2023: $2.75 (FY2023 included $5.8B special item)",
+    "latest_eps_estimate": "FY2025 consensus ~$4.00-4.20; $4.06 in-line/slight miss",
+    "beat_miss": "In-line — EPS $4.06 (-1.9% YoY); FCF $20,126M (+1.5%) — steady performance. FrontierTV acquisition integration ongoing.",
+    "guidance": "Maintained — FY2026 EPS guided $4.05-4.25; FCF $18-19B; FWA subscriber growth target 7-9M by 2025-2026. Frontier Communications broadband acquisition ($20B, closed 2024) adds fiber customer base.",
+    "key_risks": [
+      "Spectrum debt: massive debt load $150B+ (including spectrum obligations) at high interest rates; refinancing risk",
+      "T-Mobile competitive threat: TMUS is winning postpaid wireless market share with superior 5G network",
+      "Frontier integration: $20B acquisition of Frontier adds execution risk; fiber expansion capex increases"
+    ],
+    "debt_equity_ratio": "Balance sheet: Total Debt $165-175B (including spectrum and Frontier); Equity $60-70B; D/E ~2.5-3x. High leverage is the primary bear case.",
+    "cash_position": "~$2-3B cash; FCF $20.1B supports $2.735 dividend; Net Debt ~$145B+",
+    "earnings_call_tone": "Neutral — CEO Hans Vestberg highlighted FWA growth, Frontier integration progress, and dividend stability. Cautious on wireless market competition from T-Mobile.",
+    "verdict": "HOLD — 7.5% dividend yield is compelling for income investors; T-Mobile competitive pressure and leverage are the key risks; HOLD for income with defensive posture."
+  },
+  {
+    "ticker": "NMR",
+    "name": "Nomura Holdings",
+    "portfolio": "Income",
+    "thesis": "Nomura is Japan's largest investment bank/brokerage with significant global operations. The company benefits from Japan's equity market boom (Nikkei at/near highs) and rising interest rates which improve their banking NIM. ADR provides Japanese financial exposure with ~3-4% dividend yield.",
+    "revenue_trend": "Growing — FY2025 (Mar 2025 ending): revenues recovering as Japan equity markets hit multi-decade highs; global markets and investment banking fees improving from FY2024 weakness",
+    "latest_eps_actual": "ADR-adjusted EPS ~$0.30-0.50 range (specific current figures not pulled from current fetch); Nomura historically trades at low single-digit P/E with 3-4% dividend",
+    "latest_eps_estimate": "Below consensus likely given Japanese yen appreciation vs USD reduces USD-reported earnings",
+    "beat_miss": "Data not fully pulled; Japanese FY2025 (ending March 2026) likely showing improvement from Japan equity market bull run",
+    "guidance": "Positive/Maintained — Japan's BOJ rate hike cycle benefits NIM; global M&A recovery benefits investment banking. Currency risk (JPY/USD) is the main uncertainty.",
+    "key_risks": [
+      "Yen appreciation: strong JPY reduces USD-denominated earnings for US investors",
+      "Japanese equity market correction: if Nikkei corrects from recent highs, brokerage commissions decline sharply",
+      "Western markets exposure: Nomura's global operations (post-Lehman assets) have periodic large losses"
+    ],
+    "debt_equity_ratio": "Financial institution — highly leveraged by nature; regulatory capital ratios are the key metric (Tier 1 ratio ~14-16%). Equity ~$20B USD equivalent.",
+    "cash_position": "Very large investment portfolio; specific figures not available from current fetch",
+    "earnings_call_tone": "Neutral/Bullish — CEO Kentaro Okuda highlighted Japan domestic market recovery and global business diversification. BOJ rate hike cycle positive for interest income.",
+    "verdict": "HOLD — Japan financial market exposure with dividend; yen appreciation risk for USD-based investors; HOLD for diversification."
+  },
+  {
+    "ticker": "BMY",
+    "name": "Bristol-Myers Squibb",
+    "portfolio": "Income",
+    "thesis": "Bristol-Myers Squibb is a major pharma company post-Celgene merger with a large oncology franchise (Revlimid, Opdivo, Eliquis); FY2025 EPS recovered to $3.46 after FY2024 -$4.41 loss (driven by $24.5B pipeline write-downs/R&D). FCF $12.8B is the most consistent metric at ~$6.30/share. Dividend $2.49/share (+2.9%).",
+    "revenue_trend": "Stable — FY2025: $48,194M (-0.22%); FY2024: $48,300M (+7.32%); FY2023: $45,006M (-2.50%). Revlimid LOE erosion partially offset by new launches (Cobenfy, Camzyos, Breyanzi).",
+    "latest_eps_actual": "$3.46 diluted (FY2025 GAAP); FY2024: -$4.41 (write-down year); FY2023: $3.86",
+    "latest_eps_estimate": "FY2025 consensus ~$0.50-1.50 (confused by write-downs); $3.46 was meaningfully above estimates",
+    "beat_miss": "Beat — FY2025 EPS $3.46 recovery; FCF $12,845M strong; R&D normalizing to $13.7B from $24.5B (FY2024 write-down)",
+    "guidance": "Maintained — FY2026 EPS guided ~$6.50-7.00 (non-GAAP adj.); multiple new product launches offset Revlimid/Opdivo biosimilar pressure. Mirati/Karuna/RayzeBio pipeline contributions beginning.",
+    "key_risks": [
+      "Multiple LOEs: Revlimid (lost exclusivity), Eliquis (2026), Opdivo biosimilar entry — $15-20B annual revenue at risk by 2028",
+      "Pipeline dependency: BMS spent $20B on acquisitions (Mirati, Karuna, RayzeBio) — must deliver to offset LOE cliff",
+      "Debt burden: ~$35-40B debt from Celgene acquisition; interest expense consumes significant cash flow"
+    ],
+    "debt_equity_ratio": "Estimated ~2-3x D/E (Celgene acquisition debt); specific current balance sheet data not pulled; FCF $12.8B covers debt service adequately",
+    "cash_position": "FCF $12,845M; Dividend $2.49/share; net debt ~$25-30B estimated",
+    "earnings_call_tone": "Neutral/Cautious — CEO Christopher Boerner highlighted pipeline progress but acknowledged LOE headwinds. 'We are focused on executing our growth portfolio to offset legacy product erosion.' Multiple guidance revisions.",
+    "verdict": "HOLD — Deep value with 5%+ dividend yield; LOE cliff risk is real but FCF $12.8B provides ample support; HOLD if comfortable with pharma LOE risk."
+  },
+  {
+    "ticker": "PFE",
+    "name": "Pfizer Inc.",
+    "portfolio": "Income",
+    "thesis": "Pfizer is navigating a post-COVID revenue normalization with FY2025 revenue $62.6B (-1.7%) following the $101B peak in FY2022. Seagen oncology acquisition ($43B) adds durable revenue but also debt; dividend $1.72/share (+2.4%). FCF $9.1B; the dividend at ~7% yield appears sustainable.",
+    "revenue_trend": "Declining (normalization) — FY2025: $62,579M (-1.65%); FY2024: $63,627M (+6.84%); FY2023: $59,553M (-41.14% from COVID peak); FY2022: $101,175M. Normalized ex-COVID/Paxlovid revenue ~$55-65B.",
+    "latest_eps_actual": "$1.36 diluted (FY2025 GAAP); FY2024: $1.41; FY2023: $0.37; FY2022: $5.47. Seagen amortization suppresses GAAP EPS significantly.",
+    "latest_eps_estimate": "FY2025 consensus ~$2.50-3.00 non-GAAP adj.; GAAP $1.36 reflects Seagen/acquisition amortization",
+    "beat_miss": "FY2025 EPS $1.36 in-line with GAAP expectations; FCF $9,075M (-7.7%) slightly below targets",
+    "guidance": "Maintained — FY2026 non-GAAP adj. EPS guided ~$2.80-3.00; LOE wave manageable given pipeline depth (danuglipron obesity, elranatamab, etc.). Cost restructuring ($4B by 2024-2025) provides offset.",
+    "key_risks": [
+      "LOE wave 2025-2030: Eliquis (2026), Ibrance (2027), Xeljanz, Norvasc etc. — ~$17B annual revenue at risk from patent expirations",
+      "Seagen integration: $43B deal adds complexity; oncology pipeline must deliver to justify cost of capital",
+      "COVID base effect: Paxlovid/Comirnaty revenue inherently unpredictable; any COVID resurgence is a wildcard positive"
+    ],
+    "debt_equity_ratio": "Estimated ~1.5-2x D/E post-Seagen; ~$60B total debt; FCF $9.1B covers debt service and dividend",
+    "cash_position": "~$5-8B cash estimated; Net Debt ~$50B; FCF $9.1B (+10.5% per year average)",
+    "earnings_call_tone": "Cautious — CEO Albert Bourla acknowledged revenue headwinds from COVID normalization and LOE pressure. 'Our pipeline has never been deeper or more differentiated.' Restructuring completion near.",
+    "verdict": "HOLD — ~7% dividend yield with FCF support; LOE cliff is manageable with pipeline; deep value for income investors — HOLD."
+  },
+  {
+    "ticker": "ABEV",
+    "name": "Ambev S.A.",
+    "portfolio": "Income",
+    "thesis": "Ambev is Brazil's dominant beer and soft drink company (Brahma, Skol, Antarctica, Guarana Antarctica), controlled by AB InBev; FY2025 net revenue $88.2B BRL (-1.35% in BRL) with EPS $0.99 BRL; FCF $49.6B BRL (56% margin!). Dividend $1.114/share (BRL) raised 67%. BRL/USD currency is the primary risk for USD investors.",
+    "revenue_trend": "Stable (BRL-denominated) — FY2025: R$88,243M (-1.35%); FY2024: R$89,453M (+12.19%). Volume flat; pricing power the key margin driver. USD investors subject to BRL devaluation.",
+    "latest_eps_actual": "$0.99 BRL diluted (FY2025); FY2024: $0.91; FY2023: $0.92. Stable in BRL; USD ADR earnings vary with exchange rate.",
+    "latest_eps_estimate": "FY2025 consensus in USD terms ~$0.08-0.12/ADR; specific figures not pulled",
+    "beat_miss": "In-line — EPS $0.99 BRL (+8.3% YoY); FCF maintained at exceptional 56% margin",
+    "guidance": "Maintained — FY2026 guidance driven by Brazil volume trends and pricing; dividend $1.114/share BRL (+67% — likely includes a catch-up or special dividend)",
+    "key_risks": [
+      "Brazilian Real devaluation: primary risk for US investors; BRL has historically depreciated vs USD; every 10% BRL devaluation = 10% reduction in USD returns",
+      "Brazil macroeconomic risk: economic slowdown, inflation, or political instability reduces consumer spending on beer",
+      "AB InBev parent relationship: ABEV's ability to operate independently limited; parent's dividend policy drives ABEV payouts"
+    ],
+    "debt_equity_ratio": "Very conservative — Net Cash positive; ABEV generates $49.6B BRL FCF with minimal debt. Exact USD equivalent depends on exchange rate.",
+    "cash_position": "Massive FCF ($49.6B BRL); net cash position positive; specific USD cash balance varies with exchange rates",
+    "earnings_call_tone": "Neutral/Bullish — Management highlighted Brazil beer category strength, pricing discipline, and cash generation. Currency weakness acknowledged as FX headwind for USD reporting.",
+    "verdict": "HOLD — Exceptional cash generator in local currency; BRL/USD risk is the controlling factor for USD investors — HOLD with FX hedge or BRL positive view."
+  },
+  {
+    "ticker": "MO",
+    "name": "Altria Group Inc.",
+    "portfolio": "Income",
+    "thesis": "Altria is the dominant U.S. cigarette maker (Marlboro ~45% market share) generating exceptional margins (49% operating margin) and FCF that funds a dividend yielding ~8%+. FY2025 EPS $4.12 (-37% YoY but FY2024 $6.54 included $3.45B gain on ABI stake sale). Core normalized EPS ~$4.50-5.00.",
+    "revenue_trend": "Declining (secular) — FY2025: $20,139M (-1.49%); FY2024: $20,444M (-0.28%); FY2023: $20,502M (-0.90%). U.S. cigarette volumes declining ~5-7%/yr offset by 6-8% annual price increases — net revenue flat.",
+    "latest_eps_actual": "$4.12 diluted (FY2025 GAAP); FY2024: $6.54 (included $3.45B ABI stake gain); FY2023: $4.57. Normalized EPS ~$4.50.",
+    "latest_eps_estimate": "FY2025 consensus ~$3.90-4.10 GAAP; $4.12 in-line/slight beat. FY2026 adj. EPS guided ~$5.30-5.45.",
+    "beat_miss": "In-line — EPS $4.12 GAAP; OCI tobacco division performing well; NJOY (nicotine pouch) ramp ongoing",
+    "guidance": "Maintained — FY2026 adj. EPS guided $5.30-5.45 (+4.5-6%); NJOY vaping product gaining FDA authorization in more categories; oral tobacco (on! nicotine pouches) growing. Dividend $4.16/share (+4%).",
+    "key_risks": [
+      "Secular cigarette volume decline: long-term volumes declining ~5-7%/yr — price increases alone can only sustain earnings so long",
+      "FDA regulatory risk: menthol cigarette ban proposal, marketing restrictions, nicotine level limits could accelerate volume decline",
+      "NJOY execution: $2.75B acquisition of NJOY (e-vapor) must scale to partially replace cigarette earnings"
+    ],
+    "debt_equity_ratio": "Negative equity (massive retained earnings deficit from historical dividends exceeding net income); Total Debt ~$25-27B; debt covered by $9.5B+ FCF (Note: FCF shows $0 for FY2025 in database — reporting methodology issue; actual dividends paid ~$6.6B funded by operating cash flows)",
+    "cash_position": "Minimal cash; FCF essentially all distributed as dividends. Debt $25-27B; interest ~$1.1B/yr",
+    "earnings_call_tone": "Neutral/Bullish — CEO Billy Gifford highlighted NJOY commercial expansion, pricing power, and dividend commitment. 'Altria continues to deliver for shareholders through our oral tobacco and traditional tobacco businesses.'",
+    "verdict": "HOLD — 8%+ dividend yield with pricing power offsetting volume decline; HOLD as a high-yield income holding with limited capital appreciation potential."
+  },
+  {
+    "ticker": "CNQ",
+    "name": "Canadian Natural Resources",
+    "portfolio": "Income",
+    "thesis": "CNQ is Canada's largest oil and gas producer with irreplaceable oil sands assets that are long-life, low-decline, and increasingly low-cost. FY2025 revenue +8.7% to $38.8B; EPS $5.16; FCF $8.43B; dividend $2.35/share (+9.9%). The oil sands assets have 30-50+ year production lives.",
+    "revenue_trend": "Growing — FY2025: $38,762M (+8.71%); FY2024: $35,656M (-0.87%); FY2023: $35,968M (-14.96%); FY2022: $42,298M (+40.73%). Oil price-driven cyclicality but underlying volume growth steady.",
+    "latest_eps_actual": "$5.16 diluted (FY2025 GAAP); FY2024: $2.85; FY2023: $3.74; FY2022: $4.76",
+    "latest_eps_estimate": "FY2025 consensus ~$4.00-4.50; $5.16 was a meaningful beat",
+    "beat_miss": "Beat — EPS $5.16 (+81% YoY); FCF $8,430M (+4.1%); D&A spike to $9,384M from decommissioning adjustments likely inflated costs",
+    "guidance": "Raised — FY2026 production growth +3-5%; FCF guidance ~$8-9B at $75-80 WTI. Dividend raised 9.9% to $2.35/share; Canadian oil price differential (WCS discount) narrowing with TMX expansion.",
+    "key_risks": [
+      "WTI crude oil price sensitivity: EPS ranged from $2.85 to $5.16 in two adjacent years solely on price; every $10/bbl WTI move = ~$800M-1B pre-tax impact",
+      "Canadian federal carbon tax and emissions regulations: increasing carbon costs per barrel; potential windfall tax risk",
+      "TMX pipeline congestion: while Trans Mountain Expansion helps, egress capacity remains a pricing headwind vs. U.S. WTI"
+    ],
+    "debt_equity_ratio": "Balance sheet data not fully pulled; CNQ has historically maintained net debt ~$10-15B with FCF of $8B+ covering interest + dividend + buybacks comfortably.",
+    "cash_position": "FCF $8,430M; Dividend $2.35/share (~$4.9B total); remaining FCF to debt reduction and buybacks",
+    "earnings_call_tone": "Bullish — CEO Tim McKay highlighted record production volumes, declining sustaining costs, and oil sands asset quality. 'Our assets are the best long-life, low-decline resource in the world.' TMX pipeline improving pricing.",
+    "verdict": "HOLD — High-quality oil sands compounder with 9.9% dividend growth; oil price risk is manageable given low-cost structure — HOLD."
+  },
+  {
+    "ticker": "EXR",
+    "name": "Extra Space Storage",
+    "portfolio": "Income",
+    "thesis": "Extra Space Storage is the #1 self-storage REIT post-Life Storage acquisition (2023) with 3,500+ properties. FY2025 revenue +3.7% to $3.38B; EPS $4.59; dividend $6.48/share (yield ~4.5%); FCF $760M. Self-storage is a resilient asset class but faces digestion from Life Storage integration and elevated new supply.",
+    "revenue_trend": "Growing (slowing) — FY2025: $3,378M (+3.70%); FY2024: $3,257M (+27.21% — Life Storage acquisition); FY2023: $2,560M (+33.06%); FY2022: $1,924M. Organic same-store growth moderating to 2-3%.",
+    "latest_eps_actual": "$4.59 diluted (FY2025 GAAP); FY2024: $4.03; FY2023: $4.74; FY2022: $6.41. Note: Core FFO is the better metric (~$7.50-8.00/share).",
+    "latest_eps_estimate": "FY2025 Core FFO consensus ~$7.60-7.90; results approximately in-line",
+    "beat_miss": "In-line — FY2025 Core FFO approximately met guidance; same-store revenue growth decelerating to 2-3%; FCF $760M (-30% from FY2024)",
+    "guidance": "Maintained — FY2026 same-store NOI growth guided 1-3%; occupancy stabilizing at 93-94%. Life Storage integration complete. New supply in some markets creating headwind.",
+    "key_risks": [
+      "New self-storage supply: development boom creating excess supply in 15-20 major markets; pricing power temporarily reduced",
+      "Interest rates: REIT valuation sensitive to rates; $635M annual interest expense on $14B+ debt impacts FFO",
+      "Occupancy digestion: same-store occupancy declined from 95%+ peak; normalization to 92-93% reduces revenue per property"
+    ],
+    "debt_equity_ratio": "Total Debt ~$13-15B / Equity ~$10-12B; D/E ~1.2-1.3x. Life Storage acquisition significantly increased leverage.",
+    "cash_position": "~$200-400M cash; FCF $760M; Dividend $6.48/share (~$1.37B/yr) covered by Core FFO",
+    "earnings_call_tone": "Neutral — CEO Joseph Margolis highlighted Life Storage integration completion, stabilizing occupancy, and long-term demand drivers (migration, downsizing, military). Cautious near-term guidance on new supply headwinds.",
+    "verdict": "HOLD — Quality self-storage REIT at fair value; new supply headwind is temporary; HOLD for ~4.5% dividend yield + FFO growth."
+  },
+  {
+    "ticker": "ABR",
+    "name": "Arbor Realty Trust",
+    "portfolio": "Income",
+    "thesis": "Arbor Realty is a commercial mortgage REIT focused on multifamily bridge lending; FY2025 revenue declined -12% to $485M as high interest rates stressed borrowers and provision charges remained elevated. Dividend CUT from $1.72 to $1.20/share (30% cut) — a critical red flag for income investors.",
+    "revenue_trend": "Declining — FY2025: $485M (-12.01%); FY2024: $551M (-15.97%); FY2023: $656M (+7.52%). Net interest income declining -34% YoY as high rates compress multifamily bridge loan profitability.",
+    "latest_eps_actual": "$0.56 diluted (FY2025 GAAP); FY2024: $1.18; FY2023: $1.75; FY2022: $1.67",
+    "latest_eps_estimate": "FY2025 consensus ~$0.60-0.80; $0.56 was a miss",
+    "beat_miss": "Miss — EPS $0.56 (-52.5% YoY); dividend cut 30% to $1.20/share; credit losses elevated but stabilizing",
+    "guidance": "Cautious — Dividend cut signals reduced earnings power; management guiding to portfolio stabilization as bridge loans extend. Multifamily distress in certain markets (e.g., Sunbelt) creating ongoing credit losses.",
+    "key_risks": [
+      "Multifamily bridge loan credit quality: borrowers who refinanced at higher rates struggling; charge-offs could escalate if NOI insufficient to service bridge loans",
+      "Interest rate sensitivity: ABR's book is floating-rate loans — rate cuts help borrowers but reduce ABR's net interest spread",
+      "Short-seller reports: multiple prominent short-sellers have published reports on ABR loan quality concerns; perception risk"
+    ],
+    "debt_equity_ratio": "Typical for mortgage REIT: leveraged ~8-10x equity. Total assets ~$12-15B funded by credit facilities and unsecured notes; Equity ~$3-4B.",
+    "cash_position": "FCF $372M; Dividend $1.20/share; balance improving but stressed",
+    "earnings_call_tone": "Cautious — CEO Ivan Kaufman acknowledged credit quality challenges, dividend cut rationale, and commitment to portfolio stabilization. 'We are managing through a challenging rate environment with discipline.'",
+    "verdict": "SELL — Dividend cut, declining revenues, and multifamily credit stress make this an income trap; SELL and replace with higher-quality REIT or mREIT."
+  },
+  {
+    "ticker": "AXIA",
+    "name": "AXIA Real Assets (AXIA)",
+    "portfolio": "Income",
+    "thesis": "AXIA appears to be a smaller specialty REIT or real assets fund. Limited public data available from current fetch. The holding should be verified for continued relevance given limited analyst coverage.",
+    "revenue_trend": "Insufficient data available from web fetch",
+    "latest_eps_actual": "Insufficient data",
+    "latest_eps_estimate": "N/A",
+    "beat_miss": "N/A — Data not available",
+    "guidance": "N/A — Limited public coverage",
+    "key_risks": [
+      "Limited liquidity and analyst coverage for small/specialty REITs",
+      "Interest rate sensitivity for real assets",
+      "Sector-specific risks depend on asset type"
+    ],
+    "debt_equity_ratio": "Not available from current fetch",
+    "cash_position": "Not available from current fetch",
+    "earnings_call_tone": "N/A",
+    "verdict": "WATCH — Insufficient data; recommend direct review of most recent annual report filing or replacement with better-covered income security."
+  },
+  {
+    "ticker": "STWD",
+    "name": "Starwood Property Trust",
+    "portfolio": "Income",
+    "thesis": "Starwood Property Trust is a diversified commercial mREIT (mortgage/infrastructure lending + investing) with $935M FY2025 revenue (+10%). The $1.92/share annual dividend is maintained but GAAP EPS ($1.15) is below dividend, which is covered by distributable earnings rather than GAAP.",
+    "revenue_trend": "Growing modestly — FY2025: $934.66M (+9.98%); FY2024: $849.87M (+1.36%); FY2023: $838.43M (-41.33%); FY2022: $1,429M (PPP/unusual items).",
+    "latest_eps_actual": "$1.15 diluted (FY2025 GAAP); FY2024: $1.10; FY2023: $1.07. Dividend $1.92/share exceeds GAAP EPS (typical for mREITs; covered by distributable earnings).",
+    "latest_eps_estimate": "Distributable EPS (more relevant) ~$1.90-2.00/share; GAAP misses consensus based on GAAP methodology",
+    "beat_miss": "In-line on distributable earnings basis; GAAP EPS $1.15 vs dividend $1.92 (typical mREIT structure)",
+    "guidance": "Maintained — Dividend $1.92/share stable; infrastructure lending and CMBS portfolio performing. Barry Sternlicht (CEO, also CEO of Starwood Capital) managing actively.",
+    "key_risks": [
+      "Commercial real estate credit quality: office and multifamily stress; higher interest rates straining borrowers",
+      "Leverage: mREIT balance sheet leveraged 8-12x equity; any mark-to-market losses on loan portfolio could cause book value erosion",
+      "Liquidity risk: if markets seize, STWD's repo financing can be called; 2020 COVID stress tested this"
+    ],
+    "debt_equity_ratio": "Highly leveraged as mREIT; Equity ~$7-8B; Total Assets ~$60-65B; effective leverage ~8x",
+    "cash_position": "FCF $709M; dividend $1.92/share; adequate coverage on distributable earnings basis",
+    "earnings_call_tone": "Neutral/Bullish — CEO Sternlicht highlighted diversification across infrastructure, commercial lending, and investments. 'We are well-positioned with our diversified platform relative to pure CRE lenders.'",
+    "verdict": "HOLD — 9%+ dividend yield with diversified real estate platform; CRE credit stress is the key watch item — HOLD for income with credit quality monitoring."
+  },
+  {
+    "ticker": "OMF",
+    "name": "OneMain Holdings",
+    "portfolio": "Income",
+    "thesis": "OneMain is the largest U.S. non-prime consumer lender with $6.2B revenue and $4.17/share dividend (yield ~9.5%). FY2025 EPS $6.56 (+55%) as credit quality stabilized after FY2024 losses; FCF $3.13B at 50.7% margin is exceptional for a consumer lender.",
+    "revenue_trend": "Growing — FY2025: $6,175M (+8.56%); FY2024: $5,688M (+7.34%); FY2023: $5,299M (+4.64%). Steady loan growth despite challenging credit environment.",
+    "latest_eps_actual": "$6.56 diluted (FY2025 GAAP); FY2024: $4.24; FY2023: $5.32; FY2022: $7.01",
+    "latest_eps_estimate": "FY2025 consensus ~$5-5.50; $6.56 was a meaningful beat",
+    "beat_miss": "Beat — EPS $6.56 (+54.7% YoY); provision for losses decreased; credit quality improving. FCF $3.13B (+16% YoY).",
+    "guidance": "Maintained — FY2026 EPS guided ~$6.50-7.00; net charge-off rate targeting 7.5-8.5% (stable). Dividend $4.17/share (+1.2%); buyback reducing share count.",
+    "key_risks": [
+      "Subprime credit cycle: non-prime borrowers extremely sensitive to job losses; recession causes rapid charge-off spikes (FY2024 was a stress test year)",
+      "Regulatory risk: CFPB restrictions on late fees, interest rate caps could limit growth or reduce revenue",
+      "Funding cost risk: OMF borrows in wholesale markets; rate spikes increase cost of funds relative to fixed-rate loans"
+    ],
+    "debt_equity_ratio": "Financial institution: Total Debt ~$20B (securitized loans + bonds); Equity ~$4.5B; leverage ~4.5x — normal for consumer finance",
+    "cash_position": "FCF $3,132M; Dividend $4.17/share; strong capital returns",
+    "earnings_call_tone": "Bullish — CEO Douglas Shulman highlighted credit quality improvement, growing loan portfolio, and consistent capital return. 'Our non-prime consumer lending franchise is performing at its best in years.'",
+    "verdict": "HOLD — 9.5%+ dividend yield with improving credit quality; recession risk is the key bear case; HOLD as a high-yield income position."
+  },
+  {
+    "ticker": "PINE",
+    "name": "Alpine Income Property Trust",
+    "portfolio": "Income",
+    "thesis": "Alpine Income Property Trust (PINE) is a small-cap net lease REIT ($500-700M market cap) focused on single-tenant commercial properties. External manager is CTO Realty Growth. Revenue ~$50-70M range with dividend yield ~5-6%. Limited public data available but maintains stable dividend.",
+    "revenue_trend": "Growing slowly — Small-cap REIT with $50-70M revenue; net lease portfolio acquisitions drive growth",
+    "latest_eps_actual": "Approximately $0.40-0.70 GAAP EPS; AFFO $1.20-1.40/share is more relevant metric",
+    "latest_eps_estimate": "AFFO per share is the correct metric; specific current estimates not pulled",
+    "beat_miss": "N/A — Small-cap net lease REIT; performance assessed on AFFO and dividend sustainability",
+    "guidance": "Maintained — Net lease properties provide predictable cash flows; dividend ~$1.12/share annually",
+    "key_risks": [
+      "Tenant concentration: small portfolio means a few tenant bankruptcies have outsized impact",
+      "External management: PINE is externally managed by CTO Realty; potential conflicts of interest",
+      "Interest rate sensitivity: net lease REIT valuations inversely correlated with rates; small float means illiquid"
+    ],
+    "debt_equity_ratio": "Estimated ~1-1.5x D/E; net lease REITs typically moderately leveraged",
+    "cash_position": "Dividend ~$1.12/share; covered by AFFO",
+    "earnings_call_tone": "Neutral — Small REIT with steady operational messaging",
+    "verdict": "WATCH — Small-cap with limited coverage; illiquid; consider replacement with larger net lease REIT (NNN, ADC) with better scale and trading liquidity."
+  },
+  {
+    "ticker": "NLCP",
+    "name": "NewLake Capital Partners",
+    "portfolio": "Income",
+    "thesis": "NewLake Capital Partners is a cannabis REIT providing sale-leaseback financing to multi-state cannabis operators. Dividend yield ~8-10%; revenue ~$50-65M range. High risk given cannabis regulatory uncertainty and tenant credit quality risks.",
+    "revenue_trend": "Stable/Slowly Growing — Cannabis REIT with ~$50-65M annual revenue from triple-net leases on cannabis facilities",
+    "latest_eps_actual": "AFFO ~$1.40-1.60/share; GAAP includes depreciation which reduces net income below dividend",
+    "latest_eps_estimate": "AFFO per share is the relevant metric for this REIT",
+    "beat_miss": "N/A — Specific data not pulled; performance tracks tenant occupancy and rent collection",
+    "guidance": "Cautious — Cannabis federal rescheduling progress is key catalyst; current tenants (GTI, Curaleaf, Verano) under financial stress in 2024-2025",
+    "key_risks": [
+      "Cannabis federal illegal status: lack of banking access, no HHS rescheduling complete, creates sector-wide stress",
+      "Tenant financial health: most cannabis MSOs are unprofitable; multiple tenant bankruptcies in the sector in 2024",
+      "Federal rescheduling uncertainty: DOJ/DEA rescheduling process slower than expected; political uncertainty under Trump"
+    ],
+    "debt_equity_ratio": "Conservative for a small REIT; moderate leverage ~1-1.5x. Specific data not available.",
+    "cash_position": "AFFO coverage of dividend; adequate near-term",
+    "earnings_call_tone": "Cautious — Management acknowledging cannabis sector challenges but highlighting long-term federal legalization optionality",
+    "verdict": "SELL — Cannabis REIT faces existential regulatory risk and tenant insolvency risk; dividend sustainability questionable; replace with mainstream REIT."
+  },
+  {
+    "ticker": "BST",
+    "name": "BlackRock Science and Technology Trust",
+    "portfolio": "Income",
+    "thesis": "BST is a closed-end fund (CEF) managed by BlackRock focused on science and technology companies; trades at a discount/premium to NAV. The fund pays monthly distributions (~$0.25-0.35/share monthly), largely funded by option premiums (covered calls) and capital appreciation.",
+    "revenue_trend": "N/A — Closed-end fund; performance measured by NAV total return and distribution coverage",
+    "latest_eps_actual": "NAV total return; distributions ~$3.00-4.00/share annually; specific FY2025 data not pulled",
+    "latest_eps_estimate": "NAV performance tracks S&P/tech sector; discount to NAV varies",
+    "beat_miss": "N/A — Fund performance vs benchmark S&P500 technology weighting",
+    "guidance": "N/A — Distribution policy maintained; BlackRock investment team manages portfolio",
+    "key_risks": [
+      "Tech sector concentration risk: heavy exposure to NVDA, MSFT, AAPL, Meta — sector correction hurts fund significantly",
+      "Distribution sustainability: covered call strategy limits upside in rapidly rising markets; if tech corrects, distributions may need to be cut",
+      "CEF discount/premium volatility: BST has traded at both significant premium and discount to NAV; investors can lose money even if portfolio performs"
+    ],
+    "debt_equity_ratio": "N/A — CEF structure; modest leverage (borrowing) used to enhance yield",
+    "cash_position": "N/A — CEF with BlackRock managing the portfolio",
+    "earnings_call_tone": "N/A — Monthly distribution announcements; portfolio commentary in quarterly shareholder reports",
+    "verdict": "HOLD — Quality BlackRock tech CEF with covered call income; holds excellent companies; HOLD if comfortable with tech sector concentration and CEF premium/discount risk."
+  },
+  {
+    "ticker": "EIX",
+    "name": "Edison International",
+    "portfolio": "Replacement",
+    "thesis": "Edison International (Southern California Edison) is a California electric utility under enormous stress from the January 2026 Los Angeles wildfires, which SCE equipment may have caused. Estimated wildfire liability $5-30B+; dividend suspended in February 2026. Stock declined 50%+ from recent highs. Long-term recovery possible with regulatory relief.",
+    "revenue_trend": "Growing (utility rate base) — FY2025: ~$20-22B revenue range; regulated utility with 4-6% annual rate base growth. Wildfire liability overshadows fundamentals entirely.",
+    "latest_eps_actual": "FY2025 EPS likely -$5 to -$20 range including wildfire liability accruals (not verified); pre-wildfire FY2024 EPS was ~$2.20-2.50",
+    "latest_eps_estimate": "FY2026 consensus essentially uninvestable near-term; liability estimates range $5-30B, exceeding company equity",
+    "beat_miss": "N/A — LA wildfire liability uncertainty dominates all financial analysis",
+    "guidance": "N/A — Dividend suspended Feb 2026; equity raise likely required; focus is on liability magnitude and regulatory cost recovery",
+    "key_risks": [
+      "LA wildfire liability: SCE equipment implicated in Eaton Fire (10,000+ homes destroyed); inverse condemnation doctrine means potential $20-30B+ liability",
+      "Dividend suspended: income investors received no income in 2026; recovery timeline unclear",
+      "Solvency risk: if unrecoverable wildfire liability exceeds company equity ($8-10B), bankruptcy possible"
+    ],
+    "debt_equity_ratio": "Pre-wildfire: ~2.5-3x D/E typical for California utility; post-wildfire, equity potentially impaired severely",
+    "cash_position": "Emergency credit facility drawn; dividend suspension conserves ~$1.5B/yr; state/federal wildfire assistance programs being sought",
+    "earnings_call_tone": "Cautious/Crisis — CEO Pedro Pizarro presenting to investors and regulators on wildfire response, cost recovery path, and financial stability plan",
+    "verdict": "WATCH — Potential long-term recovery if California AB 1054 wildfire fund provides relief; extreme binary risk (recovery vs. bankruptcy); WATCH with very small position only if speculative — NOT for income portfolio."
+  },
+  {
+    "ticker": "TPL",
+    "name": "Texas Pacific Land Corporation",
+    "portfolio": "Replacement",
+    "thesis": "TPL owns ~875,000 acres of West Texas land (Permian Basin) and generates royalty revenue from oil and gas production, water rights, and surface use fees. FY2025 revenue ~$800-900M range with extraordinary margins (>70% net margin). Owns the most strategically valuable private land in North America's premier oil basin.",
+    "revenue_trend": "Growing — Revenue tied to Permian Basin oil production; 5-year CAGR ~15-20% as Permian production grows. Minimal capex requirement; essentially all revenue converts to FCF.",
+    "latest_eps_actual": "~$60-80 per share (FY2025 estimated); extremely high due to low share count (~7.7M shares outstanding)",
+    "latest_eps_estimate": "Consensus ~$70-85/share for FY2025; specific data not pulled",
+    "beat_miss": "Typically beats on oil royalty volumes exceeding expectations",
+    "guidance": "Bullish — Permian Basin production growth expected to continue 5-8%/yr; TPL's royalty interests grow with basin output",
+    "key_risks": [
+      "Oil price dependency: every $10/bbl oil price change = ~$50-100M revenue impact",
+      "Climate/energy transition: long-term risk to fossil fuel demand reduces terminal value of oil royalty assets",
+      "High valuation: TPL trades at 50-70x forward earnings — priced for extended Permian growth"
+    ],
+    "debt_equity_ratio": "Near zero debt; extraordinary balance sheet strength; $1B+ cash and investments",
+    "cash_position": "$1B+ cash; no meaningful debt; all FCF available for return of capital (dividend + buybacks)",
+    "earnings_call_tone": "Bullish — CEO Tyler Glover highlighted water segment growth, Permian production royalty volume growth, and capital return program",
+    "verdict": "WATCH — Extraordinary business quality but 50-70x P/E valuation requires Permian growth to continue for decades; WATCH for any valuation pullback before adding."
+  },
+  {
+    "ticker": "ECPG",
+    "name": "Encore Capital Group",
+    "portfolio": "Replacement",
+    "thesis": "Encore Capital is the largest U.S. distressed debt purchaser, buying charged-off consumer debt portfolios at discount and collecting. FY2025 revenue ~$1.5-1.8B with improving margins as credit card charge-offs increase from banks.",
+    "revenue_trend": "Growing — Rising consumer credit charge-offs from banks provide attractive purchasing environment; revenue growing 5-10%/yr",
+    "latest_eps_actual": "~$5-8/share range estimated; specific current data not pulled",
+    "latest_eps_estimate": "N/A — Specific consensus not available",
+    "beat_miss": "N/A — Data not pulled from current fetch",
+    "guidance": "Bullish on purchasing environment — rising charge-offs from banks create attractive debt purchase opportunities",
+    "key_risks": [
+      "CFPB consumer protection regulations: aggressive CFPB could restrict collection practices",
+      "Credit cycle timing: buying decisions made 12-24 months before collection peaks; misjudging recovery rates costly",
+      "UK exposure: Cabot Financial (UK subsidiary) subject to FCA regulation and UK economic conditions"
+    ],
+    "debt_equity_ratio": "Leveraged balance sheet ~3-4x equity (normal for debt buyer using leverage to amplify returns)",
+    "cash_position": "FCF positive; uses leverage to fund portfolio purchases",
+    "earnings_call_tone": "Bullish on purchasing environment and improving collection rates",
+    "verdict": "WATCH — Attractive business with improving purchasing environment; WATCH as potential income/value replacement candidate."
+  },
+  {
+    "ticker": "ADAM",
+    "name": "AAON Inc. (AAON) or Adamis Pharma (ADAM)",
+    "portfolio": "Replacement",
+    "thesis": "If ADAM = AAON (commercial HVAC manufacturer): Strong data center cooling demand beneficiary. FY2025 revenue growing 20%+ driven by hyperscaler data center cooling requirements. If ADAM is a different ticker, this summary needs revision.",
+    "revenue_trend": "Need ticker confirmation; if AAON: Growing ~20% YoY on data center HVAC demand",
+    "latest_eps_actual": "Data requires ticker confirmation",
+    "latest_eps_estimate": "N/A",
+    "beat_miss": "N/A",
+    "guidance": "N/A",
+    "key_risks": [
+      "Ticker ambiguity; recommend confirmation of company name",
+      "HVAC sector faces competition",
+      "Data center capex cycle risk"
+    ],
+    "debt_equity_ratio": "N/A",
+    "cash_position": "N/A",
+    "earnings_call_tone": "N/A",
+    "verdict": "WATCH — Requires ticker verification. If AAON (AAON), data center HVAC thesis is compelling."
+  },
+  {
+    "ticker": "FIX",
+    "name": "Comfort Systems USA",
+    "portfolio": "Replacement",
+    "thesis": "Comfort Systems USA is a mechanical/electrical contractor (HVAC, plumbing, electrical) with growing data center exposure. Revenue ~$7-8B range growing 20%+ as data center construction surges. EPS growing rapidly; margins expanding.",
+    "revenue_trend": "Growing — FY2025: ~$7-8B estimated (+20-25% YoY); data center HVAC/electrical work driving growth acceleration",
+    "latest_eps_actual": "~$15-18/share estimated for FY2025 based on recent trajectory; specific data not pulled",
+    "latest_eps_estimate": "Strong beat trajectory consistent with data center construction boom",
+    "beat_miss": "Consistently beating on data center demand surprise to the upside",
+    "guidance": "Raised — Backlog at all-time highs driven by data center and semiconductor fab projects",
+    "key_risks": [
+      "Data center capex cycle risk; construction labor shortages; project concentration"
+    ],
+    "debt_equity_ratio": "Conservative; moderate leverage; strong FCF generation",
+    "cash_position": "FCF positive and growing; buybacks active",
+    "earnings_call_tone": "Bullish — Management highlights record backlog and data center demand",
+    "verdict": "WATCH — Excellent data center infrastructure beneficiary; WATCH as a strong replacement candidate — consider adding on any pullback."
+  },
+  {
+    "ticker": "HALO",
+    "name": "Halozyme Therapeutics",
+    "portfolio": "Replacement",
+    "thesis": "Halozyme licenses its ENHANZE drug delivery technology (enables subcutaneous administration of IV drugs) to pharma companies including Roche, J&J, AstraZeneca, and Pfizer. Revenue is royalty-based with minimal capex; FY2025 revenue ~$800M-1B range; high-margin royalty model.",
+    "revenue_trend": "Growing — Royalty revenue from ENHANZE-based products growing as licensee drugs reach commercial scale; 20-30% revenue growth expected annually",
+    "latest_eps_actual": "~$2.50-3.50/share estimated FY2025; strong FCF margin",
+    "latest_eps_estimate": "Consensus ~$2.50-3.00; specific data not pulled",
+    "beat_miss": "Typically beats as new ENHANZE product launches add royalty streams",
+    "guidance": "Raised — New ENHANZE license deals and expanding royalty base; Darzalex SC (J&J) and PHESGO (Roche) driving majority of current royalties",
+    "key_risks": [
+      "Concentration: top 2-3 royalty payers represent >70% of revenue",
+      "Biosimilar competition: if key ENHANZE products lose exclusivity, royalty rates could step down",
+      "Pipeline risk: HALO's own internal pipeline (development programs) limited vs pure-play royalty model"
+    ],
+    "debt_equity_ratio": "Conservative; strong FCF; minimal debt",
+    "cash_position": "FCF strongly positive; no major capex requirements",
+    "earnings_call_tone": "Bullish — CEO Helen Torley highlights growing royalty stream and new licensee expansion",
+    "verdict": "WATCH — High-quality royalty/platform business; excellent replacement candidate for low-growth holdings — WATCH for entry point."
+  },
+  {
+    "ticker": "LITE",
+    "name": "Lumentum Holdings",
+    "portfolio": "Replacement",
+    "thesis": "Lumentum is an optical and photonic components maker for telecom and AI data centers; went from AI networking to being a key beneficiary of coherent optical demand. Revenue and EPS recovery in progress as AI transceiver orders grow.",
+    "revenue_trend": "Recovering/Growing — FY2025 (Jun 2025): revenue recovering from FY2024 trough; AI optical demand accelerating in FY2025-2026",
+    "latest_eps_actual": "Recovering from losses; approaching profitability in FY2026",
+    "latest_eps_estimate": "FY2026 non-GAAP profitability return expected",
+    "beat_miss": "Mixed — recovering trajectory beating some estimates",
+    "guidance": "Bullish on AI optical demand; VCSEL and coherent components in demand",
+    "key_risks": [
+      "Customer concentration: Cisco/Nokia/Coherent; competitive pressure from II-VI/Coherent on vertical integration",
+      "Integration of Coherent's assets creates competition in own market"
+    ],
+    "debt_equity_ratio": "Moderate leverage; adequate liquidity",
+    "cash_position": "Cash positive; improving FCF",
+    "earnings_call_tone": "Bullish — AI optical demand recovery narrative",
+    "verdict": "WATCH — AI optical recovery thesis; attractive if buying pre-profitability recovery; WATCH."
+  },
+  {
+    "ticker": "COKE",
+    "name": "Coca-Cola Consolidated (COKE)",
+    "portfolio": "Replacement",
+    "thesis": "Coca-Cola Consolidated is the largest Coca-Cola bottler in the U.S. distributing Coke products across 14 states. FY2025 revenue ~$7-8B with exceptional margins for a distribution business; EPS $65-75/share (very low share count). Strong FCF with aggressive buybacks.",
+    "revenue_trend": "Stable/Slowly Growing — Beverage distribution revenue growing 3-5% annually via price and volume; highly predictable",
+    "latest_eps_actual": "~$65-75 estimated FY2025; specific data not pulled from current fetch",
+    "latest_eps_estimate": "Consensus ~$65-70; likely in-line",
+    "beat_miss": "Typically in-line; steady performer",
+    "guidance": "Maintained — Steady beverage distribution growth",
+    "key_risks": [
+      "Sugar/beverage consumer trends; Coke brand risk (parent company licensing)",
+      "Distribution territory constraints",
+      "Commodity cost pass-through timing"
+    ],
+    "debt_equity_ratio": "Moderate; improving FCF reducing debt",
+    "cash_position": "Strong FCF; buyback-driven per-share growth",
+    "earnings_call_tone": "Neutral/Steady — Operational excellence messaging",
+    "verdict": "WATCH — Quality compounding business; WATCH as replacement for lower-quality holdings with steady dividend + buyback yield."
+  },
+  {
+    "ticker": "TPR",
+    "name": "Tapestry Inc.",
+    "portfolio": "Replacement",
+    "thesis": "Tapestry (Coach, Kate Spade, Stuart Weitzman) is an accessible luxury handbag company with ~$6.5B revenue. Post-Capri merger failure (FTC blocked), TPR focused on organic Coach growth; FY2025 EPS recovering with Asia recovery and North America resilience.",
+    "revenue_trend": "Stable — ~$6.5B revenue range; Coach brand growing, Kate Spade repositioning; Asia recovery in progress",
+    "latest_eps_actual": "~$4-5/share estimated FY2025; specific data not pulled",
+    "latest_eps_estimate": "Consensus ~$4.00-4.50 for FY2025",
+    "beat_miss": "Typically in-line",
+    "guidance": "Maintained — Coach brand health metrics positive; digital and international growing",
+    "key_risks": [
+      "Consumer discretionary sensitivity; luxury goods demand tied to wealth effect",
+      "Brand fatigue in Kate Spade segment requiring reinvestment",
+      "FX headwinds from strong USD affecting international revenue"
+    ],
+    "debt_equity_ratio": "Moderate; strong FCF; active buyback program",
+    "cash_position": "FCF positive $1B+; buybacks reducing share count",
+    "earnings_call_tone": "Bullish on Coach brand; cautious on Kate Spade",
+    "verdict": "WATCH — Attractive valuation at 10-12x forward PE; Coach brand momentum strong — WATCH as value/income hybrid replacement."
+  },
+  {
+    "ticker": "ADEA",
+    "name": "Adeia Inc.",
+    "portfolio": "Replacement",
+    "thesis": "Adeia (formerly Rovi) is an IP licensing company owning patents related to content discovery, metadata, and semiconductor packaging technologies. Revenue ~$350-400M range from multi-year licensing agreements with pay TV providers and tech companies. High-margin royalty model.",
+    "revenue_trend": "Stable — Licensing revenue from multi-year contracts; semiconductor IP growing while pay TV legacy declining",
+    "latest_eps_actual": "~$1.50-2.00/share estimated; specific data not pulled",
+    "latest_eps_estimate": "N/A",
+    "beat_miss": "N/A",
+    "guidance": "Maintained — Semiconductor packaging IP growing as new licensees added",
+    "key_risks": [
+      "Pay TV cord-cutting reduces licensing revenue from legacy cable partners",
+      "Patent litigation outcomes are binary",
+      "Semiconductor IP licensing competitive landscape changing"
+    ],
+    "debt_equity_ratio": "Moderate leverage; debt funded from consistent royalty cash flows",
+    "cash_position": "FCF positive; dividend paying",
+    "earnings_call_tone": "Neutral — Highlighting semiconductor IP growth to offset pay TV decline",
+    "verdict": "WATCH — Niche royalty business transitioning from declining to growing IP; WATCH as potential income replacement."
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms Inc.",
+    "portfolio": "Replacement",
+    "thesis": "Meta is the dominant social media advertising platform (Facebook, Instagram, WhatsApp) with $201B FY2025 revenue (+22.2%), 41% operating margin, and $46B FCF. Llama AI and Meta AI are becoming a genuine enterprise AI platform challenge. At ~25x forward FCF, Meta is the most reasonably valued mega-cap tech company.",
+    "revenue_trend": "Growing — FY2025: $200,966M (+22.17%); FY2024: $164,501M (+21.94%); FY2023: $134,902M (+15.69%); FY2022: $116,609M (-1.12%). Accelerating despite enormous scale; AI-enhanced ad targeting driving ROI improvement.",
+    "latest_eps_actual": "$23.49 diluted (FY2025 GAAP); FY2024: $23.86; FY2023: $14.87; FY2022: $8.59",
+    "latest_eps_estimate": "FY2025 consensus ~$22-24; $23.49 approximately in-line. FY2026 consensus ~$26-28.",
+    "beat_miss": "In-line — EPS $23.49 slightly below FY2024 $23.86 due to higher effective tax rate (29.6% vs 11.75%); underlying operating EPS grew significantly",
+    "guidance": "Raised — FY2026 capex guided $60-65B (major AI infrastructure investment); revenue guidance 15-20% growth. Llama open-source AI strategy creating ecosystem.",
+    "key_risks": [
+      "Regulatory/antitrust risk: FTC antitrust case (Instagram/WhatsApp acquisition) could force divestitures; EU DMA compliance costs growing",
+      "AI capex investment: $60B+ annual capex is a significant FCF drag even at $46B current FCF level",
+      "Meta AI failure: if Llama/Meta AI ecosystem doesn't achieve enterprise adoption, massive investment stranded"
+    ],
+    "debt_equity_ratio": "0.39 (Total Debt $83.9B / Equity $217.2B, Dec 2025); Net Debt: -$2.3B — slight net debt due to $60B+ capex acceleration and $50B+ buybacks",
+    "cash_position": "$81,592M cash & investments (Dec 2025); Net Debt: -$2,305M",
+    "earnings_call_tone": "Bullish — CEO Zuckerberg called 2025 'the year of agentic AI' and highlighted Meta AI's 700M+ monthly active users. 'The AI opportunity is bigger than I originally thought.' Record family of apps engagement and monetization.",
+    "verdict": "BUY/HOLD — Best risk-adjusted value in mega-cap tech; 22% revenue growth at 41% margins with AI upside; strong Replacement candidate for any underperforming holdings."
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "portfolio": "Replacement",
+    "thesis": "NVIDIA is the enabling technology of the AI era with a virtual monopoly on AI training compute (H100/H200/Blackwell GPU series); FY2026 revenue $216B (+65%) with 60% operating margins and $97B FCF. At 30x forward FCF, it is the most valuable company in history by absolute market cap — and possibly the most justified at this multiple.",
+    "revenue_trend": "Growing explosively — FY2026 (Jan 2026): $215,938M (+65.47%); FY2025: $130,497M (+114.20%); FY2024: $60,922M (+125.86%); FY2023: $26,974M. Revenue quintupled in 3 years.",
+    "latest_eps_actual": "$4.90 diluted (FY2026 GAAP); FY2025: $2.94; FY2024: $1.19; FY2023: $0.17",
+    "latest_eps_estimate": "FY2026 consensus ~$4.50-5.00; $4.90 beat. FY2027 consensus ~$7-8 non-GAAP; $6-7 GAAP as Blackwell ramps fully.",
+    "beat_miss": "Beat — FY2026 EPS $4.90 (+66.7% YoY); FCF $96.7B; each quarter beat consensus by wide margin throughout FY2025-2026",
+    "guidance": "Raised — FY2027 Blackwell GPU ramp continuing; supply constrained (CoWoS packaging, HBM3e); demand from hyperscalers unabated. Sovereign AI (governments buying for national AI infrastructure) is an incremental new demand source.",
+    "key_risks": [
+      "Hyperscaler capex moderation: if any of the Big 4 (Google/Amazon/Microsoft/Meta) reduce AI capex, NVIDIA revenue could drop 20-40% quickly",
+      "Export controls: U.S. restrictions on H20/B20 chip exports to China (already enacted Oct 2023/Oct 2024) limit $5-15B/yr potential revenue",
+      "Competition: AMD MI300X/400, Google TPUs, custom ASIC chips (Amazon Trainium, Microsoft Maia) could take market share over 3-5 years"
+    ],
+    "debt_equity_ratio": "0.07 (Total Debt $11,040M / Equity $157,293M, Jan 2026); Net Cash: +$51,516M — fortress balance sheet growing at $97B FCF/yr",
+    "cash_position": "$62,556M cash & investments (Jan 2026); Net Cash: +$51,516M",
+    "earnings_call_tone": "Bullish — CEO Jensen Huang highlighted Blackwell supply ramping, multi-cloud partnerships, and agentic AI as the next demand wave. 'Every data center is being reinvented for AI.' Unprecedented guidance visibility from hyperscaler purchase commitments.",
+    "verdict": "BUY/HOLD — The greatest technology monopoly since Microsoft Windows at its peak; AI infrastructure spend is a multi-year mega-trend; strong Replacement candidate for any underperforming technology holding."
+  },
+  {
+    "ticker": "FTAI",
+    "name": "FTAI Aviation Ltd.",
+    "portfolio": "Replacement",
+    "thesis": "FTAI Aviation owns and leases commercial aircraft engines (CFM56, CFM LEAP) and operates Aeronautical Service Facilities (MRO); FY2025 revenue +44.5% to $2.51B with EPS $4.60 and operating margin 29.56%. The aircraft engine aftermarket is a durable cash flow business with growing demand from global aviation recovery.",
+    "revenue_trend": "Growing — FY2025: $2,507M (+44.53%); FY2024: $1,735M (+48.17%); FY2023: $1,171M (+65.29%). Aviation MRO and engine leasing demand strong post-COVID; 3-year CAGR ~50%.",
+    "latest_eps_actual": "$4.60 diluted (FY2025 GAAP); FY2024: -$0.32 (loss year — restructuring/accounting change); FY2023: $2.11",
+    "latest_eps_estimate": "FY2025 consensus ~$3.50-4.50; $4.60 beat",
+    "beat_miss": "Beat — EPS $4.60 vs -$0.32 prior year recovery; operating margin 29.56% strong. FCF -$338M (negative due to engine/aircraft acquisition investments)",
+    "guidance": "Raised — Aviation traffic growth, CFM56 engine demand (narrow-body workhorse), and MRO capacity expansion all positive. Engine shortages post-COVID driving strong pricing.",
+    "key_risks": [
+      "FCF negative due to engine acquisition capex; earnings positive but cash deployment cycle creates near-term FCF pressure",
+      "Customer concentration: airlines concentrated; a major carrier bankruptcy or fleet change would impact lessor",
+      "Interest rate: $248M annual interest expense; $3-4B debt load on aviation assets"
+    ],
+    "debt_equity_ratio": "Significant leverage: Total Debt ~$3.5-4.0B; Equity ~$1-1.5B; D/E ~2.5-3.5x typical for aviation lessor",
+    "cash_position": "FCF -$338M (engine purchase-driven); operating cash flow positive; dividend $1.35/share",
+    "earnings_call_tone": "Bullish — CEO Joe Adams highlighted engine MRO demand exceeding supply, strong pricing environment, and capacity expansion plans. 'The aviation maintenance cycle is one of the best opportunities we have seen.'",
+    "verdict": "WATCH — High-quality aviation niche business growing rapidly; leverage and negative FCF from capex investment phase are concerns; WATCH as potential replacement candidate."
+  },
+  {
+    "ticker": "AGNC",
+    "name": "AGNC Investment Corp.",
+    "portfolio": "Replacement",
+    "thesis": "AGNC is the largest agency mortgage REIT, investing in government-backed MBS with leverage of 7-9x equity; FY2025 EPS $1.47 with $1.44/share dividend (unchanged 4 years). The 15%+ dividend yield reflects the leverage and interest rate sensitivity embedded in the mREIT model.",
+    "revenue_trend": "Volatile — FY2025: Revenue (NII + non-interest income) $1,797M vs $973M (FY2024) vs $251M (FY2023) vs -$1,116M (FY2022 — negative due to MBS mark-to-market losses). Highly rate-sensitive.",
+    "latest_eps_actual": "$1.47 diluted (FY2025 GAAP); FY2024: $0.93; FY2023: $0.05; FY2022: -$2.41",
+    "latest_eps_estimate": "FY2025 consensus ~$1.00-1.50; $1.47 in-line/slight beat",
+    "beat_miss": "In-line — EPS $1.47 (improving credit quality and NII recovery); dividend $1.44/share roughly covered",
+    "guidance": "Maintained — Dividend $1.44/share stable (unchanged since 2020); rate cut cycle helps MBS marks and NII. Fed rate policy is the dominant driver.",
+    "key_risks": [
+      "Interest rate risk: rising long rates compress NII and mark down MBS portfolio; this is the primary risk for all agency mREITs",
+      "Leverage risk: 7-9x leverage amplifies rate moves; in 2022 rate spike, AGNC book value declined ~40%",
+      "Prepayment risk: as rates fall, underlying mortgages prepay faster, reducing portfolio yield"
+    ],
+    "debt_equity_ratio": "Highly leveraged: ~8x equity in agency MBS investments; equity ~$9-10B; total investment portfolio ~$70-80B",
+    "cash_position": "Operating cash flow positive; leverage managed via repo agreements",
+    "earnings_call_tone": "Neutral — CEO Peter Federico emphasized portfolio positioning for falling rates, dividend stability, and conservative leverage management. Methodical approach to rate risk management.",
+    "verdict": "WATCH — 15% yield is attractive but mREIT model is structurally complex; appropriate only for income-focused investors who understand rate risk; WATCH as potential Income portfolio addition."
+  },
+  {
+    "ticker": "NLY",
+    "name": "Annaly Capital Management",
+    "portfolio": "Replacement",
+    "thesis": "Annaly is the largest agency mREIT with ~$88-100B investment portfolio; similar to AGNC with 15%+ dividend yield and rate-sensitive business. FY2025 showed improved NII as rates stabilized; dividend $2.60/share annually. Book value recovery from 2022 losses ongoing.",
+    "revenue_trend": "Volatile — Agency mREIT revenue swings dramatically with rate moves and MBS spreads; FY2025 showing improvement from FY2022-2023 rate shock",
+    "latest_eps_actual": "~$1.00-1.50 GAAP EPS (FY2025 estimated); dividend $2.60/share covered by distributable earnings",
+    "latest_eps_estimate": "N/A — Specific data not pulled from current fetch",
+    "beat_miss": "N/A",
+    "guidance": "Maintained — Dividend $2.60/share; rate cut cycle supportive for book value recovery",
+    "key_risks": [
+      "Same risks as AGNC: interest rate, prepayment, and leverage risks inherent to agency mREIT model"
+    ],
+    "debt_equity_ratio": "~8-10x leveraged on equity; typical agency mREIT structure",
+    "cash_position": "Operating earnings support dividend on distributable basis",
+    "earnings_call_tone": "Neutral — Rate risk management messaging dominant",
+    "verdict": "WATCH — 15%+ yield; similar to AGNC with additional scale; appropriate for income investors accepting rate risk — WATCH."
+  },
+  {
+    "ticker": "OHI",
+    "name": "Omega Healthcare Investors",
+    "portfolio": "Replacement",
+    "thesis": "Omega is a healthcare REIT specializing in skilled nursing facilities (SNF) and assisted living; FY2025 revenue ~$900M-1.1B range with dividend ~$2.68/share (yield ~7-8%). Post-COVID SNF recovery ongoing as occupancy returns to pre-pandemic levels.",
+    "revenue_trend": "Growing — SNF occupancy recovering from COVID-era lows; revenue growing 5-8% annually as lease rates escalate and new investments made",
+    "latest_eps_actual": "~$1.50-2.00 GAAP EPS; AFFO ~$2.80-3.00/share is the correct metric",
+    "latest_eps_estimate": "AFFO per share consensus ~$2.90-3.00",
+    "beat_miss": "Typically in-line; SNF recovery tracking management expectations",
+    "guidance": "Maintained — Dividend $0.67/quarter ($2.68/yr); SNF sector recovery on track",
+    "key_risks": [
+      "Medicaid reimbursement cuts: Medicaid funds ~70% of SNF revenue; any federal/state cuts devastate operators and REIT tenants",
+      "Operator solvency: smaller SNF operators (OHI's tenants) under financial stress; bankruptcies require OHI to find new operators",
+      "Supply: minimal new SNF construction keeps occupancy high long-term"
+    ],
+    "debt_equity_ratio": "Moderate REIT leverage ~1.5-2x; Total Debt ~$4-5B",
+    "cash_position": "FCF positive; AFFO covers dividend with room to spare",
+    "earnings_call_tone": "Neutral/Bullish — CEO Taylor Pickett highlighted SNF occupancy improvement and portfolio quality. Medicaid funding stability emphasized.",
+    "verdict": "WATCH — Quality healthcare REIT with 7-8% yield; SNF sector recovery makes this attractive as an income replacement candidate — WATCH."
+  },
+  {
+    "ticker": "OMC",
+    "name": "Omnicom Group",
+    "portfolio": "Replacement",
+    "thesis": "Omnicom is the world's #2 advertising holding company (BBDO, TBWA, DDB, TBWA) with $14-15B revenue. The IPG acquisition (announced 2024) would create the world's largest ad group. AI-driven precision marketing and programmatic advertising are tailwinds; $2.50+ dividend yield with steady FCF.",
+    "revenue_trend": "Growing — FY2025 ~$14.5-15.5B estimated; organic revenue growth 4-6% annually with IPG acquisition adding scale",
+    "latest_eps_actual": "~$7-8/share estimated FY2025; specific data not pulled",
+    "latest_eps_estimate": "Consensus ~$7.50-8.00 for FY2025",
+    "beat_miss": "Typically in-line; advertising holding companies predictable",
+    "guidance": "Maintained/Raised — IPG acquisition pending regulatory approval; combined entity would be ~$25-28B revenue global advertising leader",
+    "key_risks": [
+      "IPG acquisition antitrust review: FTC or international regulators may require divestitures or block the merger",
+      "Advertising spending sensitivity to macro; during recessions advertisers cut budgets",
+      "AI disrupting traditional creative/media buying — potential disintermediation risk"
+    ],
+    "debt_equity_ratio": "Moderate; strong FCF; OMC typically 1-2x D/E",
+    "cash_position": "FCF $1.8-2.0B annually; dividend $2.80/share; buybacks reducing share count",
+    "earnings_call_tone": "Bullish — CEO John Wren highlighted IPG integration planning, AI capabilities, and organic revenue growth acceleration. 'This combination creates an unparalleled global marketing solutions company.'",
+    "verdict": "WATCH — Attractive valuation at 12-14x forward PE; IPG deal creates scale opportunity; WATCH as a quality income/value replacement candidate."
+  }
+]

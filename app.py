@@ -20,14 +20,18 @@ st.markdown("""
     .main { background-color: #f8f9fa; }
     .stTabs [data-baseweb="tab"] { font-size: 15px; font-weight: 500; }
     h1, h2, h3 { color: #1a1a2e; }
-    /* Sticky tab bar */
+    /* Sticky tab bar — account for Streamlit's own fixed header (~56px) */
     .stTabs [data-baseweb="tab-list"] {
         position: sticky;
-        top: 0;
-        z-index: 999;
-        background-color: white;
-        padding-top: 6px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+        top: 2.875rem;
+        z-index: 99;
+        background-color: #ffffff;
+        padding-bottom: 4px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+    }
+    /* Ensure parent containers don't clip sticky */
+    section[data-testid="stSidebar"] ~ div, .main .block-container {
+        overflow: visible !important;
     }
 </style>
 """, unsafe_allow_html=True)

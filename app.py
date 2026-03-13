@@ -18,20 +18,43 @@ st.set_page_config(
 st.markdown("""
 <style>
     .main { background-color: #f8f9fa; }
-    .stTabs [data-baseweb="tab"] { font-size: 15px; font-weight: 500; }
     h1, h2, h3 { color: #1a1a2e; }
-    /* Sticky tab bar — account for Streamlit's own fixed header (~56px) */
-    .stTabs [data-baseweb="tab-list"] {
-        position: sticky;
-        top: 2.875rem;
-        z-index: 99;
-        background-color: #ffffff;
-        padding-bottom: 4px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.10);
+
+    /* Dark sidebar */
+    section[data-testid="stSidebar"] {
+        background-color: #1a1a2e !important;
     }
-    /* Ensure parent containers don't clip sticky */
-    section[data-testid="stSidebar"] ~ div, .main .block-container {
-        overflow: visible !important;
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] .stMarkdown p,
+    section[data-testid="stSidebar"] .stCaption {
+        color: #aab0c0 !important;
+    }
+
+    /* Nav buttons — full-width, left-aligned, no border */
+    section[data-testid="stSidebar"] .stButton > button {
+        width: 100% !important;
+        text-align: left !important;
+        background-color: transparent !important;
+        color: #c8cdd8 !important;
+        border: none !important;
+        border-radius: 8px !important;
+        padding: 11px 18px !important;
+        font-size: 15px !important;
+        font-weight: 500 !important;
+        margin-bottom: 3px !important;
+        transition: background 0.15s, color 0.15s;
+        box-shadow: none !important;
+    }
+    section[data-testid="stSidebar"] .stButton > button:hover {
+        background-color: rgba(255,255,255,0.10) !important;
+        color: #ffffff !important;
+    }
+    /* Active nav item */
+    section[data-testid="stSidebar"] .stButton > button[data-active="true"],
+    section[data-testid="stSidebar"] .nav-active > button {
+        background-color: #3d1152 !important;
+        color: #ffffff !important;
+        font-weight: 700 !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -245,13 +268,34 @@ st.sidebar.image(
     use_container_width=True
 )
 st.sidebar.markdown("---")
-page = st.sidebar.radio("", [
-    "🔔 Market Alerts",
-    "📈 Portfolio",
-    "⭐ Stock Ratings",
-    "🔄 Matchups",
-    "🔍 Research"
-])
+
+NAV_ITEMS = [
+    ("🔔", "Market Alerts"),
+    ("📈", "Portfolio"),
+    ("⭐", "Stock Ratings"),
+    ("🔄", "Matchups"),
+    ("🔍", "Research"),
+]
+
+if "page" not in st.session_state:
+    st.session_state.page = "Market Alerts"
+
+for icon, label in NAV_ITEMS:
+    active = st.session_state.page == label
+    # Inject active class via markdown wrapper
+    if active:
+        st.sidebar.markdown(
+            f'<div style="background:#3d1152;border-radius:8px;margin-bottom:3px;">'
+            f'<span style="display:block;padding:11px 18px;color:#fff;font-size:15px;font-weight:700;">'
+            f'{icon} {label}</span></div>',
+            unsafe_allow_html=True
+        )
+    else:
+        if st.sidebar.button(f"{icon}  {label}", key=f"nav_{label}"):
+            st.session_state.page = label
+            st.rerun()
+
+page = st.session_state.page
 st.sidebar.markdown("---")
 port_filter_global = st.sidebar.selectbox("Portfolio Filter", ["All","Power","Core","Income"])
 move_threshold = st.sidebar.slider("Alert Threshold (%)", 1.0, 10.0, 3.0, 0.5)
